@@ -15,7 +15,14 @@
     - Back
     - suitStorage
   #- type: AmmoCounter VXS
+  - type: GunWieldBonus # VXS
+    minAngle: -11
+    maxAngle: -10
   - type: Gun
+    minAngle: 13 # VXS
+    maxAngle: 16 # VXS
+    angleIncrease: 1.5 # VXS
+    angleDecay: 6 # VXS
     cameraRecoilScalar: 2
     projectileSpeed: 35 # VXS
     fireRate: 5
