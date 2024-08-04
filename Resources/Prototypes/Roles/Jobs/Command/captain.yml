@@ -21,7 +21,7 @@
     - !type:SpeciesRequirement
       inverted: true
       species:
-      - Vox
+      - Reptilian
       - Diona
   weight: 20
   startingGear: CaptainGear
