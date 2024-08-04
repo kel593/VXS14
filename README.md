@@ -1,27 +1,16 @@
 <p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg" /></p>
 
-Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), our homegrown engine written in C#.
+<p align="center"> Станция 14 это сессионная игрушка про взаимодействие космонафтиков и взаимодействие газов. Сборка VXS14 представляет примерно такой же геймплей, но сессионки чуть меньше а пострелушек чуть больше.</p>
 
-This is the primary repo for Space Station 14. To prevent people forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server.
+## Ссылки
 
-If you want to host or create content for SS14, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
+[Дискорд](https://discord.gg/wArjmHTv7S) | [Апстрим](https://github.com/space-wizards/space-station-14) | [Вики](https://vxs14.miraheze.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0)
 
-## Links
+## Контрибьютинг
 
-[Discord](https://discord.gg/wArjmHTv7S) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
+Список TODO можно увидеть в дискорде проекта или получить у мейнтейнера проекта.
 
-## Documentation/Wiki
-
-Our [docs site](https://docs.spacestation14.io/) has documentation on SS14s content, engine, game design and more. We also have lots of resources for new contributors to the project.
-
-## Contributing
-
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/space-wizards/space-station-14-content/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
-Just make sure your changes and pull requests are in accordance with the [contribution guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
-
-We are not currently accepting translations of the game on our main repository. If you would like to translate the game into another language consider creating a fork or contributing to a fork.
-
-## Building
+## Локальный сервер
 
 1. Clone this repo.
 2. Run `RUN_THIS.py` to init submodules and download the engine.
@@ -29,7 +18,7 @@ We are not currently accepting translations of the game on our main repository. 
 
 [More detailed instructions on building the project.](https://docs.spacestation14.com/en/general-development/setup.html)
 
-## License
+## Лицензия
 
 All code for the content repository is licensed under [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT).
 
