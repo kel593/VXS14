@@ -30,6 +30,7 @@
     Shock: 1.2
     Heat: 1.2
     Structural: 0.5
+    Piercing: 0.3 # VXS
   flatReductions:
     Blunt: 10
     Slash: 10
