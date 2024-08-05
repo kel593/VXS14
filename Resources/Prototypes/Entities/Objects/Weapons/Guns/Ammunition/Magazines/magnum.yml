@@ -16,7 +16,7 @@
 
 - type: entity
   id: BaseMagazineMagnumSubMachineGun
-  name: "Vector magazine (.45 magnum)"
+  name: "Vector magazine (.35 auto)" # VXS
   parent: BaseItem
   abstract: true
   components:
