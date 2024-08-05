@@ -192,7 +192,7 @@
   name: Vector
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunVector
-  description: An excellent fully automatic Heavy SMG. Uses .45 magnum ammo.
+  description: An excellent fully automatic Heavy SMG. Uses .35 auto ammo. # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
