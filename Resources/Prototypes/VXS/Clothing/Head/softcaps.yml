@@ -1,0 +1,31 @@
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: ClothingHeadHatSolar
+  name: solgov softcap
+  description: "A popular field cap worn by strikeballers, BDSM enthusiasts and SolFed Army mercenaries."
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Head/Caps/solgov.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Head/Caps/solgov.rsi
+
+- type: entity
+  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatSolar]
+  id: ClothingHeadHatSolarFlipped
+  name: solgov softcap
+
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: ClothingHeadHatSolarGray
+  name: solgov gray softcap
+  description: "A popular field cap worn by strikeballers, BDSM enthusiasts and SolFed Army mercenaries."
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Head/Caps/solgovgray.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Head/Caps/solgovgray.rsi
+
+- type: entity
+  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatSolarGray]
+  id: ClothingHeadHatSolarGrayFlipped
+  name: solgov gray softcap

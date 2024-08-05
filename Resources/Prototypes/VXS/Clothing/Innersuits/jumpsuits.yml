@@ -1,10 +1,21 @@
 - type: entity
   parent: UnsensoredClothingUniformBase
   id: ClothingUniformJumpsuitSolar
-  name: solar army uniform
-  description: Universal camouflage of a new pattern. Worn by everyone from staff officers to medical workers. Surprisingly bad looking but comfortable. Features thick anti-fragmentation kevlar pads and kneepads.
+  name: solgov army uniform
+  description: Universal camouflage of a new pattern. Worn by those who work in the field. Surprisingly bad looking but comfortable.
   components:
   - type: Sprite
     sprite: VXS/Clothing/Innersuits/tsf.rsi
   - type: Clothing
     sprite: VXS/Clothing/Innersuits/tsf.rsi
+
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingUniformJumpsuitSolarGray
+  name: solgov gray army uniform
+  description: Universal camouflage of a new pattern. Worn by camp staff and commanders. Surprisingly bad looking but comfortable.
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Innersuits/tsf_gray.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Innersuits/tsf_gray.rsi
