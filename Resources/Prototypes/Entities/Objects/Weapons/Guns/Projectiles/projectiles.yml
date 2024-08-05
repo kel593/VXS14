@@ -239,6 +239,7 @@
         - BulletImpassable
       fly-by: *flybyfixture
   - type: Ammo
+    muzzleFlash: null # VXS
   - type: StaminaDamageOnCollide
     damage: 15 # VXS
   - type: Projectile
@@ -280,6 +281,7 @@
         - BulletImpassable
       fly-by: *flybyfixture
   - type: Ammo
+    muzzleFlash: null # VXS
   - type: StaminaDamageOnCollide
     damage: 1
   - type: Projectile
@@ -958,6 +960,7 @@
         - BulletImpassable
       fly-by: *flybyfixture
   - type: Ammo
+    muzzleFlash: null # VXS
   - type: StaminaDamageOnCollide
     damage: 15
   - type: Projectile
