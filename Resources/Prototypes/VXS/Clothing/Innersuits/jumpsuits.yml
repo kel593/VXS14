@@ -1,0 +1,10 @@
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingUniformJumpsuitSolar
+  name: solar army uniform
+  description: Universal camouflage of a new pattern. Worn by everyone from staff officers to medical workers. Surprisingly bad looking but comfortable. Features thick anti-fragmentation kevlar pads and kneepads.
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Innersuits/tsf.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Innersuits/tsf.rsi
