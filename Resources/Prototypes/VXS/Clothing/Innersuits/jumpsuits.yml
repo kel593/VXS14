@@ -19,3 +19,14 @@
     sprite: VXS/Clothing/Innersuits/tsf_gray.rsi
   - type: Clothing
     sprite: VXS/Clothing/Innersuits/tsf_gray.rsi
+
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingUniformJumpsuitSolarGold
+  name: solgov officer army uniform
+  description: Universal camouflage of a new pattern. Surprisingly bad looking but comfortable.
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Innersuits/tsf_gold.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Innersuits/tsf_gold.rsi
