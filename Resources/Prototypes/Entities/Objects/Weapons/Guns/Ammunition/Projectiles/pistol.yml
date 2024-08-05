@@ -9,6 +9,7 @@
       types:
         Piercing: 20 # VXS
         Blunt: 6 # VXS
+        Asphyxiation: 3 # VXS
   - type: StaminaDamageOnCollide # VXS
     damage: 11
   - type: TimedDespawn # VXS
