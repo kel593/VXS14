@@ -18,11 +18,6 @@
       time: 54000 # 15 hours
     - !type:AgeRequirement
       requiredAge: 20
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Reptilian
-      - Diona
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
