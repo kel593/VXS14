@@ -31,6 +31,7 @@
     layers:
       - state: icon
         map: ["enum.GunVisualLayers.Base"]
+  - type: GunRequiresWield # VXS
   - type: Clothing
     sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi
     slots:
