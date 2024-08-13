@@ -19,9 +19,9 @@
   - type: Gun
     minAngle: 15
     maxAngle: 25
-    fireRate: 6
-    cameraRecoilScalar: 1
-    projectileSpeed: 45
+    fireRate: 6.5
+    cameraRecoilScalar: 1.5
+    projectileSpeed: 50
     soundGunshot:
       path: /Audio/VXS/Gunshots/Rifle/rifle1.ogg
       params:
