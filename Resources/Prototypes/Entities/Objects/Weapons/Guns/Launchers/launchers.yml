@@ -22,7 +22,7 @@
 
 - type: entity
   name: china lake
-  parent: [BaseWeaponLauncher, BaseGunWieldable]
+  parent: [BaseWeaponLauncher, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponLauncherChinaLake
   description: A lever-action infantry grenade launcher, originally developed by the Triglav forces but then spread around the world. # VXS
   components:
@@ -60,7 +60,7 @@
 
 - type: entity
   name: RPG-29-2M # VXS
-  parent: BaseWeaponLauncher
+  parent: [ BaseWeaponLauncher, BaseMajorContraband ]
   id: WeaponLauncherRocket
   description: Robust handheld anti-tank reusable grenade launcher maximizes the effectiveness of the grenade launcher in suppressing a wide range of enemy targets. # VXS
   components:
