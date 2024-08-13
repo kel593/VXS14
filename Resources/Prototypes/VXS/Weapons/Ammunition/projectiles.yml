@@ -79,10 +79,10 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 55
         Blunt: 35
         Structural: 30
   - type: StaminaDamageOnCollide
-    damage: 40
+    damage: 45
   - type: TimedDespawn
     lifetime: 25
