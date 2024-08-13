@@ -3,3 +3,9 @@
 
 - type: Tag
   id: MagazineLightMachineGunRPK
+
+- type: Tag
+  id: CartridgeSniper
+
+- type: Tag
+  id: MagazineSniper

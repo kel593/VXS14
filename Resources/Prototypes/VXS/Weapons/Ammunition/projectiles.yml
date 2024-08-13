@@ -67,3 +67,22 @@
     spreadAmount: 6
   - type: FlashOnTrigger
     range: 4
+
+# Sniper
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletSniper
+  name: bullet (.338 magnum)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 65
+        Blunt: 35
+        Structural: 30
+  - type: StaminaDamageOnCollide
+    damage: 40
+  - type: TimedDespawn
+    lifetime: 25

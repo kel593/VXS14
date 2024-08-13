@@ -41,3 +41,24 @@
       - !type:TriggerBehavior
       - !type:DoActsBehavior
         acts: ["Destruction"]
+
+- type: entity
+  parent: BaseCartridge
+  id: CartridgeSniper
+  name: cartridge (.338 magnum)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeSniper
+  - type: CartridgeAmmo
+    proto: BulletSniper
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 15

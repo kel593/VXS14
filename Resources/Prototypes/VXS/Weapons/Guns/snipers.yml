@@ -1,0 +1,60 @@
+- type: entity
+  name: Svyat
+  suffix: 338Magnum
+  parent: [BaseItem, BaseGunWieldable, BaseSyndicateContraband]
+  id: WeaponSniperSvyat
+  description: The Marksman rifle is a cheaply made rifle that shoots pretty rare at this time is pretty rare. Nevertheless, still not a bad weapon. Uses .338 Magnum.
+  components:
+  - type: Sprite
+    sprite: VXS/Weapons/Snipers/svyat.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+  - type: Clothing
+    sprite: VXS/Weapons/Snipers/svyat.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: GunRequiresWield
+  - type: Gun
+    cameraRecoilScalar: 2
+    projectileSpeed: 50
+    fireRate: 1.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/VXS/Gunshots/Sniper/sniper3.ogg
+      params:
+        maxDistance: 100
+        volume: 15
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniper
+        priority: 2
+        whitelist:
+          tags:
+          - MagazineSniper
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineAmmoProvider
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
