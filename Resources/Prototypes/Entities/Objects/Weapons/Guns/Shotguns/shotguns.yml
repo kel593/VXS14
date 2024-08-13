@@ -70,7 +70,7 @@
     slots:
     - Back
     - suitStorage
-  - type: AmmoCounter
+  #- type: AmmoCounter VXS
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
     cameraRecoilScalar: 2
