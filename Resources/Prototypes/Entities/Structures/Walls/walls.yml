@@ -9,8 +9,6 @@
     snap:
     - Wall
   components:
-  - type: Reflect # VXS
-    reflectProb: 0.04
   - type: RangedDamageSound
     soundGroups:
       Brute:
