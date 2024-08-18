@@ -4,16 +4,12 @@
   name: FAST helmet
   description: A new type of tactical helmet without ears. Unfortunately for you, instead of a headset cutout, there's already a built-in tactical headset with a slot for an encryption key.
   components:
-  - type: ContainerContainer
-    containers:
-      key_slots: !type:Container
-  - type: ContainerFill
-    containers:
-      key_slots:
-      - EncryptionKeyCommon
-  - type: Headset
-  - type: EncryptionKeyHolder
-    keySlots: 2
+  - type: ToggleableClothing
+    stripDelay: 4
+    clothingPrototype: ClothingHeadsetAltFAST
+    requiredSlot:
+    - HEAD
+    slot: ears
   - type: Sprite
     sprite: VXS/Clothing/Head/Hard/tactical.rsi
   - type: Clothing
@@ -24,3 +20,15 @@
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.95
+
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetAltFAST
+  name: over-ear headset
+  components:
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/command.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/command.rsi
+  - type: EncryptionKeyHolder
+    keySlots: 2
