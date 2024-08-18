@@ -30,6 +30,7 @@
         volume: 6
   - type: BallisticAmmoProvider
     capacity: 10
+    autoCycle: false
     proto: CartridgeLightRifle
     whitelist:
       tags:
