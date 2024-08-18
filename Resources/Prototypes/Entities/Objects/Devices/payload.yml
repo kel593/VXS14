@@ -3,6 +3,13 @@
   abstract: true
   id: BasePayload
   components:
+  - type: TriggerOnSignal # VXS - S
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink # VXS - E
   - type: Appearance
   - type: Sprite
   - type: Tag
