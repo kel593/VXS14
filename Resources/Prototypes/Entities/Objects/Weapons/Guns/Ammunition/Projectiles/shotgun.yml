@@ -46,7 +46,7 @@
       types:
         Piercing: 7
   - type: TimedDespawn # VXS
-    lifetime: 3
+    lifetime: 0.45
 
 - type: entity
   id: PelletShotgunSpread
@@ -225,7 +225,7 @@
         Radiation: 5
         Piercing: 5
   - type: TimedDespawn # VXS
-    lifetime: 3
+    lifetime: 0.45
 
 - type: entity
   id: PelletShotgunUraniumSpread
