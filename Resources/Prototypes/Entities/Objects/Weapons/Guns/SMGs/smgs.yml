@@ -107,7 +107,7 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -19
-    maxAngle: -16
+    maxAngle: -23 # VXS
   - type: Gun
     projectileSpeed: 30 # VXS
     minAngle: 21
