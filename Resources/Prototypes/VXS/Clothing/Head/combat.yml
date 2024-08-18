@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetTactical
+  name: FAST helmet
+  description: A new type of tactical helmet without ears. Unfortunately for you, instead of a headset cutout, there's already a built-in tactical headset with a slot for an encryption key.
+  components:
+  - type: ContainerContainer
+    containers:
+      key_slots: !type:Container
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+  - type: Headset
+  - type: EncryptionKeyHolder
+    keySlots: 2
+  - type: Sprite
+    sprite: VXS/Clothing/Head/Hard/tactical.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Head/Hard/tactical.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.95
