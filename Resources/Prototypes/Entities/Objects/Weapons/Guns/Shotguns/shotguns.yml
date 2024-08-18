@@ -190,6 +190,8 @@
   - type: Tag
     tags:
     - WeaponShotgunKammerer
+  - type: Gun # VXS
+    fireRate: 4
 
 - type: entity
   name: sawn-off shotgun
