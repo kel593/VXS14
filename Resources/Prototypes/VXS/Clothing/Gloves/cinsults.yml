@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsGlovesCombatInsulated
+  name: combat insulated gloves
+  description: Tactical gloves that don't burn, but melt. Some call it fireproof, but we're using tactical terms here. The fingers are rubberized with a dielectric coating.
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Gloves/combatinsults.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Gloves/combatinsults.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
