@@ -119,7 +119,6 @@ public enum LightBulbType : byte
 {
     Bulb,
     Tube,
-    DiscoTube,
 }
 
 [Serializable, NetSerializable]
