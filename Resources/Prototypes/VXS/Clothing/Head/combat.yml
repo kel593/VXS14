@@ -24,6 +24,7 @@
 - type: entity
   parent: ClothingHeadsetAlt
   id: ClothingHeadsetAltFAST
+  noSpawn: true
   name: over-ear headset
   components:
   - type: Sprite
