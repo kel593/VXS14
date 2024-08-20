@@ -1,0 +1,28 @@
+- type: entity
+  parent: BaseItem
+  id: ArmorPlateZabralo
+  name: Zabralo-2R armor plate
+  suffix: 2R
+  description: General military armor plate, protects vital organs from rifle bullets and shrapnel. Having proven its quality time and time again, this armor plate has become a classic of the genre due to its fairly low cost relative to quality.
+  components:
+  - type: Sprite
+    sprite: VXS/Objects/armorplates.rsi
+    state: icon
+  - type: StaticPrice
+    price: 120
+  - type: Tag
+    tags:
+    - Armorplate
+
+- type: entity
+  parent: ArmorPlateZabralo
+  id: ArmorPlateZabraloMod
+  name: Zabralo-3R2 armor plate
+  suffix: 3R2
+  description: General military armor plate, protects vital organs from rifle bullets and shrapnel. Having proven its quality time and time again, this armor plate has become a classic of the genre due to its fairly low cost relative to quality. Specifically this model is lightweight and has more Kevlar around the edges of the armor plate.
+  components:
+  - type: Sprite
+    sprite: VXS/Objects/armorplates.rsi
+    state: icon2
+  - type: StaticPrice
+    price: 160

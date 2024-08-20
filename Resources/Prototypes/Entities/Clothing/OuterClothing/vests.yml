@@ -18,6 +18,18 @@
         Heat: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: ItemSlots # VXS
+    slots:
+      armorplate:
+        name: Armor plate
+        startingItem: ArmorPlateZabralo
+        insertSound: /Audio/Machines/id_insert.ogg
+        ejectSound: /Audio/Machines/id_swipe.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Armorplate
+        whitelistFailPopup: armor-fail-armorplate
 
 #Mercenary web vest
 - type: entity

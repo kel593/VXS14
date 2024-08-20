@@ -1,3 +1,5 @@
+# Ammunition
+
 - type: Tag
   id: MagazineVeresk
 
@@ -9,3 +11,8 @@
 
 - type: Tag
   id: MagazineSniper
+
+# Armor
+
+- type: Tag
+  id: Armorplate
