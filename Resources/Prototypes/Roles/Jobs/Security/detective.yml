@@ -1,6 +1,7 @@
 - type: job
   id: Detective
   name: job-name-detective
+  setPreference: false # VXS
   description: job-description-detective
   playTimeTracker: JobDetective
   requirements:

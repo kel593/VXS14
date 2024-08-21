@@ -1,6 +1,7 @@
 - type: job
   id: Mime
   name: job-name-mime
+  setPreference: false # VXS
   description: job-description-mime
   playTimeTracker: JobMime
   requirements:

@@ -1,6 +1,7 @@
 - type: job
   id: ResearchDirector
   name: job-name-rd
+  setPreference: false # VXS
   description: job-description-rd
   playTimeTracker: JobResearchDirector
   requirements:

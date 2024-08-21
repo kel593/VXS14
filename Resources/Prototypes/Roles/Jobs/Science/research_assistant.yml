@@ -1,6 +1,7 @@
 ﻿- type: job
   id: ResearchAssistant
   name: job-name-research-assistant
+  setPreference: false # VXS
   description: job-description-research-assistant
   playTimeTracker: JobResearchAssistant
   requirements:

@@ -1,6 +1,7 @@
 - type: job
   id: HeadOfSecurity
   name: job-name-hos
+  setPreference: false # VXS
   description: job-description-hos
   playTimeTracker: JobHeadOfSecurity
   requirements:

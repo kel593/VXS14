@@ -1,6 +1,7 @@
 - type: job
   id: SalvageSpecialist
   name: job-name-salvagespec
+  setPreference: false # VXS
   description: job-description-salvagespec
   playTimeTracker: JobSalvageSpecialist
   requirements:

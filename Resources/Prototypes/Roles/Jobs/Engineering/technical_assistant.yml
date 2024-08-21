@@ -1,6 +1,7 @@
 ﻿- type: job
   id: TechnicalAssistant
   name: job-name-technical-assistant
+  setPreference: false # VXS
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
   requirements:

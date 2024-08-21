@@ -1,6 +1,7 @@
 - type: job
   id: Borg
   name: job-name-borg
+  setPreference: false # VXS
   description: job-description-borg
   playTimeTracker: JobBorg
   requirements:

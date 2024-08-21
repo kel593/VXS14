@@ -1,6 +1,7 @@
 - type: job
   id: Scientist
   name: job-name-scientist
+  setPreference: false # VXS
   description: job-description-scientist
   playTimeTracker: JobScientist
   requirements:

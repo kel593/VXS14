@@ -1,6 +1,7 @@
 - type: job
   id: StationEngineer
   name: job-name-engineer
+  setPreference: false # VXS
   description: job-description-engineer
   playTimeTracker: JobStationEngineer
   requirements:

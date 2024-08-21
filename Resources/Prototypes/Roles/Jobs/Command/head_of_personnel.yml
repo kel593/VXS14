@@ -1,6 +1,7 @@
 - type: job
   id: HeadOfPersonnel
   name: job-name-hop
+  setPreference: false # VXS
   description: job-description-hop
   playTimeTracker: JobHeadOfPersonnel
   requirements:

@@ -1,6 +1,7 @@
 - type: job
   id: Librarian
   name: job-name-librarian
+  setPreference: false # VXS
   description: job-description-librarian
   playTimeTracker: JobLibrarian
   startingGear: LibrarianGear

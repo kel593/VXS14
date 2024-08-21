@@ -1,6 +1,7 @@
 - type: job
   id: Zookeeper
   name: job-name-zookeeper
+  setPreference: false # VXS
   description: job-description-zookeeper
   playTimeTracker: JobZookeeper
   startingGear: ZookeeperGear

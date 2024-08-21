@@ -1,6 +1,7 @@
 - type: job
   id: Bartender
   name: job-name-bartender
+  setPreference: false # VXS
   description: job-description-bartender
   playTimeTracker: JobBartender
   requirements:
