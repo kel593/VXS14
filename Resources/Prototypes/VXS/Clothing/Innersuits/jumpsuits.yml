@@ -2,7 +2,7 @@
   parent: UnsensoredClothingUniformBase
   id: ClothingUniformJumpsuitSolar
   name: solgov army uniform
-  description: Universal camouflage of a new pattern. Worn by those who work in the field. Surprisingly bad looking but comfortable.
+  description: Universal camouflage of a new pattern. Worn by camp staff and commanders. Surprisingly bad looking but comfortable.
   components:
   - type: Sprite
     sprite: VXS/Clothing/Innersuits/tsf.rsi
@@ -13,7 +13,7 @@
   parent: UnsensoredClothingUniformBase
   id: ClothingUniformJumpsuitSolarGray
   name: solgov gray army uniform
-  description: Universal camouflage of a new pattern. Worn by camp staff and commanders. Surprisingly bad looking but comfortable.
+  description: Universal camouflage of a new pattern. Worn by those who work in the field. Surprisingly bad looking but comfortable.
   components:
   - type: Sprite
     sprite: VXS/Clothing/Innersuits/tsf_gray.rsi
@@ -24,7 +24,7 @@
   parent: UnsensoredClothingUniformBase
   id: ClothingUniformJumpsuitSolarGold
   name: solgov officer army uniform
-  description: Universal camouflage of a new pattern. Surprisingly bad looking but comfortable.
+  description: Universal camouflage of a new pattern. This particular model with a gold-plated buckle is usually worn by high-ranking officers. Surprisingly bad looking but comfortable.
   components:
   - type: Sprite
     sprite: VXS/Clothing/Innersuits/tsf_gold.rsi
