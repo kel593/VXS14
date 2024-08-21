@@ -1,0 +1,7 @@
+- type: department
+  id: SolarFederation
+  name: department-Solfed
+  description: department-Solfed-description
+  color: "#318CE7"
+  roles:
+  - SolfedPeacekeeper

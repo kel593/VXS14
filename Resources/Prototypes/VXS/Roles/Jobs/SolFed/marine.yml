@@ -1,0 +1,20 @@
+- type: job
+  id: SolfedPeacekeeper
+  name: job-name-peacekeeper
+  description: job-description-peacekeeper
+  playTimeTracker: JobPeacekeeperTracker
+  requirements:
+  startingGear: PeacekeeperGear
+  icon: "JobIconPeacekeeper"
+  supervisors: job-supervisors-peacekeeper
+  access:
+  - Command
+  - Maintenance
+  extendedAccess:
+  - Security
+
+- type: startingGear
+  id: PeacekeeperGear
+  equipment:
+    ears: ClothingHeadsetMedical
+    belt: ClothingBeltMedicalFilled

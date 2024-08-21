@@ -1,0 +1,93 @@
+# Syndicate
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndieMedic
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: SyndieMedic
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconMasterAtArms
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: MasterAtArms
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndieMarksman
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: SyndieMarksman
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndieEngineer
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: SyndieEngineer
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndieScientist
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: SyndieScientist
+  allowSelection: false
+
+# SolFed
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSolFed
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: SolFed
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPeacekeeper
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Peacekeeper
+  allowSelection: false
+
+# NanoTrasen
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNTLogistics
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: NTLogistics
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNTEngineer
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: NTEngineer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNTParamed
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: NTParamed
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNTScientist
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: NTScientist
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNTSolider
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: NTSolider

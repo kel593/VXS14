@@ -188,6 +188,42 @@
         },
         {
             "name": "Admin"
+        },
+        {
+            "name": "SyndieMedic"
+        },
+        {
+            "name": "MasterAtArms"
+        },
+        {
+            "name": "SyndieMarksman"
+        },
+        {
+            "name": "SyndieEngineer"
+        },
+        {
+            "name": "SyndieScientist"
+        },
+        {
+            "name": "SolFed"
+        },
+        {
+            "name": "Peacekeeper"
+        },
+        {
+            "name": "NTLogistics"
+        },
+        {
+            "name": "NTEngineer"
+        },
+        {
+            "name": "NTParamed"
+        },
+        {
+            "name": "NTScientist"
+        },
+        {
+            "name": "NTSolider"
         }
     ]
 }
