@@ -31,6 +31,7 @@
       params: # VXS
         maxDistance: 55
         volume: 2
+    defaultDirection: 1, 0
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
@@ -154,15 +155,17 @@
       projectileSpeed: 30 # VXS
       minAngle: 21
       maxAngle: 32
-      fireRate: 6
-      selectedMode: FullAuto
+      fireRate: 12
+      selectedMode: Burst
       soundGunshot:
         path: /Audio/VXS/Gunshots/SMG/smg1.ogg # VXS
       params: # VXS
         maxDistance: 55
         volume: 2
       availableModes:
-        - FullAuto
+        - Burst
+      shotsPerBurst: 3
+      burstCooldown: 0.25
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -271,6 +274,8 @@
     angleDecay: 6
     selectedMode: FullAuto
     shotsPerBurst: 5
+    burstCooldown: 0.2
+    burstFireRateModifier: 1.273
     availableModes:
     - SemiAuto
     - Burst
