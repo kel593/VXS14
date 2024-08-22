@@ -108,3 +108,39 @@
     soundHit:
       collection: WeakHit
     forceSound: true
+
+# Shrapnel
+
+- type: entity
+  id: PelletClusterLethalSmall
+  name: shrapnel
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Piercing: 10
+  - type: TimedDespawn
+    lifetime: 0.25
+
+- type: entity
+  id: PelletClusterLethalHeavy
+  name: shrapnel
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Piercing: 50
+  - type: TimedDespawn
+    lifetime: 0.25
