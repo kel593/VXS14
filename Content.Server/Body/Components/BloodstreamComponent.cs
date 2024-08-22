@@ -48,13 +48,13 @@ namespace Content.Server.Body.Components
         ///     How much should bleeding be reduced every update interval?
         /// </summary>
         [DataField]
-        public float BleedReductionAmount = 0.33f;
+        public float BleedReductionAmount = 0.10f; // VXS
 
         /// <summary>
         ///     How high can <see cref="BleedAmount"/> go?
         /// </summary>
         [DataField]
-        public float MaxBleedAmount = 10.0f;
+        public float MaxBleedAmount = 5.0f; // VXS
 
         /// <summary>
         ///     What percentage of current blood is necessary to avoid dealing blood loss damage?
@@ -87,7 +87,7 @@ namespace Content.Server.Body.Components
         ///     How much blood needs to be in the temporary solution in order to create a puddle?
         /// </summary>
         [DataField]
-        public FixedPoint2 BleedPuddleThreshold = 1.0f;
+        public FixedPoint2 BleedPuddleThreshold = 2.5f; // VXS
 
         /// <summary>
         ///     A modifier set prototype ID corresponding to how damage should be modified
@@ -117,14 +117,14 @@ namespace Content.Server.Body.Components
         ///     Max volume of internal chemical solution storage
         /// </summary>
         [DataField]
-        public FixedPoint2 ChemicalMaxVolume = FixedPoint2.New(250);
+        public FixedPoint2 ChemicalMaxVolume = FixedPoint2.New(30); // VXS
 
         /// <summary>
         ///     Max volume of internal blood storage,
         ///     and starting level of blood.
         /// </summary>
         [DataField]
-        public FixedPoint2 BloodMaxVolume = FixedPoint2.New(300);
+        public FixedPoint2 BloodMaxVolume = FixedPoint2.New(150); // VXS
 
         /// <summary>
         ///     Which reagent is considered this entities 'blood'?
