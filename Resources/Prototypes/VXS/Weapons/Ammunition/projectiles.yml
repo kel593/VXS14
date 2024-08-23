@@ -115,32 +115,24 @@
   id: PelletClusterLethalSmall
   name: shrapnel
   categories: [ HideSpawnMenu ]
-  parent: BaseBullet
+  parent: [BaseBullet, PelletClusterLethal]
   components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
   - type: Projectile
-    deleteOnCollide: false
     damage:
       types:
         Piercing: 10
   - type: TimedDespawn
-    lifetime: 0.25
+    lifetime: 0.30
 
 - type: entity
   id: PelletClusterLethalHeavy
   name: shrapnel
   categories: [ HideSpawnMenu ]
-  parent: BaseBullet
+  parent: [BaseBullet, PelletClusterLethal]
   components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
   - type: Projectile
-    deleteOnCollide: false
     damage:
       types:
-        Piercing: 50
+        Piercing: 75
   - type: TimedDespawn
-    lifetime: 0.25
+    lifetime: 0.15

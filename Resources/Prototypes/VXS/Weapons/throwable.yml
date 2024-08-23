@@ -51,7 +51,7 @@
     beepSound:
       path: "/Audio/Effects/beep1.ogg"
       params:
-        volume: 1
+        volume: -5
     initialBeepDelay: 0
     beepInterval: 2
     delay: 3.5
@@ -67,6 +67,7 @@
         enum.ConstructionVisuals.Layer:
           Primed: { state: primed }
           Unprimed: { state: icon }
+  - type: DeleteOnTrigger
 
 - type: entity
   name: M33SG smoke smart-grenade
@@ -164,26 +165,26 @@
 
 - type: entity
   name: M18FG frag smart-grenade
-  description: Smart Grenade. A cloud of light shrapnel that is usually hard to penetrate plywood. Also has a small explosion!
+  description: Smart Grenade. A cloud of light shrapnel that is usually hard to penetrate plywood.
   suffix: Low frag
   parent: [BaseSmartGrenade, GrenadeShrapnel]
   id: SmartGrenadeM18FG
   components:
   - type: ClusterGrenade
     fillPrototype: PelletClusterLethalSmall
-    maxGrenadesCount: 30
+    maxGrenadesCount: 40
     maxSpreadDistance: 4
     minSpreadDistance: 1
     velocity: 30
     grenadeType: enum.GrenadeType.Shoot
     randomSpread: true
     randomAngle: true
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default
-    maxIntensity: 100
-    intensitySlope: 5
-    totalIntensity: 25
+  #- type: ExplodeOnTrigger
+  #- type: Explosive
+  #  explosionType: Default
+  #  maxIntensity: 100
+  #  intensitySlope: 5
+  #  totalIntensity: 25
   - type: Sprite
     sprite: VXS/Weapons/Throwable/Grenades/smart.rsi
     layers:
@@ -198,24 +199,26 @@
 
 - type: entity
   name: M9GP frag smart-grenade
-  description: Smart Grenade. Some heavy shrapnel that can penetrate most of the side armor of armored vehicles. Produces a large but rather weak explosion.
+  description: Smart Grenade. Some heavy shrapnel that can penetrate most of the side armor of armored vehicles.
   suffix: High frag
   parent: [BaseSmartGrenade, GrenadeShrapnel]
   id: SmartGrenadeM9GP
   components:
   - type: ClusterGrenade
     fillPrototype: PelletClusterLethalHeavy
-    maxGrenadesCount: 10
+    maxGrenadesCount: 15
     maxSpreadDistance: 3
     minSpreadDistance: 1
+    randomSpread: false
+    randomAngle: false
     velocity: 20
     grenadeType: enum.GrenadeType.Shoot
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default
-    maxIntensity: 3
-    intensitySlope: 1
-    totalIntensity: 100
+  #- type: ExplodeOnTrigger
+  #- type: Explosive
+  #  explosionType: Default
+  #  maxIntensity: 3
+  #  intensitySlope: 1
+  #  totalIntensity: 100
   - type: Sprite
     sprite: VXS/Weapons/Throwable/Grenades/smart.rsi
     layers:
