@@ -90,7 +90,9 @@
     proto: CartridgeRocket
     capacity: 1
     soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      path: /Audio/Machines/id_insert.ogg # VXS
+      params: # VXS
+        volume: 8
   - type: MagazineVisuals
     magState: mag
     steps: 2
