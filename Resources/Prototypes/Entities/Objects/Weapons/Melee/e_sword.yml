@@ -70,6 +70,10 @@
   - type: Reflect
   - type: IgnitionSource
     temperature: 700
+  - type: Cauterizer # VXS
+    doAfterDuration: 5
+    bleedReduce: -5
+    damage: 5
 
 - type: entity
   name: energy sword

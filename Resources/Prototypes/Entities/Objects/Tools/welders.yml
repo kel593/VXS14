@@ -104,6 +104,10 @@
     price: 40
   - type: IgnitionSource
     temperature: 700
+  - type: Cauterizer # VXS
+    doAfterDuration: 6
+    bleedReduce: -2
+    damage: 10
 
 - type: entity
   name: industrial welding tool
