@@ -97,8 +97,8 @@
           tags:
           - MagazineShotgun
         whitelistFailPopup: gun-magazine-whitelist-fail
-        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        insertSound: /Audio/VXS/Gunshots/Gunsounds/SMG/smgInsert2.ogg # VXS
+        ejectSound: /Audio/VXS/Gunshots/Gunsounds/SMG/smgMagout.ogg # VXS
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
