@@ -87,6 +87,10 @@
     netsync: false
     radius: 1.1 #smallest possible
     color: orange
+  - type: Cauterizer # VXS
+    doAfterDuration: 10
+    bleedReduce: -5
+    damage: 10
 
 - type: entity
   name: cheap lighter
@@ -208,6 +212,10 @@
   - type: UseDelay
   - type: IgnitionSource
     ignited: false
+  - type: Cauterizer # VXS
+    doAfterDuration: 9
+    bleedReduce: -5
+    damage: 11
 
 - type: entity
   name: flippo engraved lighter

@@ -32,6 +32,10 @@
         Heat: 5
     soundHit:
       path: /Audio/Effects/lightburn.ogg
+  - type: Cauterizer # VXS
+    doAfterDuration: 9
+    bleedReduce: -4
+    damage: 4.5
 
 # Drill
 
