@@ -68,6 +68,28 @@
   - type: FlashOnTrigger
     range: 4
 
+- type: entity
+  id: BulletRocketFrag
+  name: rocket
+  parent: BaseBulletTrigger
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+      - state: frag
+  - type: SmokeOnTrigger
+    duration: 1
+    spreadAmount: 6
+  - type: FlashOnTrigger
+    range: 4
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 3
+    intensitySlope: 1.5
+    totalIntensity: 250
+
 # Sniper
 
 - type: entity

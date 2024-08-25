@@ -12,6 +12,24 @@
 - type: Tag
   id: MagazineSniper
 
+- type: Tag
+  id: CartridgeRocketFragTag
+
+- type: Tag
+  id: CartridgeRocketThermobarUnloaded
+
+- type: Tag
+  id: CartridgeRocketFragUnloaded
+
+- type: Tag
+  id: CartridgeRocketFugasUnloaded
+
+- type: Tag
+  id: CartridgeRocketThermobar
+
+- type: Tag
+  id: CartridgeRocketGunpowderRPG
+
 # Armor
 
 - type: Tag

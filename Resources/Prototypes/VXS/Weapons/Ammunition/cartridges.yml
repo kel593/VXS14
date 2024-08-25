@@ -1,21 +1,23 @@
+# Rockets
 - type: entity
   id: CartridgeRocketThermobar
   name: TBG-7V grenade
   suffix: thermobaric
   parent: BaseItem
-  description: The thermobaric warhead has a high explosive, fragmentation and incendiary effect, causing devastating damage to the enemy's manpower on the battlefield. The penetration capability of this ammunition is sufficient to defeat lightly armored and unarmored vehicles, and the TBG-7B's impact factors effectively affect the enemy located in trenches and bunkers at a distance of two meters from the epicenter of the grenade explosion. This ammunition leaves no chance for all living things in small spaces # VXS
+  description: The thermobaric warhead has a high explosive, fragmentation and incendiary effect, causing devastating damage to the enemy's manpower on the battlefield. The penetration capability of this ammunition is sufficient to defeat lightly armored and unarmored vehicles, and the TBG-7B's impact factors effectively affect the enemy located in trenches and bunkers at a distance of two meters from the epicenter of the grenade explosion. This ammunition leaves no chance for all living things in small spaces.
   components:
   - type: Tag
     tags:
       - CartridgeRocket
+      - CartridgeRocketThermobar
   - type: Item
     size: Large
   - type: CartridgeAmmo
     proto: BulletRocketThermobar
     deleteOnSpawn: true
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
-    state: rpg
+    sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+    state: thermobar
   - type: StaticPrice
     price: 300
   - type: SmokeOnTrigger
@@ -36,12 +38,221 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 30
+        damage: 60
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: RocketThermobarGraph
+    node: rocketThermobar
+
+- type: entity
+  id: CartridgeRocketThermobarUnloaded
+  name: TBG-7V grenade
+  suffix: thermobaric, unloaded
+  parent: BaseItem
+  description: The thermobaric warhead has a high explosive, fragmentation and incendiary effect, causing devastating damage to the enemy's manpower on the battlefield. The penetration capability of this ammunition is sufficient to defeat lightly armored and unarmored vehicles, and the TBG-7B's impact factors effectively affect the enemy located in trenches and bunkers at a distance of two meters from the epicenter of the grenade explosion. This ammunition leaves no chance for all living things in small spaces.
+  components:
+  - type: Tag
+    tags:
+      - CartridgeRocketThermobarUnloaded
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+    state: thermobar-unload
+  - type: StaticPrice
+    price: 200
+  - type: SmokeOnTrigger
+    duration: 2
+    spreadAmount: 8
+  - type: FlashOnTrigger
+    range: 3
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FireBomb
+    maxIntensity: 35
+    intensitySlope: 1
+    totalIntensity: 100
+    maxTileBreak: 1
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior
         acts: ["Destruction"]
 
+- type: entity
+  id: CartridgeRocketFrag
+  name: OG-7V grenade
+  suffix: frag
+  parent: BaseItem
+  description: The OG-7V shot with fragmentation grenade is designed to suppress live forces, including those with personal protective equipment (body armor), located in open terrain, in field-type shelters and buildings, as well as to defeat non-armored vehicles.
+  components:
+  - type: Tag
+    tags:
+      - CartridgeRocket
+      - CartridgeRocketFragTag
+  - type: Item
+    size: Large
+  - type: CartridgeAmmo
+    proto: BulletRocketFrag
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+    state: frag
+  - type: StaticPrice
+    price: 250
+  - type: SmokeOnTrigger
+    duration: 1
+    spreadAmount: 6
+  - type: FlashOnTrigger
+    range: 4
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 3
+    intensitySlope: 1
+    totalIntensity: 100
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: RocketFragGraph
+    node: rocketFrag
+
+- type: entity
+  id: CartridgeRocketFragUnloaded
+  name: OG-7V grenade
+  suffix: frag, unloaded
+  parent: BaseItem
+  description: The OG-7V shot with fragmentation grenade is designed to suppress live forces, including those with personal protective equipment (body armor), located in open terrain, in field-type shelters and buildings, as well as to defeat non-armored vehicles.
+  components:
+  - type: Tag
+    tags:
+      - CartridgeRocketFragUnloaded
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+    state: frag-unload
+  - type: StaticPrice
+    price: 150
+  - type: SmokeOnTrigger
+    duration: 1
+    spreadAmount: 4
+  - type: FlashOnTrigger
+    range: 2
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 3
+    intensitySlope: 1
+    totalIntensity: 150
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: CartridgeRocketFugasUnloaded
+  name: PG-7VL grenade
+  suffix: fugas, unloaded
+  parent: BaseItem
+  description: The PG-7VL anti-tank grenade round is equipped with a shaped-charge warhead, which allows effective combat against modern armored targets, fortifications and enemy manpower in brick, reinforced concrete and wood-and-earth shelters. The use of this round turns a simple infantryman into an armored vehicle fighter.
+  components:
+  - type: Tag
+    tags:
+      - CartridgeRocketFugasUnloaded
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+    state: fugas-unload
+  - type: StaticPrice
+    price: 150
+  - type: SmokeOnTrigger
+    duration: 2
+    spreadAmount: 3
+  - type: FlashOnTrigger
+    range: 3
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    maxIntensity: 6
+    intensitySlope: 10
+    totalIntensity: 60
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: CartridgeRocketGunpowderRPG
+  name: Powder charge PG-22
+  suffix: gunpowder, RPG
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - CartridgeRocketGunpowderRPG
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+    state: gunpowder
+  - type: StaticPrice
+    price: 100
+  - type: SmokeOnTrigger
+    duration: 1
+    spreadAmount: 4
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    maxIntensity: 6
+    intensitySlope: 3
+    totalIntensity: 20
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+# Boolets
 - type: entity
   parent: BaseCartridge
   id: CartridgeSniper

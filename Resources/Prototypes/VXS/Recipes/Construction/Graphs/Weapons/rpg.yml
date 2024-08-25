@@ -1,0 +1,77 @@
+- type: constructionGraph
+  id: RocketThermobarGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: rocketThermobar
+          steps:
+            - material: Cable
+              amount: 1
+              doAfter: 1
+            - tag: CartridgeRocketGunpowderRPG
+              name: gunpowder
+              icon:
+                sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+                state: gunpowder
+              doAfter: 1
+            - tag: CartridgeRocketThermobarUnloaded
+              name: unloaded rocket
+              icon:
+                sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+                state: thermobar-unload
+              doAfter: 2
+    - node: rocketThermobar
+      entity: CartridgeRocketThermobar
+
+- type: constructionGraph
+  id: RocketFragGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: rocketFrag
+          steps:
+            - material: Cable
+              amount: 1
+              doAfter: 1
+            - tag: CartridgeRocketGunpowderRPG
+              name: gunpowder
+              icon:
+                sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+                state: gunpowder
+              doAfter: 1
+            - tag: CartridgeRocketFragUnloaded
+              name: unloaded rocket
+              icon:
+                sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+                state: frag-unload
+              doAfter: 2
+    - node: rocketFrag
+      entity: CartridgeRocketFrag
+
+- type: constructionGraph
+  id: RocketFugasGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: rocketFugas
+          steps:
+            - material: Cable
+              amount: 1
+              doAfter: 1
+            - tag: CartridgeRocketGunpowderRPG
+              name: gunpowder
+              icon:
+                sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+                state: gunpowder
+              doAfter: 1
+            - tag: CartridgeRocketFugasUnloaded
+              name: unloaded rocket
+              icon:
+                sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi
+                state: fugas-unload
+              doAfter: 2
+    - node: rocketFugas
+      entity: CartridgeRocket

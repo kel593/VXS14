@@ -1,0 +1,32 @@
+- type: construction
+  name: TBG-7V grenade RPG
+  id: RocketThermobar
+  graph: RocketThermobarGraph
+  startNode: start
+  targetNode: rocketThermobar
+  category: construction-category-weapons
+  description: Careful, unfolded grenades explode easier!
+  icon: { sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi, state: thermobar }
+  objectType: Item
+
+- type: construction
+  name: OG-7V grenade RPG
+  id: RocketFrag
+  graph: RocketFragGraph
+  startNode: start
+  targetNode: rocketFrag
+  category: construction-category-weapons
+  description: Careful, unfolded grenades explode easier!
+  icon: { sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi, state: frag }
+  objectType: Item
+
+- type: construction
+  name: PG-7VL grenade RPG
+  id: RocketFugas
+  graph: RocketFugasGraph
+  startNode: start
+  targetNode: rocketFugas
+  category: construction-category-weapons
+  description: Careful, unfolded grenades explode easier!
+  icon: { sprite: VXS/Weapons/Ammunition/Explosives/rpg.rsi, state: fugas }
+  objectType: Item

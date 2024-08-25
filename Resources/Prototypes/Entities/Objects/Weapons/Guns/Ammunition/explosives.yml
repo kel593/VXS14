@@ -32,7 +32,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 25
+        damage: 120
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior
@@ -43,6 +43,9 @@
     intensitySlope: 600
     totalIntensity: 100
     maxTileBreak: 1
+  - type: Construction # VXS
+    graph: RocketFugasGraph
+    node: rocketFugas
 
 - type: entity
   id: CartridgeRocketSlow
