@@ -38,10 +38,10 @@
       tags:
       - ShellShotgun
     capacity: 7
-    autoCycle: false
+    autoCycle: false # VXS
     proto: ShellShotgun
     soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+      collection: InsertShotgunShell # VXS
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

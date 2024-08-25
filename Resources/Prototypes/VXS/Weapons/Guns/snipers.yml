@@ -35,7 +35,7 @@
         maxDistance: 100
         volume: 15
     soundEmpty:
-      path: /Audio/Weapons/Guns/Empty/empty.ogg
+      path: /Audio/VXS/Gunshots/Gunsounds/Sniper/sniperEmpty.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -46,8 +46,8 @@
           tags:
           - MagazineSniper
         whitelistFailPopup: gun-magazine-whitelist-fail
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        insertSound: /Audio/VXS/Gunshots/Gunsounds/Sniper/sniperInsert.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
