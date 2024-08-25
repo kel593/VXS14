@@ -74,8 +74,12 @@
         Slash: 0.9
         Piercing: 0.4
         Heat: 0.9
+  - type: ClothingSpeedModifier # VXS
+    walkModifier: 1
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier # VXS
   - type: ExplosionResistance
-    damageCoefficient: 0.80
+    damageCoefficient: 0.9 # VXS
 
 - type: entity
   parent: ClothingOuterArmorBasic

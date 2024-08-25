@@ -12,12 +12,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6 #ballistic plates = better protection
-        Slash: 0.6
-        Piercing: 0.3
+        Blunt: 0.8 # VXS
+        Slash: 0.7 # VXS
+        Piercing: 0.5 # VXS
         Heat: 0.9
-  - type: ExplosionResistance
-    damageCoefficient: 0.9
+  #- type: ExplosionResistance VXS
+  #  damageCoefficient: 0.9
   - type: ItemSlots # VXS
     slots:
       armorplate:
