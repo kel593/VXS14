@@ -29,8 +29,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineRifle
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        insertSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert2.ogg
+        ejectSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleMagout2.ogg
         priority: 2
         whitelist:
           tags:

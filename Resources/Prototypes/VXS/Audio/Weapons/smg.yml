@@ -1,0 +1,5 @@
+- type: soundCollection
+  id: SMGMagInsert
+  files:
+    - /Audio/VXS/Gunshots/Gunsounds/SMG/smgInsert.ogg
+    - /Audio/VXS/Gunshots/Gunsounds/SMG/smgInsert2.ogg

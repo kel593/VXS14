@@ -1,0 +1,5 @@
+- type: soundCollection
+  id: RifleMagInsert
+  files:
+    - /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert.ogg
+    - /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert2.ogg
