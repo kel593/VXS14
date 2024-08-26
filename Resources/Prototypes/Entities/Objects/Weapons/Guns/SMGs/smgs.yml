@@ -110,12 +110,15 @@
     minAngle: -19
     maxAngle: -23 # VXS
   - type: Gun
-    projectileSpeed: 30 # VXS
+    fireRate: 9 # VXS
+    cameraRecoilScalar: 1 # VXS
+    projectileSpeed: 35 # VXS
     minAngle: 21
     maxAngle: 32
     shotsPerBurst: 5
+    burstCooldown: 0.1 # VXS
     availableModes:
-    - SemiAuto
+    #- SemiAuto VXS
     - Burst
     - FullAuto
     soundGunshot:
