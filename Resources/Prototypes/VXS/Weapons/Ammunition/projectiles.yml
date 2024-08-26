@@ -108,6 +108,12 @@
     damage: 45
   - type: TimedDespawn
     lifetime: 25
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: marksman
+      shader: unshaded
 
 # Energy
 

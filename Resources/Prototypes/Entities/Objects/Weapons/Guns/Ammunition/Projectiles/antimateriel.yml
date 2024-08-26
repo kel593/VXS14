@@ -14,3 +14,9 @@
     damage: 90 # VXS
   - type: TimedDespawn # VXS
     lifetime: 30
+  - type: Sprite # VXS
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: marksman
+      shader: unshaded
