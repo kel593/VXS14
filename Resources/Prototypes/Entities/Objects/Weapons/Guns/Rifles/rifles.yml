@@ -125,8 +125,9 @@
   description: An older bullpup carbine model, with an attached underbarrel grenade launcher. Uses .20 rifle ammo.
   components:
   - type: Gun
+    fireRate: 6 # VXS
     cameraRecoilScalar: 1
-    projectileSpeed: 45 # VXS
+    projectileSpeed: 50 # VXS
     soundGunshot:
       path: /Audio/VXS/Gunshots/Rifle/rifle2.ogg # VXS
       params: # VXS
