@@ -294,8 +294,8 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 12
-            Heat: 12
+            Slash: 15 # VXS
+            Heat: 15 # VXS
             Structural: 15
   - type: ItemToggleActiveSound
     activeSound:
