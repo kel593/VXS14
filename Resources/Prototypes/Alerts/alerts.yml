@@ -24,6 +24,7 @@
     - category: Thirst
     - alertType: Magboots
     - alertType: Pacified
+    - alertType: Crawler # VXS
 
 - type: entity
   id: AlertSpriteView

@@ -211,6 +211,7 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
+  - type: Crawler # VXS
 
 - type: entity
   save: false

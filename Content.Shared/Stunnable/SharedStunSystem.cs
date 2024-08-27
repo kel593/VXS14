@@ -19,6 +19,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
+using Content.Shared.Crawling; // VXS
 
 namespace Content.Shared.Stunnable;
 
@@ -141,6 +142,8 @@ public abstract class SharedStunSystem : EntitySystem
 
     private void OnKnockShutdown(EntityUid uid, KnockedDownComponent component, ComponentShutdown args)
     {
+        if (HasComp<CrawlerComponent>(uid)) // VXS
+            return;
         _standingState.Stand(uid);
     }
 
