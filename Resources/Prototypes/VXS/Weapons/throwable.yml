@@ -67,7 +67,6 @@
         enum.ConstructionVisuals.Layer:
           Primed: { state: primed }
           Unprimed: { state: icon }
-  - type: DeleteOnTrigger
 
 - type: entity
   name: M33SG smoke smart-grenade
@@ -90,6 +89,7 @@
         enum.ConstructionVisuals.Layer:
           Primed: { state: primed-nonlethal }
           Unprimed: { state: icon-nonlethal }
+  - type: DeleteOnTrigger
 
 - type: entity
   name: M26SG smoke smart-grenade
@@ -112,6 +112,7 @@
         enum.ConstructionVisuals.Layer:
           Primed: { state: primed-nonlethal }
           Unprimed: { state: icon-nonlethal }
+  - type: DeleteOnTrigger
 
 - type: entity
   name: M88TG thermobaric smart-grenade
