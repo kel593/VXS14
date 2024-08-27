@@ -15,9 +15,9 @@
 - type: entity
   parent: ClothingMaskGas
   id: ClothingMaskSpecialisedMaskResomi
-  name: resomi gas mask
+  name: resomi ballistic mask
   suffix: Resomi
-  description: A standard issue Security gas mask.
+  description: Ballistic mask, defending from sharpnel and any other shit.
   components:
   - type: Item
     size: Tiny
@@ -30,7 +30,7 @@
       coefficients:
         Blunt: 0.9
         Slash: 0.9
-        Piercing: 0.9
+        Piercing: 0.8
         Heat: 0.9
 
 - type: entity
