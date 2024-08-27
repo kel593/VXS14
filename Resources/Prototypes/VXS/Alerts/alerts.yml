@@ -4,4 +4,4 @@
   - sprite: /Textures/VXS/Interface/Alerts/crawling.rsi
     state: icon
   name: Crawling
-  description: You are crawling right now! Bind a hotkey and then press it to stand up.
+  description: You are crawling right now! Press U by default to stand up.
