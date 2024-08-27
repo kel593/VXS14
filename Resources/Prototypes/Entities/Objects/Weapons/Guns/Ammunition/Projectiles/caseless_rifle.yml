@@ -45,4 +45,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 8 # VXS
+        Asphyxiation: 1 # VXS
+  - type: StaminaDamageOnCollide # VXS
+    damage: 15

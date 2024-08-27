@@ -39,9 +39,9 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 11 # VXS
   - type: StaminaDamageOnCollide
-    damage: 35 # 3 hits to stun cuz revolver
+    damage: 22 # VXS
 
 - type: entity
   id: BulletMagnumIncendiary
