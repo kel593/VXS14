@@ -25,6 +25,8 @@
     damage:
       types:
         Piercing: 35 # VXS
+        Blunt: 12 # VXS
+        Asphyxiation: 7 # VXS
   - type: TimedDespawn # VXS
     lifetime: 13
 
