@@ -12,16 +12,16 @@
 
 ## Локальный сервер
 
-1. Clone this repo.
-2. Run `RUN_THIS.py` to init submodules and download the engine.
-3. Compile the solution.
+0. Установите необходимые зависимости (Dotnet, git, python)
+1. Клонируйте репозиторий (git clone https://github.com/kel593/VXS14/)
+2. Запустите `RUN_THIS.py` для установки дополнительных зависимостей
+3. Компилируйте решение (dotnet build)
+4. Запустите решение (dotnet run --project Content.Server)
 
-[More detailed instructions on building the project.](https://docs.spacestation14.com/en/general-development/setup.html)
+[Более детальная инструкция по работе с репозиторием и запуску локального сервера](https://docs.spacestation14.com/en/general-development/setup.html)
 
 ## Лицензия
 
-All code for the content repository is licensed under [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT).
-
-Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
-
-Note that some assets are licensed under the non-commercial [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) or similar non-commercial licenses and will need to be removed if you wish to use this project commercially.
+Весь код репозитория лицензирован под лицензией [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT).
+Лицензии ассетов в проекте указаны в файле метаданных. [Пример](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+Учтите что некоторые ассеты лицензированы под некоммерческой лицензией [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или схожей некоммерческой лицензией и должны быть удалены если вы хотите использовать их в коммерческих целях.
