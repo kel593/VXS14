@@ -33,6 +33,17 @@
     lifetime: 15
 
 - type: entity
+  id: BulletRifleRubber
+  name: bullet (0.20 rifle rubber)
+  parent: BaseBulletRubber
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+
+- type: entity
   id: BulletRifleIncendiary
   parent: BaseBulletIncendiary
   name: bullet (0.20 rifle incendiary)
