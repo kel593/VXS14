@@ -235,11 +235,6 @@
     duration: 1
     spreadAmount: 4
   - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: DemolitionCharge
-    maxIntensity: 6
-    intensitySlope: 3
-    totalIntensity: 20
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -251,6 +246,11 @@
       - !type:TriggerBehavior
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: Explosive
+    explosionType: DemolitionCharge
+    maxIntensity: 6
+    intensitySlope: 10
+    totalIntensity: 60
 
 # Boolets
 - type: entity
