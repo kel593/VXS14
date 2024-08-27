@@ -49,3 +49,20 @@
         Asphyxiation: 1 # VXS
   - type: StaminaDamageOnCollide # VXS
     damage: 15
+
+- type: entity # VXS
+  id: BulletCaselessRifleIncendiary
+  parent: BaseBulletIncendiary
+  name: bullet (.25 caseless incendiary)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 13
+        Blunt: 14
+        Heat: 3
+  - type: StaminaDamageOnCollide
+    damage: 8
+  - type: TimedDespawn
+    lifetime: 10
