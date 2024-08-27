@@ -109,7 +109,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: practice
+    - state: marksman # VXS
   - type: Projectile
     damage:
       types:
