@@ -1,0 +1,11 @@
+- type: rcd
+  id: RCDSoil
+  category: WallsAndFlooring
+  sprite: /Textures/Interface/Radial/RCD/soil.png
+  mode: ConstructObject
+  prototype: hydroponicsSoil
+  cost: 0
+  delay: 8
+  collisionMask: FullTileMask
+  rotation: Fixed
+  fx: EffectRCDConstruct2

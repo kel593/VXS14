@@ -480,6 +480,12 @@
   - type: StaticPrice
     price: 25
   - type: Shovel
+  - type: RCD
+    availablePrototypes:
+    - RCDSoil
+  - type: LimitedCharges
+    maxCharges: 60
+    charges: 60
 
 - type: entity
   parent: BaseItem
