@@ -27,7 +27,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 25 # VXS
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
