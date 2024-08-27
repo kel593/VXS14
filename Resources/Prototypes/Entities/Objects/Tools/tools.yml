@@ -480,10 +480,10 @@
   - type: StaticPrice
     price: 25
   - type: Shovel
-  - type: RCD
+  - type: RCD # VXS
     availablePrototypes:
     - RCDSoil
-  - type: LimitedCharges
+  - type: LimitedCharges # VXS
     maxCharges: 60
     charges: 60
 
