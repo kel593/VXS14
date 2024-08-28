@@ -89,3 +89,53 @@
   - type: Clothing
     sprite: VXS/Clothing/Specialised/Resomi/goggles.rsi
   - type: FlashImmunity
+
+# Фракционные костюмы
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSpecialisedResomiMAA
+  name: MAA resomi jumpsuit
+  description: I fucking hate this shitty repository, i want to kill myself right now. I really think i should sleep after that, but i cant, Nikita Buyanow keeping me in coding basement and forcing me to do this fuckling spesstention14 bullshit.
+  suffix: Resomi
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Specialised/Resomi/MAA.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Specialised/Resomi/MAA.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSpecialisedResomiSolar
+  name: solar resomi jumpsuit
+  description: I fucking hate this shitty repository, i want to kill myself right now. I really think i should sleep after that, but i cant, Nikita Buyanow keeping me in coding basement and forcing me to do this fuckling spesstention14 bullshit.
+  suffix: Resomi
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Specialised/Resomi/solar.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Specialised/Resomi/solar.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSpecialisedResomiSolarOfficer
+  name: solar officer resomi jumpsuit
+  description: I fucking hate this shitty repository, i want to kill myself right now. I really think i should sleep after that, but i cant, Nikita Buyanow keeping me in coding basement and forcing me to do this fuckling spesstention14 bullshit.
+  suffix: Resomi
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Specialised/Resomi/solar_officer.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Specialised/Resomi/solar_officer.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSpecialisedResomiSyndie
+  name: syndie resomi jumpsuit
+  description: I fucking hate this shitty repository, i want to kill myself right now. I really think i should sleep after that, but i cant, Nikita Buyanow keeping me in coding basement and forcing me to do this fuckling spesstention14 bullshit.
+  suffix: Resomi
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/Specialised/Resomi/syndie.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Specialised/Resomi/syndie.rsi
