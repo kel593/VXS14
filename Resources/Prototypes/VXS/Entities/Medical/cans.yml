@@ -1,0 +1,132 @@
+- type: entity
+  parent: BaseItem
+  id: BaseSolutionGlassBottle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Bottle
+    - GlassBeaker
+  - type: Sprite
+    sprite: VXS/Objects/Medical/cans.rsi
+    layers:
+      - state: small
+      - state: small1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    sprite: VXS/Objects/Medical/cans.rsi
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+  - type: MixableSolution
+    solution: beaker
+  - type: FitsInDispenser
+    solution: beaker
+  - type: RefillableSolution
+    solution: beaker
+  - type: ExaminableSolution
+    solution: beaker
+  - type: DrawableSolution
+    solution: beaker
+  - type: InjectableSolution
+    solution: beaker
+  - type: SolutionItemStatus
+    solution: beaker
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: small
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -4
+      - !type:SpillBehavior
+        solution: beaker
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 1
+        transferForensics: true
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 2
+    damage:
+      types:
+        Blunt: 5
+  - type: StaticPrice
+    price: 30
+  - type: DnaSubstanceTrace
+
+- type: entity
+  name: glass solution bottle
+  suffix: Empty, small
+  parent: BaseSolutionGlassBottle
+  description: Standard glass bottle for solutions manufactured by SolFed Medical Group. It has a sealed rubber cap for syringes.
+  id: SolutionGlassBottleSmall
+  components:
+  - type: StaticPrice
+    price: 10
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 50
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: small
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
+  - type: Item
+    sprite: VXS/Objects/Medical/cans.rsi
+    size: Tiny
+
+- type: entity
+  name: glass solution bottle
+  suffix: Empty, big
+  parent: BaseSolutionGlassBottle
+  description: Standard glass bottle for solutions manufactured by SolFed Medical Group. It has a sealed rubber cap for syringes.
+  id: SolutionGlassBottleBig
+  components:
+  - type: StaticPrice
+    price: 20
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 80
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: big
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
+  - type: Sprite
+    sprite: VXS/Objects/Medical/cans.rsi
+    layers:
+      - state: big
+      - state: big1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    sprite: VXS/Objects/Medical/cans.rsi
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100

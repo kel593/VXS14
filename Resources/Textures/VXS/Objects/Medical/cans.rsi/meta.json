@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by LogDog for VXS14, modified by TooMuchGolang",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "big"
+    },
+    {
+      "name": "small"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+	{
+      "name": "inhand-left-fill-1",
+      "directions": 4
+    },
+		{
+      "name": "inhand-left-fill-2",
+      "directions": 4
+    },
+		{
+      "name": "inhand-left-fill-3",
+      "directions": 4
+    },
+		{
+      "name": "inhand-left-fill-4",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+	{
+      "name": "inhand-right-fill-1",
+      "directions": 4
+    },
+	{
+      "name": "inhand-right-fill-2",
+      "directions": 4
+    },
+	{
+      "name": "inhand-right-fill-3",
+      "directions": 4
+    },
+	{
+      "name": "inhand-right-fill-4",
+      "directions": 4
+    },
+    {
+      "name": "small1"
+    },
+    {
+      "name": "small2"
+    },
+    {
+      "name": "small3"
+    },
+    {
+      "name": "small4"
+    },
+    {
+      "name": "small5"
+    },
+    {
+      "name": "small6"
+    },
+    {
+      "name": "big1"
+    },
+    {
+      "name": "big2"
+    },
+    {
+      "name": "big3"
+    },
+    {
+      "name": "big4"
+    },
+    {
+      "name": "big5"
+    },
+    {
+      "name": "big6"
+    }
+  ]
+}
