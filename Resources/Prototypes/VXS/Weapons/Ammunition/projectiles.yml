@@ -95,6 +95,29 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
+  id: BulletSniperTrasser
+  name: bullet (.338 magnum)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 55
+        Blunt: 35
+        Structural: 30
+  - type: StaminaDamageOnCollide
+    damage: 45
+  - type: TimedDespawn
+    lifetime: 25
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: marksman
+      shader: unshaded
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
   id: BulletSniper
   name: bullet (.338 magnum)
   components:
@@ -108,6 +131,23 @@
     damage: 45
   - type: TimedDespawn
     lifetime: 25
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletAntiMaterielTrasser
+  name: bullet (.60 anti-materiel trasser)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 65
+        Blunt: 40
+        Structural: 75
+  - type: StaminaDamageOnCollide
+    damage: 90
+  - type: TimedDespawn
+    lifetime: 30
   - type: Sprite
     noRot: false
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi

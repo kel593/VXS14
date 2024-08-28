@@ -91,6 +91,39 @@
   - type: Appearance
 
 - type: entity
+  id: MagazineSniperTrasser
+  name: "magazine (.338 magnum trasser)"
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - MagazineSniper
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeSniper
+    proto: CartridgeSniperTrasser
+    capacity: 8
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: VXS/Weapons/Ammunition/Magazines/svyatmag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
   id: MagazineSniper
   name: "magazine (.338 magnum)"
   parent: BaseMagazineSniper

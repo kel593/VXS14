@@ -273,3 +273,45 @@
   - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 15
+
+- type: entity
+  parent: BaseCartridge
+  id: CartridgeSniperTrasser
+  name: cartridge (.338 magnum trasser)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeSniper
+  - type: CartridgeAmmo
+    proto: BulletSniperTrasser
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: BaseCartridge
+  id: CartridgeAntiMaterielTrasser
+  name: cartridge (.60 anti-materiel trasser)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeAntiMateriel
+  - type: CartridgeAmmo
+    proto: BulletAntiMaterielTrasser
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 20
