@@ -1,0 +1,14 @@
+# Активация угля
+
+- type: reaction
+  id: CharcoalActivation
+  maxTemp: 1000
+  minTemp: 650
+  reactants:
+    CharcoalNonActivated:
+      amount: 1
+    Oxygen:
+      amount: 1
+      catalyst: true
+  products:
+    Charcoal: 1

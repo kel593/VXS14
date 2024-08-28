@@ -46,4 +46,4 @@
       amount: 1
   products:
     NalipidemAnticaustic: 0.5
-    Charcoal: 1 # TODO: Сменить с активированного угля на технический уголь
+    CharcoalNonActivated: 1

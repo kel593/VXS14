@@ -94,7 +94,7 @@
         - ReagentId: Oxygen
           Quantity: 2
         # fuel or something
-        - ReagentId: Charcoal
+        - ReagentId: CharcoalNonActivated # VXS
           Quantity: 2
         - ReagentId: Sulfur
           Quantity: 2

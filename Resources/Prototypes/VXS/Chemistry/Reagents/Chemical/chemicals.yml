@@ -1,0 +1,8 @@
+- type: reagent
+  id: CharcoalNonActivated
+  name: reagent-name-charcoal
+  desc: charcoal
+  physicalDesc: reagent-physical-desc-porous
+  color: "#22282b"
+  boilingPoint: 4200.0
+  meltingPoint: 3550.0
