@@ -86,9 +86,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 3
+    maxIntensity: 45
     intensitySlope: 1.5
-    totalIntensity: 250
+    totalIntensity: 300
 
 # Sniper
 
