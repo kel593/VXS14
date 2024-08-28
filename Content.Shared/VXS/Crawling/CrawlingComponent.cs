@@ -7,8 +7,8 @@ namespace Content.Shared.Crawling;
 public sealed partial class CrawlingComponent : Component
 {
     [ViewVariables, DataField("sprintSpeedModifier"), AutoNetworkedField]
-    public float SprintSpeedModifier = 0.5f;
+    public float SprintSpeedModifier = 0.15f;
 
     [ViewVariables, DataField("walkSpeedModifier"), AutoNetworkedField]
-    public float WalkSpeedModifier = 0.5f;
+    public float WalkSpeedModifier = 0.25f;
 }
