@@ -9,7 +9,7 @@
 #       amount: 1
 #   products:
 #     Ammonia: 4
-#
+
 - type: reaction
   id: CelluloseBreakdown
   source: true
@@ -21,7 +21,7 @@
   products:
     Sugar: 2
     Carbon: 1
-#
+
 # - type: reaction
 #   id: Diethylamine
 #   reactants:
@@ -53,7 +53,7 @@
 #       amount: 1
 #   products:
 #     Acetone: 2
-#
+
 - type: reaction
   id: FoamingAgent
   reactants:
@@ -63,7 +63,7 @@
       amount: 1
   products:
     FoamingAgent: 2
-#
+
 # - type: reaction
 #   id: PolytrinicAcid
 #   reactants:
@@ -229,7 +229,7 @@
   products:
     Chlorine: 1
     Sodium: 1
-#
+
 # - type: reaction
 #   id: Thermite
 #   impact: Medium
