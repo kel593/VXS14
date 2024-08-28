@@ -1,0 +1,43 @@
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterCamocoatWinter
+  name: winter camouflage coat
+  description: Sniper-marksman camouflage suit. Has a built-in hood, but it's too tight. Equipped with armor plate holder and built-in elbow pads and kneepads.
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/OuterClothing/CamoCoat/winter.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/OuterClothing/CamoCoat/winter.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Item
+    size: Big
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9
+        Piercing: 0.5
+        Heat: 0.85
+  - type: ItemSlots
+    slots:
+      armorplate:
+        name: Armor plate
+        startingItem: ArmorPlateZabralo
+        insertSound: /Audio/Machines/id_insert.ogg
+        ejectSound: /Audio/Machines/id_swipe.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Armorplate
+        whitelistFailPopup: armor-fail-armorplate
+
+- type: entity
+  parent: ClothingOuterCamocoatWinter
+  id: ClothingOuterCamocoatMoss
+  name: moss camouflage coat
+  description: Sniper-marksman camouflage suit. Has a built-in hood, but it's too tight. Equipped with armor plate holder and built-in elbow pads and kneepads.
+  components:
+  - type: Sprite
+    sprite: VXS/Clothing/OuterClothing/CamoCoat/moss.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/OuterClothing/CamoCoat/moss.rsi
