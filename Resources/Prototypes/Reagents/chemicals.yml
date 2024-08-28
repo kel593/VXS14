@@ -40,9 +40,9 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: -1
+            Poison: -0.5 # VXS
       - !type:ChemCleanBloodstream
-        cleanseRate: 3
+        cleanseRate: 1 # VXS
 
 - type: reagent
   id: Ash
