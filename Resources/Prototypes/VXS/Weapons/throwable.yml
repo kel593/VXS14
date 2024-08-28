@@ -105,7 +105,7 @@
     solution:
       reagents:
       - ReagentId: Ash
-        Quantity: 5
+        Quantity: 15
   - type: Sprite
     sprite: VXS/Weapons/Throwable/Grenades/smart.rsi
     layers:

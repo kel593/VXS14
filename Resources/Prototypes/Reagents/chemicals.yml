@@ -50,6 +50,20 @@
   desc: reagent-desc-ash
   physicalDesc: reagent-physical-desc-powdery
   color: white
+  metabolisms: # VXS
+    Poison:
+      effects:
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.9
+        sprintSpeedModifier: 0.9
+      - !type:HealthChange
+        damage:
+          groups:
+            Airloss: 1
 
 - type: reagent
   id: SodiumCarbonate
