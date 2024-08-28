@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseFoam
+  id: HeavySmoke
+  name: tight smoke
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Occluder
+  - type: Sprite
+    sprite: VXS/Effect/heavysmoke.rsi
+    state: heavysmoke
+  - type: TimedDespawn
+    lifetime: 25
+  - type: Tag
+    tags:
+    - HideContextMenu

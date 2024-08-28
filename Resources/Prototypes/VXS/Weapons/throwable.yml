@@ -99,8 +99,13 @@
   id: SmartGrenadeM26SG
   components:
   - type: SmokeOnTrigger
-    duration: 45
-    spreadAmount: 30
+    duration: 40
+    spreadAmount: 25
+    smokePrototype: HeavySmoke
+    solution:
+      reagents:
+      - ReagentId: Ash
+        Quantity: 5
   - type: Sprite
     sprite: VXS/Weapons/Throwable/Grenades/smart.rsi
     layers:
