@@ -1,0 +1,33 @@
+# Категория для побочных реагентов медицинских препаратов
+
+- type: reagent # Халосат
+  id: IvsterineMed
+  name: ivsterine
+  group: Medicine
+  desc: anti-toxin
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: medicine
+  color: "#2E5090"
+  metabolisms:
+    Medicine:
+      metabolismRate: 5
+      effects:
+      - !type:SatiateThirst
+        factor: -5
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -30
+        scaleByQuantity: true
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 3
+        damage:
+          types:
+            Poison: 5
+        scaleByQuantity: true
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 2

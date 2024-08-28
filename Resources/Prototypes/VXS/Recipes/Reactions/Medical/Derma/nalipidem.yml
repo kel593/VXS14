@@ -1,0 +1,49 @@
+- type: reaction
+  id: NalipidemAnticausticReaction
+  minTemp: 299
+  maxTemp: 301
+  reactants:
+    Benzene:
+      amount: 1
+    Phenol:
+      amount: 1
+    Carbon:
+      amount: 2
+    Oxygen:
+     amount: 1
+     catalyst: true
+  products:
+    NalipidemAnticaustic: 2
+
+- type: reaction
+  id: NalipidemDermaAntiburnReaction
+  minTemp: 301
+  reactants:
+    NalipidemAnticaustic:
+      amount: 1
+    Estrinidap:
+      amount: 0.3
+  products:
+    NalipidemDermaAntiburn: 1
+
+- type: reaction
+  id: NalipidemDermaIndicator
+  reactants:
+    NalipidemDermaAntiburn:
+      amount: 1
+    Ammonia:
+      amount: 1
+  products:
+    NalipidemDermaAntiburn: 0.5
+    Ash: 1
+
+- type: reaction
+  id: NalipidemAnticausticIndicator
+  reactants:
+    NalipidemAnticaustic:
+      amount: 1
+    Ammonia:
+      amount: 1
+  products:
+    NalipidemAnticaustic: 0.5
+    Charcoal: 1 # TODO: Сменить с активированного угля на технический уголь

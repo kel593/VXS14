@@ -1,0 +1,32 @@
+# Изготовление халосата невозможно, только покупается
+# Побочные химикаты
+
+- type: reaction
+  id: HalosatToxinReaction
+  reactants:
+    HalosatAntitox:
+      amount: 1
+    Toxin:
+      amount: 1
+  products:
+    IvsterineMed: 1
+
+- type: reaction
+  id: HalosatHistamineReaction
+  reactants:
+    HalosatAntitox:
+      amount: 1
+    Histamine:
+      amount: 1
+  products:
+    IvsterineMed: 0.5
+
+- type: reaction
+  id: HalosatWaterReaction
+  reactants:
+    HalosatAntitox:
+      amount: 1
+    Water:
+      amount: 1
+  products:
+    Toxin: 3

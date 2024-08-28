@@ -1,0 +1,13 @@
+# Изготовление коллоидного силикондиоксида
+
+- type: reaction
+  id: SiliconDioxideColloidalReaction
+  minTemp: 450
+  reactants:
+    Silicon:
+      amount: 1
+    Oxygen:
+      amount: 1
+      catalyst: true
+  products:
+    SiliconDioxideColloidal: 1
