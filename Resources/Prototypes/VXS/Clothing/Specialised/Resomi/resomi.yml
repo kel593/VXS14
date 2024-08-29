@@ -96,7 +96,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformSpecialisedResomiMAA
   name: MAA resomi jumpsuit
-  description: I fucking hate this shitty repository, i want to kill myself right now. I really think i should sleep after that, but i cant, Nikita Buyanow keeping me in coding basement and forcing me to do this fuckling spesstention14 bullshit.
+  description: placeholder
   suffix: Resomi
   components:
   - type: Sprite
@@ -108,7 +108,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformSpecialisedResomiSolar
   name: solar resomi jumpsuit
-  description: I fucking hate this shitty repository, i want to kill myself right now. I really think i should sleep after that, but i cant, Nikita Buyanow keeping me in coding basement and forcing me to do this fuckling spesstention14 bullshit.
+  description: placeholder
   suffix: Resomi
   components:
   - type: Sprite
@@ -120,7 +120,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformSpecialisedResomiSolarOfficer
   name: solar officer resomi jumpsuit
-  description: I fucking hate this shitty repository, i want to kill myself right now. I really think i should sleep after that, but i cant, Nikita Buyanow keeping me in coding basement and forcing me to do this fuckling spesstention14 bullshit.
+  description: placeholder
   suffix: Resomi
   components:
   - type: Sprite
@@ -132,7 +132,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformSpecialisedResomiSyndie
   name: syndie resomi jumpsuit
-  description: I fucking hate this shitty repository, i want to kill myself right now. I really think i should sleep after that, but i cant, Nikita Buyanow keeping me in coding basement and forcing me to do this fuckling spesstention14 bullshit.
+  description: placeholder
   suffix: Resomi
   components:
   - type: Sprite
