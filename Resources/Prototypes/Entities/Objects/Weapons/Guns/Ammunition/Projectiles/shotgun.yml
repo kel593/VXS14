@@ -11,6 +11,7 @@
     damage:
       types:
         Piercing: 28
+        Blunt: 22 # VXS
   - type: StaminaDamageOnCollide
     damage: 25 # VXS
   - type: TimedDespawn # VXS
