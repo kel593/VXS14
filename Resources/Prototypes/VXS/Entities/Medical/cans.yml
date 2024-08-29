@@ -130,3 +130,32 @@
     solutions:
       beaker:
         maxVol: 100
+
+# Reagent
+- type: entity
+  name: glass solution bottle
+  suffix: Estrinidap, big
+  parent: SolutionGlassBottleBig
+  description: Standard glass bottle for solutions manufactured by SolFed Medical Group. It has a sealed rubber cap for syringes.
+  id: SolutionGlassBottleBigEstrinidap
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        reagents:
+          - ReagentId: Estrinidap
+            Quantity: 100
+
+- type: entity
+  name: glass solution bottle
+  suffix: colloidal silicon dioxide, small
+  parent: SolutionGlassBottleSmall
+  description: Standard glass bottle for solutions manufactured by SolFed Medical Group. It has a sealed rubber cap for syringes.
+  id: SolutionGlassBottleSmallSiliconDioxideColloidal
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        reagents:
+          - ReagentId: SiliconDioxideColloidal
+            Quantity: 50
