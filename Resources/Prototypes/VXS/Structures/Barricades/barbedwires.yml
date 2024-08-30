@@ -58,3 +58,42 @@
     bodyType: Dynamic
   - type: CollisionWake
     enabled: false
+
+- type: entity
+  id: BarbedwireBarricadeOnFloor
+  description: Placeholder
+  parent: BarbedwireBarricade
+  name: low barbed wire
+  components:
+  - type: Sprite
+    sprite: VXS/Structures/barbedwire.rsi
+    state: metal_wire
+    drawdepth: BlastDoors
+  - type: Damageable
+    damageModifierSet: FlimsyMetallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: TriggerOnStepTrigger
+  - type: DamageUserOnTrigger
+    damage:
+      types:
+        Slash: 15
+  - type: StepTrigger
+  - type: EmitSoundOnTrigger
+    sound: "/Audio/Items/snap.ogg"
+  - type: Physics
+    bodyType: Dynamic
+  - type: CollisionWake
+    enabled: true

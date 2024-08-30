@@ -10,6 +10,10 @@
 	{
 	  "name": "barricade_directional",
 	  "directions": 4
+	},
+	{
+	  "name": "metal_wire",
+	  "directions": 4
 	}
   ]
 }
