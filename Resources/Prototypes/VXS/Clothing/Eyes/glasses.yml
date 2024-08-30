@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesNightvision
+  name: night vision goggles
+  description: Seventh generation night vision system. Does not inhibit the brain's perception of night vision, but it does cause the eyes to ripple more quickly.
+  components:
+  - type: NightvisionClothing
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
