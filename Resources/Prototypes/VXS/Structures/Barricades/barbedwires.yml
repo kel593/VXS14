@@ -1,0 +1,60 @@
+- type: entity
+  id: BarbedwireBarricade
+  description: Placeholder
+  parent: BaseStructure
+  name: barbed wire
+  components:
+  - type: Sprite
+    sprite: VXS/Structures/barbedwire.rsi
+    state: barricade_directional
+    drawdepth: BlastDoors
+  - type: Damageable
+    damageModifierSet: FlimsyMetallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: AtmosExposed
+  - type: Anchorable
+  - type: MovedByPressure
+  - type: TileFrictionModifier
+    modifier: 0.5
+  - type: TriggerOnStepTrigger
+  - type: DamageUserOnTrigger
+    damage:
+      types:
+        Slash: 25
+  - type: StepTrigger
+  - type: EmitSoundOnTrigger
+    sound: "/Audio/Items/snap.ogg"
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: true
+        layer:
+          - LowImpassable
+          - MidImpassable
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        density: 25
+        mask:
+          - ItemMask
+  - type: Physics
+    bodyType: Dynamic
+  - type: CollisionWake
+    enabled: false
