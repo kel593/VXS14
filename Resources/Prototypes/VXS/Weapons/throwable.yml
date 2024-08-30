@@ -202,6 +202,7 @@
         enum.ConstructionVisuals.Layer:
           Primed: { state: primed }
           Unprimed: { state: icon }
+  - type: TriggerOnLand
 
 - type: entity
   name: M9GP frag smart-grenade
@@ -236,3 +237,4 @@
         enum.ConstructionVisuals.Layer:
           Primed: { state: primed }
           Unprimed: { state: icon }
+  - type: TriggerOnLand
