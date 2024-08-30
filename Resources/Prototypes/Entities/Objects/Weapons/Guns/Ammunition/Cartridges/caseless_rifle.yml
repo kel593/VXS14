@@ -1,6 +1,6 @@
 - type: entity
   id: BaseCartridgeCaselessRifle
-  name: cartridge (.25 rifle)
+  name: cartridge (6.35x15mm AWR25S) # VXS
   parent: BaseCartridge
   abstract: true
   components:
@@ -23,7 +23,7 @@
 
 - type: entity
   id: CartridgeCaselessRifle
-  name: cartridge (.25 caseless)
+  name: cartridge (6.35x15mm AWR25S) # VXS
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo
@@ -31,7 +31,7 @@
 
 - type: entity
   id: CartridgeCaselessRiflePractice
-  name: cartridge (.25 caseless practice)
+  name: cartridge (6.35x15mm AWR25T) # VXS
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo
@@ -46,7 +46,7 @@
 
 - type: entity
   id: CartridgeCaselessRifleRubber
-  name: cartridge (.25 caseless rubber)
+  name: cartridge (6.35x15mm AWR25NL) # VXS
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo
@@ -61,7 +61,7 @@
 
 - type: entity # VXS
   id: CartridgeCaselessRifleIncendiary
-  name: cartridge (.25 caseless incendiary)
+  name: cartridge (6.35x15mm AWR25I)
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo

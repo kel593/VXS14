@@ -1,6 +1,6 @@
 - type: entity
   id: BaseCartridgeMagnum
-  name: cartridge (.45 magnum)
+  name: cartridge (11.5x30mm SA45S) # VXS
   parent: BaseCartridge
   abstract: true
   components:
@@ -20,7 +20,7 @@
 
 - type: entity
   id: CartridgeMagnum
-  name: cartridge (.45 magnum)
+  name: cartridge (11.5x30mm SA45S) # VXS
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -28,7 +28,7 @@
 
 - type: entity
   id: CartridgeMagnumPractice
-  name: cartridge (.45 magnum practice)
+  name: cartridge (11.5x30mm SA45T) # VXS
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -43,7 +43,7 @@
 
 - type: entity
   id: CartridgeMagnumRubber
-  name: cartridge (.45 magnum rubber)
+  name: cartridge (11.5x30mm SA45NL) # VXS
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -58,7 +58,7 @@
 
 - type: entity
   id: CartridgeMagnumIncendiary
-  name: cartridge (.45 magnum incendiary)
+  name: cartridge (11.5x30mm SA45I) # VXS
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -73,7 +73,7 @@
 
 - type: entity
   id: CartridgeMagnumAP
-  name: cartridge (.45 magnum armor-piercing)
+  name: cartridge (11.5x30mm SA45AP) # VXS
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -88,7 +88,7 @@
 
 - type: entity
   id: CartridgeMagnumUranium
-  name: cartridge (.45 magnum uranium)
+  name: cartridge (11.5x30mm SA45U) # VXS
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -100,4 +100,3 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#65fe08"
-

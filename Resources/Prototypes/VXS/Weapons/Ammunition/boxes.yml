@@ -2,7 +2,7 @@
 - type: entity
   parent: BaseMagazineBoxCaselessRifle
   id: MagazineBoxCaselessRifleIncendiary
-  name: ammunition box (.25 caseless incendiary)
+  name: ammunition box (6.35x15mm AWR25I)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifleIncendiary
@@ -18,7 +18,7 @@
   parent: BaseMagazineBoxAntiMateriel
   id: MagazineBoxAntiMaterielTrasser
   suffix: Trasser
-  name: ammunition box (.60 anti-materiel trasser)
+  name: ammunition box (12.7x99mm M50T)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeAntiMaterielTrasser

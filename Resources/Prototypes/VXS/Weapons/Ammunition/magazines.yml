@@ -1,6 +1,6 @@
 - type: entity
   id: PistolMagazineVereskHeath
-  name: heath magazine (.25 caseless)
+  name: heath magazine (6.35x15mm AWR25S)
   parent: BaseItem
   components:
   - type: Tag
@@ -33,7 +33,7 @@
 
 - type: entity
   id: MagazineLMGRPK
-  name: "mg magazine (.20 rifle)"
+  name: "mg magazine (5.45x39mm SWT20S)"
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -58,7 +58,7 @@
 
 - type: entity
   id: BaseMagazineSniper
-  name: "magazine (.338 magnum)"
+  name: "magazine (8.6x70mm M338S)"
   parent: BaseItem
   abstract: true
   components:
@@ -92,7 +92,7 @@
 
 - type: entity
   id: MagazineSniperTrasser
-  name: "magazine (.338 magnum trasser)"
+  name: "magazine (8.6x70mm M338T)"
   parent: BaseItem
   components:
   - type: Tag
@@ -125,7 +125,7 @@
 
 - type: entity
   id: MagazineSniper
-  name: "magazine (.338 magnum)"
+  name: "magazine (8.6x70mm M338S)"
   parent: BaseMagazineSniper
   components:
   - type: BallisticAmmoProvider

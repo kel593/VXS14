@@ -1,6 +1,6 @@
 - type: entity
   id: BaseMagazineCaselessRifle
-  name: "magazine (.25 caseless)"
+  name: "magazine (6.35x15mm AWR25S)" # VXS
   parent: BaseItem
   abstract: true
   components:
@@ -34,7 +34,7 @@
 
 - type: entity
   id: BaseMagazineCaselessRifleShort
-  name: "caseless rifle short magazine (.25 caseless)"
+  name: "caseless rifle short magazine (6.35x15mm AWR25S)" # VXS
   parent: BaseMagazineCaselessRifle
   abstract: true
   components:
@@ -53,7 +53,7 @@
 
 - type: entity
   id: BaseMagazinePistolCaselessRifle
-  name: "pistol magazine (.25 caseless)"
+  name: "pistol magazine (6.35x15mm AWR25S)" # VXS
   parent: BaseMagazineCaselessRifle
   abstract: true
   components:
@@ -83,7 +83,7 @@
 
 - type: entity
   id: MagazineCaselessRifle10x24
-  name: "box magazine (.25 caseless)"
+  name: "box magazine (6.35x15mm AWR25S)" # VXS
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -94,7 +94,7 @@
 
 - type: entity
   id: MagazinePistolCaselessRifle
-  name: "pistol magazine (.25 caseless)"
+  name: "pistol magazine (6.35x15mm AWR25S)" # VXS
   parent: BaseMagazinePistolCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -114,7 +114,7 @@
 
 - type: entity
   id: MagazinePistolCaselessRiflePractice
-  name: "pistol magazine (.25 caseless practice)"
+  name: "pistol magazine (6.35x15mm AWR25T)" # VXS
   parent: BaseMagazinePistolCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -134,7 +134,7 @@
 
 - type: entity
   id: MagazinePistolCaselessRifleRubber
-  name: "pistol magazine (.25 caseless rubber)"
+  name: "pistol magazine (6.35x15mm AWR25NL)" # VXS
   parent: BaseMagazinePistolCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -154,7 +154,7 @@
 
 - type: entity
   id: MagazineCaselessRifle
-  name: "magazine (.25 caseless)"
+  name: "magazine (6.35x15mm AWR25S)" # VXS
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -168,7 +168,7 @@
 
 - type: entity
   id: MagazineCaselessRiflePractice
-  name: "magazine (.25 caseless practice)"
+  name: "magazine (6.35x15mm AWR25T)" # VXS
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -182,7 +182,7 @@
 
 - type: entity
   id: MagazineCaselessRifleRubber
-  name: "magazine (.25 caseless rubber)"
+  name: "magazine (6.35x15mm AWR25NL)" # VXS
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -196,7 +196,7 @@
 
 - type: entity
   id: MagazineCaselessRifleShort
-  name: "short magazine (.25 caseless)"
+  name: "short magazine (6.35x15mm AWR25S)" # VXS
   parent: BaseMagazineCaselessRifleShort
   components:
   - type: BallisticAmmoProvider
@@ -211,7 +211,7 @@
 
 - type: entity
   id: MagazineCaselessRifleShortPractice
-  name: "short magazine (.25 caseless practice)"
+  name: "short magazine (6.35x15mm AWR25T)" # VXS
   parent: BaseMagazineCaselessRifleShort
   components:
   - type: BallisticAmmoProvider
@@ -226,7 +226,7 @@
 
 - type: entity
   id: MagazineCaselessRifleShortRubber
-  name: "short magazine (.25 caseless rubber)"
+  name: "short magazine (6.35x15mm AWR25NL)" # VXS
   parent: BaseMagazineCaselessRifleShort
   components:
   - type: BallisticAmmoProvider

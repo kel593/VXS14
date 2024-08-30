@@ -2,7 +2,7 @@
 
 - type: entity
   id: CartridgeRocket
-  name: PG-7VL grenade
+  name: PG-7VL grenade (93mm) # VXS
   suffix: fugas
   parent: [BaseItem, BaseMajorContraband]
   description: The PG-7VL anti-tank grenade round is equipped with a shaped-charge warhead, which allows effective combat against modern armored targets, fortifications and enemy manpower in brick, reinforced concrete and wood-and-earth shelters. The use of this round turns a simple infantryman into an armored vehicle fighter.   # VXS
@@ -85,7 +85,7 @@
 
 - type: entity
   id: GrenadeBaton
-  name: baton grenade
+  name: baton grenade (40mm) # VXS
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
@@ -102,7 +102,7 @@
 
 - type: entity
   id: GrenadeBlast
-  name: blast grenade
+  name: blast grenade (40mm) # VXS
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
@@ -141,7 +141,7 @@
 
 - type: entity
   id: GrenadeFlash
-  name: flash grenade
+  name: flash grenade (40mm) # VXS
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
@@ -158,7 +158,7 @@
 
 - type: entity
   id: GrenadeFrag
-  name: frag grenade
+  name: frag grenade (40mm) # VXS
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
@@ -197,7 +197,7 @@
 
 - type: entity
   id: GrenadeEMP
-  name: EMP grenade
+  name: EMP grenade (40mm) # VXS
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo

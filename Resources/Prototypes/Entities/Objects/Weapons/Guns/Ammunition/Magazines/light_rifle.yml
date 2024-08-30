@@ -1,7 +1,7 @@
 # Empty mags
 - type: entity
   id: BaseMagazineLightRifle
-  name: "magazine (.30 rifle)"
+  name: "magazine (7.62x51mm LWT30S)" # VXS
   parent: BaseItem
   abstract: true
   components:
@@ -36,7 +36,7 @@
 # Magazines
 - type: entity
   id: MagazineLightRifleBox
-  name: "L6 SAW magazine box (.30 rifle)"
+  name: "L6 SAW magazine box (7.62x51mm LWT30S)" # VXS
   parent: BaseMagazineLightRifle
   components:
   - type: Tag
@@ -57,7 +57,7 @@
 
 - type: entity
   id: MagazineLightRifle
-  name: "magazine (.30 rifle)"
+  name: "magazine (7.62x51mm LWT30S)" # VXS
   parent: BaseMagazineLightRifle
   components:
   - type: BallisticAmmoProvider
@@ -71,7 +71,7 @@
 
 - type: entity
   id: MagazineLightRifleEmpty
-  name: "magazine (.30 rifle any)"
+  name: "magazine (7.62x51mm)"
   suffix: empty
   parent: MagazineLightRifle
   components:
@@ -84,7 +84,7 @@
 
 - type: entity
   id: MagazineLightRiflePractice
-  name: "magazine (.30 rifle practice)"
+  name: "magazine (7.62x51mm LWT30T)" # VXS
   parent: BaseMagazineLightRifle
   components:
   - type: BallisticAmmoProvider
@@ -98,7 +98,7 @@
 
 - type: entity
   id: MagazineLightRifleRubber
-  name: "magazine (.30 rifle rubber)"
+  name: "magazine (7.62x51mm LWT30NL)" # VXS
   parent: BaseMagazineLightRifle
   components:
   - type: BallisticAmmoProvider
@@ -112,7 +112,7 @@
 
 - type: entity
   id: MagazineLightRifleUranium
-  name: "magazine (.30 rifle uranium)"
+  name: "magazine (7.62x51mm LWT30U)" # VXS
   parent: BaseMagazineLightRifle
   components:
   - type: BallisticAmmoProvider
@@ -126,7 +126,7 @@
 
 - type: entity
   id: MagazineLightRifleIncendiary
-  name: "magazine (.30 rifle incendiary)"
+  name: "magazine (7.62x51mm LWT30I)" # VXS
   parent: MagazineLightRifle
   components:
   - type: BallisticAmmoProvider
@@ -134,7 +134,7 @@
 
 - type: entity
   id: MagazineLightRifleMaxim
-  name: "pan magazine (.30 rifle)"
+  name: "pan magazine (7.62x51mm)" # VXS
   parent: BaseMagazineLightRifle
   components:
   - type: Tag
@@ -148,7 +148,7 @@
 
 - type: entity
   id: MagazineLightRiflePkBox
-  name: "PK munitions box (.30 rifle)"
+  name: "PK munitions box (7.62x51mm LWT30S)" # VXS
   parent: BaseMagazineLightRifle
   components:
   - type: Tag

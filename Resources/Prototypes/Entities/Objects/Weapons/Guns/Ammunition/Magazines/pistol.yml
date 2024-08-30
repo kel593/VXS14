@@ -1,6 +1,6 @@
 - type: entity
   id: BaseMagazinePistol
-  name: pistol magazine (.35 auto)
+  name: pistol magazine (9x19mm M35S) # VXS
   parent: BaseItem
   abstract: true
   components:
@@ -33,7 +33,7 @@
 
 - type: entity
   id: BaseMagazinePistolHighCapacity
-  name: machine pistol magazine (.35 auto)
+  name: machine pistol magazine (9x19mm M35S) # VXS
   parent: BaseItem
   abstract: true
   components:
@@ -66,7 +66,7 @@
 
 - type: entity
   id: BaseMagazinePistolSubMachineGun  # Yeah it's weird but it's pistol caliber
-  name: SMG magazine (.35 auto)
+  name: SMG magazine (9x19mm M35S) # VXS
   parent: BaseItem
   abstract: true
   components:
@@ -99,7 +99,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunTopMounted
-  name: WT550 magazine (.35 auto top-mounted)
+  name: WT550 magazine (9x19mm M35S top-mounted) # VXS
   parent: BaseItem
   components:
   - type: Tag
@@ -130,7 +130,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunTopMountedEmpty
-  name: WT550 magazine (.35 auto top-mounted any)
+  name: WT550 magazine (9x19mm top-mounted) # VXS
   parent: MagazinePistolSubMachineGunTopMounted
   components:
   - type: BallisticAmmoProvider
@@ -138,7 +138,7 @@
 
 - type: entity
   id: MagazinePistol
-  name: pistol magazine (.35 auto)
+  name: pistol magazine (9x19mm M35S) # VXS
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -152,7 +152,7 @@
 
 - type: entity
   id: MagazinePistolEmpty
-  name: pistol magazine (.35 auto any)
+  name: pistol magazine (9x19mm) # VXS
   suffix: empty
   parent: MagazinePistol
   components:
@@ -166,7 +166,7 @@
 
 - type: entity
   id: MagazinePistolIncendiary
-  name: pistol magazine (.35 auto incendiary)
+  name: pistol magazine (9x19mm M35I) # VXS
   parent: MagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -174,7 +174,7 @@
 
 - type: entity
   id: MagazinePistolPractice
-  name: pistol magazine (.35 auto practice)
+  name: pistol magazine (9x19mm M35T) # VXS
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -188,7 +188,7 @@
 
 - type: entity
   id: MagazinePistolUranium
-  name: pistol magazine (.35 auto uranium)
+  name: pistol magazine (9x19mm M35U) # VXS
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -202,7 +202,7 @@
 
 - type: entity
   id: MagazinePistolRubber
-  name: pistol magazine (.35 auto rubber)
+  name: pistol magazine (9x19mm M35NL) # VXS
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -216,7 +216,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacityEmpty
-  name: machine pistol magazine (.35 auto any)
+  name: machine pistol magazine (9x19mm) # VXS
   suffix: empty
   parent: BaseMagazinePistolHighCapacity
   components:
@@ -229,7 +229,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacity
-  name: machine pistol magazine (.35 auto)
+  name: machine pistol magazine (9x19mm) # VXS
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: BallisticAmmoProvider
@@ -243,7 +243,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacityPractice
-  name: machine pistol magazine (.35 auto practice)
+  name: machine pistol magazine (9x19mm M35T) # VXS
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: BallisticAmmoProvider
@@ -257,7 +257,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacityRubber
-  name: machine pistol magazine (.35 auto rubber)
+  name: machine pistol magazine (9x19mm M35NL) # VXS
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: BallisticAmmoProvider
@@ -271,7 +271,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGun
-  name: SMG magazine (.35 auto)
+  name: SMG magazine (9x19mm M35S) # VXS
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -291,7 +291,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunEmpty
-  name: SMG magazine (.35 auto any)
+  name: SMG magazine (9x19mm) # VXS
   suffix: empty
   parent: BaseMagazinePistolSubMachineGun
   components:
@@ -304,7 +304,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunPractice
-  name: SMG magazine (.35 auto practice)
+  name: SMG magazine (9x19mm M35T) # VXS
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -318,7 +318,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunRubber
-  name: SMG magazine (.35 auto rubber)
+  name: SMG magazine (9x19mm M35NL) # VXS
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -332,7 +332,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunUranium
-  name: SMG magazine (.35 auto rubber)
+  name: SMG magazine (9x19mm M35U) # VXS
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider

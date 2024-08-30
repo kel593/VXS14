@@ -1,7 +1,7 @@
 # Rockets
 - type: entity
   id: CartridgeRocketThermobar
-  name: TBG-7V grenade
+  name: TBG-7V grenade (105mm)
   suffix: thermobaric
   parent: BaseItem
   description: The thermobaric warhead has a high explosive, fragmentation and incendiary effect, causing devastating damage to the enemy's manpower on the battlefield. The penetration capability of this ammunition is sufficient to defeat lightly armored and unarmored vehicles, and the TBG-7B's impact factors effectively affect the enemy located in trenches and bunkers at a distance of two meters from the epicenter of the grenade explosion. This ammunition leaves no chance for all living things in small spaces.
@@ -49,7 +49,7 @@
 
 - type: entity
   id: CartridgeRocketThermobarUnloaded
-  name: TBG-7V grenade
+  name: TBG-7V grenade (105mm)
   suffix: thermobaric, unloaded
   parent: BaseItem
   description: The thermobaric warhead has a high explosive, fragmentation and incendiary effect, causing devastating damage to the enemy's manpower on the battlefield. The penetration capability of this ammunition is sufficient to defeat lightly armored and unarmored vehicles, and the TBG-7B's impact factors effectively affect the enemy located in trenches and bunkers at a distance of two meters from the epicenter of the grenade explosion. This ammunition leaves no chance for all living things in small spaces.
@@ -90,7 +90,7 @@
 
 - type: entity
   id: CartridgeRocketFrag
-  name: OG-7V grenade
+  name: OG-7V grenade (40mm)
   suffix: frag
   parent: BaseItem
   description: The OG-7V shot with fragmentation grenade is designed to suppress live forces, including those with personal protective equipment (body armor), located in open terrain, in field-type shelters and buildings, as well as to defeat non-armored vehicles.
@@ -137,7 +137,7 @@
 
 - type: entity
   id: CartridgeRocketFragUnloaded
-  name: OG-7V grenade
+  name: OG-7V grenade (40mm)
   suffix: frag, unloaded
   parent: BaseItem
   description: The OG-7V shot with fragmentation grenade is designed to suppress live forces, including those with personal protective equipment (body armor), located in open terrain, in field-type shelters and buildings, as well as to defeat non-armored vehicles.
@@ -177,7 +177,7 @@
 
 - type: entity
   id: CartridgeRocketFugasUnloaded
-  name: PG-7VL grenade
+  name: PG-7VL grenade (93mm)
   suffix: fugas, unloaded
   parent: BaseItem
   description: The PG-7VL anti-tank grenade round is equipped with a shaped-charge warhead, which allows effective combat against modern armored targets, fortifications and enemy manpower in brick, reinforced concrete and wood-and-earth shelters. The use of this round turns a simple infantryman into an armored vehicle fighter.
@@ -256,7 +256,7 @@
 - type: entity
   parent: BaseCartridge
   id: CartridgeSniper
-  name: cartridge (.338 magnum)
+  name: cartridge (8.6x70mm M338S)
   components:
   - type: Tag
     tags:
@@ -277,7 +277,7 @@
 - type: entity
   parent: BaseCartridge
   id: CartridgeSniperTrasser
-  name: cartridge (.338 magnum trasser)
+  name: cartridge (8.6x70mm M338T)
   components:
   - type: Tag
     tags:
@@ -298,7 +298,7 @@
 - type: entity
   parent: BaseCartridge
   id: CartridgeAntiMaterielTrasser
-  name: cartridge (.60 anti-materiel trasser)
+  name: cartridge (12.7x99mm M50T)
   components:
   - type: Tag
     tags:
@@ -319,7 +319,7 @@
 - type: entity
   parent: BaseCartridge
   id: CartridgeSniperSupressor
-  name: cartridge (12.7x55mm M54S)
+  name: cartridge (12.7x55mm M12S)
   components:
   - type: Tag
     tags:
@@ -338,7 +338,7 @@
 - type: entity
   parent: BaseCartridge
   id: CartridgeSniperSupressorTrasser
-  name: cartridge (12.7x55mm M33T)
+  name: cartridge (12.7x55mm M12T)
   suffix: Trasser
   components:
   - type: Tag
