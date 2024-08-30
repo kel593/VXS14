@@ -12,7 +12,7 @@
     deleteOnSpawn: true
   - type: Sprite
     noRot: false
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: VXS/Weapons/Ammunition/Casings/small.rsi # VXS
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

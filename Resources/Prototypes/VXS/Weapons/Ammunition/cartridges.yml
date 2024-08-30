@@ -265,7 +265,7 @@
   - type: CartridgeAmmo
     proto: BulletSniper
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: VXS/Weapons/Ammunition/Casings/marksman.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -286,7 +286,7 @@
   - type: CartridgeAmmo
     proto: BulletSniperTrasser
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: VXS/Weapons/Ammunition/Casings/marksman.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -307,7 +307,7 @@
   - type: CartridgeAmmo
     proto: BulletAntiMaterielTrasser
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: VXS/Weapons/Ammunition/Casings/marksman.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -328,7 +328,7 @@
   - type: CartridgeAmmo
     proto: BulletSniperSupressor
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: VXS/Weapons/Ammunition/Casings/marksman.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -348,7 +348,7 @@
   - type: CartridgeAmmo
     proto: BulletSniperSupressorTrasser
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: VXS/Weapons/Ammunition/Casings/marksman.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
