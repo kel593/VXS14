@@ -54,7 +54,7 @@
   # Don't parent to BaseWeaponShotgun because it differs significantly
   parent: [BaseItem, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunBulldog
-  description: It's a magazine-fed shotgun designed for close quarters combat. Uses .50 shotgun shells.
+  description: It's a magazine-fed shotgun designed for close quarters combat. # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi
@@ -116,7 +116,7 @@
   name: double-barreled shotgun
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseMinorContraband]
   id: WeaponShotgunDoubleBarreled
-  description: An immortal classic. Uses .50 shotgun shells.
+  description: An immortal classic. # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
@@ -140,7 +140,7 @@
   name: double-barreled shotgun
   parent: WeaponShotgunDoubleBarreled
   id: WeaponShotgunDoubleBarreledRubber
-  description: An immortal classic. Uses .50 shotgun shells.
+  description: An immortal classic. # VXS
   suffix: Non-Lethal
   components:
   - type: BallisticAmmoProvider
@@ -150,7 +150,7 @@
   name: Enforcer
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseRestrictedContraband]
   id: WeaponShotgunEnforcer
-  description: A premium combat shotgun based on the Kammerer design, featuring an upgraded clip capacity. .50 shotgun shells.
+  description: A premium combat shotgun based on the Kammerer design, featuring an upgraded clip capacity. # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
@@ -173,7 +173,7 @@
   name: Kammerer
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseRestrictedContraband]
   id: WeaponShotgunKammerer
-  description: When an old Remington design meets modern materials, this is the result. A favourite weapon of militia forces throughout many worlds. Uses .50 shotgun shells.
+  description: When an old Remington design meets modern materials, this is the result. A favourite weapon of militia forces throughout many worlds. # VXS
   components:
   - type: Item
     size: Normal
@@ -197,7 +197,7 @@
   name: sawn-off shotgun
   parent: BaseWeaponShotgun
   id: WeaponShotgunSawn
-  description: Groovy! Uses .50 shotgun shells.
+  description: Groovy! # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/sawn.rsi
@@ -220,7 +220,7 @@
   name: sawn-off shotgun
   parent: WeaponShotgunSawn
   id: WeaponShotgunSawnEmpty
-  description: Groovy! Uses .50 shotgun shells.
+  description: Groovy! # VXS
   suffix: Empty
   components:
   - type: BallisticAmmoProvider
@@ -234,7 +234,7 @@
   name: handmade pistol
   parent: [BaseWeaponShotgun, BaseMinorContraband]
   id: WeaponShotgunHandmade
-  description: Looks unreliable. Uses .50 shotgun shells.
+  description: Looks unreliable. # VXS
   components:
   - type: Item
     size: Small

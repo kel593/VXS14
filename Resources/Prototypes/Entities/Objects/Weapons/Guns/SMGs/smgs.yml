@@ -65,7 +65,7 @@
   name: Atreides
   parent: [BaseWeaponSubMachineGun, BaseMajorContraband]
   id: WeaponSubMachineGunAtreides
-  description: Pla-ket-ket-ket-ket! Uses .35 auto ammo.
+  description: Pla-ket-ket-ket-ket! # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
@@ -92,7 +92,7 @@
   name: C-20r sub machine gun
   parent: [BaseWeaponSubMachineGun, BaseSyndicateContraband]
   id: WeaponSubMachineGunC20r
-  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  description: A firearm that is often used by the infamous nuclear operatives. # VXS
   components:
   - type: AmmoCounter # VXS
   - type: Sprite
@@ -198,7 +198,7 @@
   name: Vector
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunVector
-  description: An excellent fully automatic Heavy SMG. Uses .35 auto ammo. # VXS
+  description: An excellent fully automatic Heavy SMG. # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
@@ -249,7 +249,7 @@
   name: WT550
   parent: [ BaseWeaponSubMachineGun, BaseRestrictedContraband ]
   id: WeaponSubMachineGunWt550
-  description: An excellent SMG, produced by NanoTrasen's Small Arms Division. Uses .35 auto ammo.
+  description: An excellent SMG, produced by NanoTrasen's Small Arms Division. # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
@@ -339,7 +339,7 @@
   name: Vector
   parent: WeaponSubMachineGunVector
   id: WeaponSubMachineGunVectorRubber
-  description: An excellent fully automatic Heavy SMG. Uses .45 magnum ammo.
+  description: An excellent fully automatic Heavy SMG. # VXS
   suffix: Non-Lethal
   components:
   - type: ItemSlots
