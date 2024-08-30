@@ -1,0 +1,16 @@
+- type: construction
+  name: barbed wire
+  id: BarbedwireBarricadeConstruction
+  graph: BarbedwireBarricadeConstructionGraph
+  startNode: start
+  targetNode: barbed1
+  category: construction-category-structures
+  description: The standard quick-draw barricade, a classic of the genre.
+  icon:
+    sprite: VXS/Structures/barbedwire.rsi
+    state: barricade_directional
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

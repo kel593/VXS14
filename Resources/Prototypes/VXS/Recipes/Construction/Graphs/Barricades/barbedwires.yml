@@ -1,0 +1,26 @@
+- type: constructionGraph
+  id: BarbedwireBarricadeConstructionGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: barbed1
+          steps:
+            - material: MetalRod
+              amount: 4
+              doAfter: 5
+    - node: barbed1
+      entity: BarbedwireBarricade
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: PartRodMetal1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Cutting
+              doAfter: 4

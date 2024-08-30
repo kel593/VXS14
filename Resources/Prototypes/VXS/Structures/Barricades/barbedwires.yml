@@ -1,6 +1,6 @@
 - type: entity
   id: BarbedwireBarricade
-  description: Placeholder
+  description: The standard quick-draw barricade, a classic of the genre
   parent: BaseStructure
   name: barbed wire
   components:
@@ -58,10 +58,13 @@
     bodyType: Dynamic
   - type: CollisionWake
     enabled: false
+  - type: Construction
+    graph: BarbedwireBarricadeConstructionGraph
+    node: barbed1
 
 - type: entity
   id: BarbedwireBarricadeOnFloor
-  description: Placeholder
+  description: The standard quick-draw barricade, a classic of the genre
   parent: BarbedwireBarricade
   name: low barbed wire
   components:
