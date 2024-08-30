@@ -155,6 +155,48 @@
     - state: marksman
       shader: unshaded
 
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletSniperSupressorTrasser
+  name: bullet (12.7x55mm)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 35
+        Blunt: 45
+        Structural: 15
+        Asphyxiation: 10
+  - type: StaminaDamageOnCollide
+    damage: 50
+  - type: TimedDespawn
+    lifetime: 20
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: marksman
+      shader: unshaded
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletSniperSupressor
+  name: bullet (12.7x55mm)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 35
+        Blunt: 45
+        Structural: 15
+        Asphyxiation: 10
+  - type: StaminaDamageOnCollide
+    damage: 50
+  - type: TimedDespawn
+    lifetime: 20
+
 # Energy
 
 - type: entity

@@ -58,3 +58,64 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+
+- type: entity
+  name: SSLCR-M Exhaust
+  suffix: 338Magnum
+  parent: [BaseItem, BaseGunWieldable]
+  id: WeaponSniperSSLCRExhaustVSSKVikhlop
+  description: Sniper Special Large Caliber Rifle. This is a modified semi-automatic version, uses pretty rare ammo.
+  components:
+  - type: Sprite
+    sprite: VXS/Weapons/Snipers/exhaust.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+  - type: Clothing
+    sprite: VXS/Weapons/Snipers/exhaust.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: GunRequiresWield
+  - type: Gun
+    cameraRecoilScalar: 1
+    projectileSpeed: 55
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/VXS/Gunshots/Pistol/pistolSupressed.ogg
+      params:
+        maxDistance: 100
+        volume: 15
+    soundEmpty:
+      path: /Audio/VXS/Gunshots/Gunsounds/Sniper/sniperEmpty.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperSupressor
+        priority: 2
+        whitelist:
+          tags:
+          - MagazineSniperSupressorTag
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        insertSound: /Audio/VXS/Gunshots/Gunsounds/Sniper/sniperInsert.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineAmmoProvider
+    #autoCycle: false Boowmp :(
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

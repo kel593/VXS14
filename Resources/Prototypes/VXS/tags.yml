@@ -30,6 +30,12 @@
 - type: Tag
   id: CartridgeRocketGunpowderRPG
 
+- type: Tag
+  id: CartridgeSniperSupressor
+
+- type: Tag
+  id: MagazineSniperSupressorTag
+
 # Armor
 
 - type: Tag

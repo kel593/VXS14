@@ -315,3 +315,42 @@
   - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 20
+
+- type: entity
+  parent: BaseCartridge
+  id: CartridgeSniperSupressor
+  name: cartridge (12.7x55mm M54S)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeSniperSupressor
+  - type: CartridgeAmmo
+    proto: BulletSniperSupressor
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  parent: BaseCartridge
+  id: CartridgeSniperSupressorTrasser
+  name: cartridge (12.7x55mm M33T)
+  suffix: Trasser
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeSniperSupressor
+  - type: CartridgeAmmo
+    proto: BulletSniperSupressorTrasser
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
