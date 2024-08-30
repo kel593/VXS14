@@ -68,7 +68,7 @@
   name: AKM # VXS
   parent: [BaseWeaponRifle, BaseRestrictedContraband]
   id: WeaponRifleAk
-  description: An iconic weapon of war. Uses .30 rifle ammo.
+  description: A modified modern version of the famous iconic weapon, the AKM. Uses .30 rifle ammo. # VXS
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi
