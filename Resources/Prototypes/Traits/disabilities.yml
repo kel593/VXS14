@@ -21,7 +21,7 @@
       - Blindable
   components:
     - type: PermanentBlindness
-      blindness: 4
+      blindness: 6 # VXS
 
 - type: trait
   id: Narcolepsy
@@ -30,8 +30,8 @@
   category: Disabilities
   components:
     - type: Narcolepsy
-      timeBetweenIncidents: 300, 600
-      durationOfIncident: 10, 30
+      timeBetweenIncidents: 200, 600 # VXS
+      durationOfIncident: 5, 30 # VXS
 
 - type: trait
   id: Unrevivable

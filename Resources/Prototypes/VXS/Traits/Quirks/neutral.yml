@@ -1,0 +1,10 @@
+- type: trait
+  id: Lightweight
+  name: Lightweight
+  category: PhysicalTraits
+  points: -2
+  requirements:
+  components:
+  - type: FixtureDensityModifier
+    min: 100
+    factor: 0.66

@@ -71,7 +71,6 @@
   id: WeaponSniperHristov
   description: A portable anti-materiel rifle. Fires armor piercing 14.5mm shells. # VXS
   components:
-  - type: GunRequiresWield # VXS
   - type: Gun
     cameraRecoilScalar: 3
     projectileSpeed: 75 # VXS
@@ -85,13 +84,6 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
   - type: GunRequiresWield
-  - type: Gun
-    fireRate: 0.4
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
   - type: BallisticAmmoProvider
     whitelist:
       tags:

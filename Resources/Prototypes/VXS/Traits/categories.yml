@@ -1,0 +1,4 @@
+- type: traitCategory
+  id: PhysicalTraits
+  name: Physical traits
+  maxTraitPoints: 4

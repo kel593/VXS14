@@ -1,0 +1,37 @@
+- type: trait
+  id: Weakness
+  category: PhysicalTraits
+  name: Weakness
+  description: Makes you weaker. You get tired faster!
+  points: 2
+  components:
+    - type: StaminaCritModifier
+      critThresholdModifier: -30
+    - type: DeadModifier
+      deadThresholdModifier: -5
+
+- type: trait
+  id: PTSD
+  name: PTSD
+  points: 2
+  description: Not license to grief.
+  category: Disabilities
+  components:
+    - type: Paracusia
+      minTimeBetweenIncidents: 2
+      maxTimeBetweenIncidents: 600
+      maxSoundDistance: 6
+      sounds:
+        collection: PTSD
+
+- type: trait
+  id: WeakOrganism
+  category: PhysicalTraits
+  name: Weak organism
+  description: Sounds like you haven't been eating enough porridge. You're dying faster.
+  points: 2
+  components:
+    - type: DeadModifier
+      deadThresholdModifier: -5
+    - type: CritModifier
+      critThresholdModifier: -5

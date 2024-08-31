@@ -1,0 +1,25 @@
+- type: trait
+  id: WillToLive
+  name: Will to live
+  description: You have what to lose. You will suffocate more slowly in a critical condition.
+  category: PhysicalTraits
+  points: -4
+  requirements:
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - WeakOrganism
+  components:
+    - type: DeadModifier
+      deadThresholdModifier: 20
+
+- type: trait
+  id: Tenacity
+  name: Tenacity
+  description: You're tough.
+  category: PhysicalTraits
+  points: -2
+  requirements:
+  components:
+    - type: CritModifier
+      critThresholdModifier: 5
