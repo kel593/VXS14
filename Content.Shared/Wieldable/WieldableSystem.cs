@@ -6,8 +6,6 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Item;
-using Content.Shared.Movement.Components;
-using Content.Shared.Movement.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Timing;
 using Content.Shared.Verbs;
@@ -32,7 +30,6 @@ public sealed class WieldableSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!;
     [Dependency] private readonly UseDelaySystem _delay = default!;
     [Dependency] private readonly SharedGunSystem _gun = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
@@ -56,9 +53,6 @@ public sealed class WieldableSystem : EntitySystem
         SubscribeLocalEvent<GunWieldBonusComponent, ItemUnwieldedEvent>(OnGunUnwielded);
         SubscribeLocalEvent<GunWieldBonusComponent, GunRefreshModifiersEvent>(OnGunRefreshModifiers);
         SubscribeLocalEvent<GunWieldBonusComponent, ExaminedEvent>(OnExamine);
-        SubscribeLocalEvent<SpeedModifiedOnWieldComponent, ItemWieldedEvent>(OnSpeedModifierWielded);
-        SubscribeLocalEvent<SpeedModifiedOnWieldComponent, ItemUnwieldedEvent>(OnSpeedModifierUnwielded);
-        SubscribeLocalEvent<SpeedModifiedOnWieldComponent, HeldRelayedEvent<RefreshMovementSpeedModifiersEvent>>(OnRefreshSpeedWielded);
 
         SubscribeLocalEvent<IncreaseDamageOnWieldComponent, GetMeleeDamageEvent>(OnGetMeleeDamage);
     }
@@ -120,26 +114,6 @@ public sealed class WieldableSystem : EntitySystem
             args.MaxAngle += bonus.Comp.MaxAngle;
             args.AngleDecay += bonus.Comp.AngleDecay;
             args.AngleIncrease += bonus.Comp.AngleIncrease;
-        }
-    }
-
-    private void OnSpeedModifierWielded(EntityUid uid, SpeedModifiedOnWieldComponent component, ItemWieldedEvent args)
-    {
-        if (args.User != null)
-            _movementSpeedModifier.RefreshMovementSpeedModifiers(args.User.Value);
-    }
-
-    private void OnSpeedModifierUnwielded(EntityUid uid, SpeedModifiedOnWieldComponent component, ItemUnwieldedEvent args)
-    {
-        if (args.User != null)
-            _movementSpeedModifier.RefreshMovementSpeedModifiers(args.User.Value);
-    }
-
-    private void OnRefreshSpeedWielded(EntityUid uid, SpeedModifiedOnWieldComponent component, ref HeldRelayedEvent<RefreshMovementSpeedModifiersEvent> args)
-    {
-        if (TryComp(uid, out WieldableComponent? wield) && wield.Wielded)
-        {
-            args.Args.ModifySpeed(component.WalkModifier, component.SprintModifier);
         }
     }
 
@@ -282,7 +256,7 @@ public sealed class WieldableSystem : EntitySystem
         var othersMessage = Loc.GetString("wieldable-component-successful-wield-other", ("user", user), ("item", used));
         _popupSystem.PopupPredicted(selfMessage, othersMessage, user, user);
 
-        var targEv = new ItemWieldedEvent(user);
+        var targEv = new ItemWieldedEvent();
         RaiseLocalEvent(used, ref targEv);
 
         Dirty(used, component);
