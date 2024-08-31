@@ -10,7 +10,7 @@
         Piercing: 65 # VXS
         Blunt: 40 # VXS
         Structural: 75 # VXS
-    penetrationThreshold: 360
+    penetrationThreshold: 500 # VXS
     penetrationDamageTypeRequirement:
     - Structural
   - type: StaminaDamageOnCollide

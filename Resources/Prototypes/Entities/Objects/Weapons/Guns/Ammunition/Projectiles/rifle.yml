@@ -10,6 +10,9 @@
         Piercing: 39 # VXS
         Blunt: 9 # VXS
         Asphyxiation: 6 # VXS
+    penetrationThreshold: 38 # VXS
+    penetrationDamageTypeRequirement:
+    - Piercing
   - type: StaminaDamageOnCollide # VXS
     damage: 18
   - type: TimedDespawn # VXS
@@ -27,6 +30,9 @@
         Piercing: 39 # VXS
         Blunt: 9 # VXS
         Asphyxiation: 6 # VXS
+    penetrationThreshold: 38 # VXS
+    penetrationDamageTypeRequirement:
+    - Piercing
   - type: StaminaDamageOnCollide # VXS
     damage: 18
   - type: TimedDespawn # VXS
@@ -57,6 +63,9 @@
         Piercing: 36 # VXS
         Heat: 2 # VXS
         Asphyxiation: 6 # VXS
+    penetrationThreshold: 36 # VXS
+    penetrationDamageTypeRequirement:
+    - Piercing
   - type: TimedDespawn # VXS
     lifetime: 12
 
@@ -71,6 +80,9 @@
       types:
         Radiation: 1 # VXS
         Piercing: 48 # VXS
+    penetrationThreshold: 50 # VXS
+    penetrationDamageTypeRequirement:
+    - Structural
   - type: StaminaDamageOnCollide # VXS
     damage: 9
   - type: TimedDespawn # VXS

@@ -25,6 +25,13 @@
     fillPrototype: PelletFugasStruya
     maxGrenadesCount: 1
     grenadeType: enum.GrenadeType.Shoot
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 40
+    penetrationThreshold: 1000
+    penetrationDamageTypeRequirement:
+    - Structural
 
 - type: entity
   id: PelletFugasStruya
@@ -104,6 +111,9 @@
         Piercing: 55
         Blunt: 35
         Structural: 30
+    penetrationThreshold: 100
+    penetrationDamageTypeRequirement:
+    - Structural
   - type: StaminaDamageOnCollide
     damage: 45
   - type: TimedDespawn
@@ -127,6 +137,9 @@
         Piercing: 55
         Blunt: 35
         Structural: 30
+    penetrationThreshold: 100
+    penetrationDamageTypeRequirement:
+    - Structural
   - type: StaminaDamageOnCollide
     damage: 45
   - type: TimedDespawn
@@ -144,6 +157,9 @@
         Piercing: 65
         Blunt: 40
         Structural: 75
+    penetrationThreshold: 100
+    penetrationDamageTypeRequirement:
+    - Structural
   - type: StaminaDamageOnCollide
     damage: 90
   - type: TimedDespawn
@@ -168,6 +184,9 @@
         Blunt: 45
         Structural: 15
         Asphyxiation: 10
+    penetrationThreshold: 80
+    penetrationDamageTypeRequirement:
+    - Structural
   - type: StaminaDamageOnCollide
     damage: 50
   - type: TimedDespawn
@@ -192,6 +211,9 @@
         Blunt: 45
         Structural: 15
         Asphyxiation: 10
+    penetrationThreshold: 80
+    penetrationDamageTypeRequirement:
+    - Structural
   - type: StaminaDamageOnCollide
     damage: 50
   - type: TimedDespawn
