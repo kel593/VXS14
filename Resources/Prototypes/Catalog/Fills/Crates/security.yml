@@ -114,3 +114,22 @@
         amount: 4
 
 # Cosmetic Crates
+
+- type: entity
+  id: CrateSecurityFastKit
+  parent: CrateSecgear
+  name: NT fast kit
+  description: This box contains everything a regular fighter needs.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifleLecter
+        amount: 1
+      - id: MagazineRifle
+        amount: 4
+      - id: ClothingOuterArmorBulletproof
+        amount: 1
+      - id: ClothingBeltMilitaryWebbing
+        amount: 1
+      - id: BoxMRE
+        amount: 1

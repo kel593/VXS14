@@ -1,0 +1,81 @@
+- type: gameMap
+  id: VXSForts
+  mapName: Ixodtibet
+  mapPath: /Maps/VXS/forts.yml
+  minPlayers: 0
+  stations:
+    Ixodtibet:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Ixodtibet"
+        - type: StationJobs
+          overflowJobs:
+            - SolfedPeacekeeper
+            - SyndAnarchykeeper
+          availableJobs:
+            SolfedPeacekeeper: [ -1, -1 ]
+            SyndAnarchykeeper: [ -1, -1 ]
+            SyndAnarchykeeperMedic: [ 3, 3 ]
+            SyndAnarchykeeperEngineer: [ 3, 3 ]
+            SyndAnarchykeeperCargoTechnician: [ 3, 3 ]
+            SyndAnarchykeeperOfficer: [ 1, 1 ]
+            SolfedPeacekeeperMedic: [ 3, 3 ]
+            SolfedPeacekeeperEngineer: [ 3, 3 ]
+            SolfedPeacekeeperCargoTechnician: [ 3, 3 ]
+            SolfedPeacekeeperOfficer: [ 1, 1 ]
+
+- type: gameMap
+  id: Barnaul
+  mapName: Barnaul
+  mapPath: /Maps/VXS/barnaul.yml
+  minPlayers: 0
+  stations:
+    Barnaul:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Barnaul"
+        - type: StationJobs
+          overflowJobs:
+            - SolfedPeacekeeper
+            - SyndAnarchykeeper
+          availableJobs:
+            SolfedPeacekeeper: [ -1, -1 ]
+            SyndAnarchykeeper: [ -1, -1 ]
+            SyndAnarchykeeperMedic: [ 3, 3 ]
+            SyndAnarchykeeperEngineer: [ 3, 3 ]
+            SyndAnarchykeeperCargoTechnician: [ 3, 3 ]
+            SyndAnarchykeeperOfficer: [ 1, 1 ]
+            SolfedPeacekeeperMedic: [ 3, 3 ]
+            SolfedPeacekeeperEngineer: [ 3, 3 ]
+            SolfedPeacekeeperCargoTechnician: [ 3, 3 ]
+            SolfedPeacekeeperOfficer: [ 1, 1 ]
+
+
+- type: gameMap
+  id: IxodtibetOld
+  mapName: Ixodtibet
+  mapPath: /Maps/VXS/ixodtibet.yml
+  minPlayers: 0
+  stations:
+    Ixodtibet:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Ixodtibet"
+        - type: StationJobs
+          overflowJobs:
+            - SolfedPeacekeeper
+            - SyndAnarchykeeper
+          availableJobs:
+            SolfedPeacekeeper: [ -1, -1 ]
+            SyndAnarchykeeper: [ -1, -1 ]
+            SyndAnarchykeeperMedic: [ 3, 3 ]
+            SyndAnarchykeeperEngineer: [ 3, 3 ]
+            SyndAnarchykeeperCargoTechnician: [ 3, 3 ]
+            SyndAnarchykeeperOfficer: [ 1, 1 ]
+            SolfedPeacekeeperMedic: [ 3, 3 ]
+            SolfedPeacekeeperEngineer: [ 3, 3 ]
+            SolfedPeacekeeperCargoTechnician: [ 3, 3 ]
+            SolfedPeacekeeperOfficer: [ 1, 1 ]

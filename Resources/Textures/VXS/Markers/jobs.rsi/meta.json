@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "TooMuchCoocks in my ass",
+  "states": [
+    {
+      "name": "Anarchy"
+    },
+    {
+      "name": "Solfed"
+    },
+    {
+      "name": "CargoAnarchy"
+    },
+    {
+      "name": "CargoSolfed"
+    },
+    {
+      "name": "EngiAnarchy"
+    },
+    {
+      "name": "EngiSolfed"
+    },
+    {
+      "name": "MedicAnarchy"
+    },
+    {
+      "name": "MedicSolfed"
+    },
+    {
+      "name": "OfficerAnarchy"
+    },
+    {
+      "name": "OfficerSolfed"
+    },
+    {
+      "name": "green"
+    }
+  ]
+}

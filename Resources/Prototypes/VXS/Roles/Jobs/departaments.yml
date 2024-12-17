@@ -1,7 +1,23 @@
 - type: department
   id: SolarFederation
-  name: department-Solfed
-  description: department-Solfed-description
+  name: department-solfed
+  description: department-solfed-description
   color: "#318CE7"
   roles:
   - SolfedPeacekeeper
+  - SolfedPeacekeeperMedic
+  - SolfedPeacekeeperEngineer
+  - SolfedPeacekeeperCargoTechnician
+  - SolfedPeacekeeperOfficer
+
+- type: department
+  id: AnarchyFederation
+  name: department-anarchy
+  description: department-anarchy-description
+  color: "#681c23"
+  roles:
+  - SyndAnarchykeeper
+  - SyndAnarchykeeperMedic
+  - SyndAnarchykeeperEngineer
+  - SyndAnarchykeeperCargoTechnician
+  - SyndAnarchykeeperOfficer
