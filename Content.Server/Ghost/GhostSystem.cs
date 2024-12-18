@@ -579,7 +579,7 @@ namespace Content.Server.Ghost
             if (ghost == null)
                 return false;
 
-            EntityManager.SystemOrNull<_VXS.Ghost.GhostReJoinSystem>()?.AttachGhost(ghost, mind.Session);
+            EntityManager.SystemOrNull<_VXS.Ghost.GhostReJoinSystem>()?.AttachGhost(ghost, mind.Session)
 
             return true;
         }
