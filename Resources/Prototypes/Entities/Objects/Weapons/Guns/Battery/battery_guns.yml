@@ -269,7 +269,7 @@
 
 - type: entity
   name: pulse carbine
-  parent: [BaseWeaponBattery, BaseGunWieldable]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband]
   id: WeaponPulseCarbine
   description: Time-tested laser rifle utilizing bluespace technology. Easy to maintain and use. # VXS
   components:
@@ -382,7 +382,7 @@
 
 - type: entity
   name: x-ray cannon
-  parent: [BaseWeaponBattery, BaseGunWieldable]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponXrayCannon
   description: An experimental weapon that uses concentrated x-ray energy against its target.
   components:
@@ -649,7 +649,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/chimp.rsi
   - type: Gun
-    projectileSpeed: 4
+    projectileSpeed: 10
     fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/emitter.ogg
@@ -722,7 +722,7 @@
 
 - type: entity
   name: energy shotgun
-  parent: [BaseWeaponBattery, BaseGunWieldable]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseGrandTheftContraband]
   id: WeaponEnergyShotgun
   description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
   components:
@@ -747,10 +747,10 @@
     fireModes:
     - proto: BulletLaserSpread
       fireCost: 150
-    - proto: BulletLaserHeavySpread
-      fireCost: 150
+    - proto: BulletLaserSpreadNarrow
+      fireCost: 200
     - proto: BulletDisablerSmgSpread
-      fireCost: 150
+      fireCost: 120
   - type: Item
     size: Large
     shape:
@@ -764,8 +764,10 @@
     stealGroup: WeaponEnergyShotgun
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Battery
-    maxCharge: 1050
-    startingCharge: 1050
+    maxCharge: 1200
+    startingCharge: 1200
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 25 #takes 42 seconds to fully recharge, the answer to life, the universe and everything
+    autoRechargeRate: 24
+    autoRechargePause: true
+    autoRechargePauseTime: 10
