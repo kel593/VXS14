@@ -18,7 +18,6 @@ public sealed partial class GhostReJoinSelect : DefaultWindow
     public GhostReJoinSelect()
     {
         RobustXamlLoader.Load(this);
-        UseRandomCharacter.OnPressed += UseRandomCharacterClick;
         UseSelectedCharacter.OnPressed += UseSelectedCharacterClick;
 
         StationSelect.OnItemSelected += StationSelectOnOnItemSelected;
