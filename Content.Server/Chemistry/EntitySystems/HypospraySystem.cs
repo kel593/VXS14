@@ -1,7 +1,6 @@
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
-using Content.Shared.Chemistry.Hypospray.Events;
 using Content.Shared.Chemistry;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
@@ -119,55 +118,19 @@ public sealed class HypospraySystem : SharedHypospraySystem
 
         string? msgFormat = null;
 
-        // Self event
-        var selfEvent = new SelfBeforeHyposprayInjectsEvent(user, entity.Owner, target);
-        RaiseLocalEvent(user, selfEvent);
-
-        if (selfEvent.Cancelled)
-        {
-            _popup.PopupEntity(Loc.GetString(selfEvent.InjectMessageOverride ?? "hypospray-cant-inject", ("owner", Identity.Entity(target, EntityManager))), target, user);
-            return false;
-        }
-
-        target = selfEvent.TargetGettingInjected;
-
-        if (!EligibleEntity(target, EntityManager, component))
-            return false;
-
-        // Target event
-        var targetEvent = new TargetBeforeHyposprayInjectsEvent(user, entity.Owner, target);
-        RaiseLocalEvent(target, targetEvent);
-
-        if (targetEvent.Cancelled)
-        {
-            _popup.PopupEntity(Loc.GetString(targetEvent.InjectMessageOverride ?? "hypospray-cant-inject", ("owner", Identity.Entity(target, EntityManager))), target, user);
-            return false;
-        }
-
-        target = targetEvent.TargetGettingInjected;
-
-        if (!EligibleEntity(target, EntityManager, component))
-            return false;
-
-        // The target event gets priority for the overriden message.
-        if (targetEvent.InjectMessageOverride != null)
-            msgFormat = targetEvent.InjectMessageOverride;
-        else if (selfEvent.InjectMessageOverride != null)
-            msgFormat = selfEvent.InjectMessageOverride;
-        else if (target == user)
+        if (target == user)
             msgFormat = "hypospray-component-inject-self-message";
-
-        if (!_solutionContainers.TryGetSolution(uid, component.SolutionName, out var hypoSpraySoln, out var hypoSpraySolution) || hypoSpraySolution.Volume == 0)
+        else if (EligibleEntity(user, EntityManager, component) && _interaction.TryRollClumsy(user, component.ClumsyFailChance))
         {
-            _popup.PopupEntity(Loc.GetString("hypospray-component-empty-message"), target, user);
-            return true;
+            msgFormat = "hypospray-component-inject-self-clumsy-message";
+            target = user;
         }
 
-        if (!_solutionContainers.TryGetInjectableSolution(target, out var targetSoln, out var targetSolution))
-        {
-            _popup.PopupEntity(Loc.GetString("hypospray-cant-inject", ("target", Identity.Entity(target, EntityManager))), target, user);
-            return false;
-        }
+        if (!InjectionFailureCheck(entity, target, user, out var hypoSpraySoln, out var targetSoln, out var targetSolution, out var returnValue)
+            || hypoSpraySoln == null
+            || targetSoln == null
+            || targetSolution == null)
+            return returnValue;
 
         _popup.PopupEntity(Loc.GetString(msgFormat ?? "hypospray-component-inject-other-message", ("other", target)), target, user);
 

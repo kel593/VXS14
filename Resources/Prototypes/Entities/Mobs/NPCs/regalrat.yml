@@ -121,7 +121,6 @@
   - type: Grammar
     attributes:
       gender: male
-  - type: Sharp
 
 - type: entity
   id: MobRatKingBuff

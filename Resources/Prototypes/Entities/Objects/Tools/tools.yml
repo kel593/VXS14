@@ -520,6 +520,3 @@
   - type: Tag
     tags:
     - RollingPin
-  - type: Construction
-    graph: WoodenRollingPin
-    node: rollingpin

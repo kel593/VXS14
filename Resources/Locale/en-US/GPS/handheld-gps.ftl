@@ -1,6 +1,1 @@
-handheld-gps-coordinates-title =
-    Coords:
-    {$coordinates}
-    Sector:
-    {$mapId}
-
+handheld-gps-coordinates-title = Coords: {$coordinates} Sector: {$mapId}

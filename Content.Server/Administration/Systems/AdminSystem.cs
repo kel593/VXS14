@@ -98,7 +98,6 @@ public sealed class AdminSystem : EntitySystem
         SubscribeLocalEvent<RoleAddedEvent>(OnRoleEvent);
         SubscribeLocalEvent<RoleRemovedEvent>(OnRoleEvent);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
-        SubscribeLocalEvent<ActorComponent, EntityRenamedEvent>(OnPlayerRenamed);
     }
 
     private void OnRoundRestartCleanup(RoundRestartCleanupEvent ev)
@@ -123,11 +122,6 @@ public sealed class AdminSystem : EntitySystem
         {
             RaiseNetworkEvent(updateEv, admin.Channel);
         }
-    }
-
-    private void OnPlayerRenamed(Entity<ActorComponent> ent, ref EntityRenamedEvent args)
-    {
-        UpdatePlayerList(ent.Comp.PlayerSession);
     }
 
     public void UpdatePlayerList(ICommonSession player)
@@ -337,15 +331,10 @@ public sealed class AdminSystem : EntitySystem
 
     private void UpdatePanicBunker()
     {
-        var hasAdmins = false;
-        foreach (var admin in _adminManager.AllAdmins)
-        {
-            if (_adminManager.HasAdminFlag(admin, AdminFlags.Admin, includeDeAdmin: PanicBunker.CountDeadminnedAdmins))
-            {
-                hasAdmins = true;
-                break;
-            }
-        }
+        var admins = PanicBunker.CountDeadminnedAdmins
+            ? _adminManager.AllAdmins
+            : _adminManager.ActiveAdmins;
+        var hasAdmins = admins.Any();
 
         // TODO Fix order dependent Cvars
         // Please for the sake of my sanity don't make cvars & order dependent.

@@ -7,7 +7,7 @@
     issuer: objective-issuer-syndicate
   - type: RoleRequirement
     roles:
-      mindRoles:
+      components:
       - TraitorRole
 
 - type: entity
@@ -195,6 +195,7 @@
 ## hos
 
 - type: entity
+  noSpawn: true
   parent: BaseTraitorStealObjective
   id: EnergyShotgunStealObjective
   components:

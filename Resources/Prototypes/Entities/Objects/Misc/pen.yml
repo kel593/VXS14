@@ -59,7 +59,6 @@
 - type: entity
   id: BaseAdvancedPen
   parent: PenEmbeddable
-  abstract: true
   components:
   - type: Tag
     tags:
@@ -93,7 +92,7 @@
 
 - type: entity
   name: CentComm pen
-  parent: [BaseAdvancedPen, BaseCentcommContraband]
+  parent: [BaseAdvancedPen, BaseCommandContraband]
   id: PenCentcom
   description: In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
   components:

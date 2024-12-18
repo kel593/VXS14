@@ -10,7 +10,7 @@
     castShadows: true
     color: "#FFE1A9"
   - type: Sprite
-    drawdepth: BelowMobs
+    drawdepth: Effects
     layers:
     - shader: unshaded
       map: ["enum.EffectLayers.Unshaded"]
@@ -1067,7 +1067,7 @@
 - type: entity
   name: wide laser barrage
   id: BulletLaserSpread
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BulletLaser
   components:
   - type: ProjectileSpread
@@ -1088,19 +1088,19 @@
 
 - type: entity
   name: narrow laser barrage
-  id: BulletLaserSpreadNarrow
-  categories: [ HideSpawnMenu ]
+  id: BulletLaserHeavySpread
+  noSpawn: true
   parent: BulletLaser
   components:
   - type: ProjectileSpread
-    proto: BulletLaser
-    count: 4 #52 heat damage if you hit all your shots, but narrower spread
+    proto: BulletLaserHeavy
+    count: 4 #60 heat damage if you hit all your shots, but narrower spread
     spread: 10
 
 - type: entity
   name: disabling laser barrage
   id: BulletDisablerSmgSpread
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BulletDisablerSmg
   components:
   - type: ProjectileSpread

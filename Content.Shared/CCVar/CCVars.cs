@@ -1,18 +1,11 @@
+using Content.Shared.Maps;
+using Content.Shared.Roles;
 using Robust.Shared;
 using Robust.Shared.Configuration;
+using Robust.Shared.Physics.Components;
 
-namespace Content.Shared.CCVar;
-
-/// <summary>
-/// Contains all the CVars used by content.
-/// </summary>
-/// <remarks>
-/// NOTICE FOR FORKS: Put your own CVars in a separate file with a different [CVarDefs] attribute. RT will automatically pick up on it.
-/// </remarks>
-[CVarDefs]
-public sealed partial class CCVars : CVars
+namespace Content.Shared.CCVar
 {
-<<<<<<< HEAD
     // ReSharper disable once InconsistentNaming
     [CVarDefs]
     public sealed class CCVars : CVars
@@ -2209,19 +2202,4 @@ public sealed partial class CCVars : CVars
         public static readonly CVarDef<bool> DebugPow3rDisableParallel =
             CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
     }
-=======
-    // Only debug stuff lives here.
-
-    /// <summary>
-    /// A simple toggle to test <c>OptionsVisualizerComponent</c>.
-    /// </summary>
-    public static readonly CVarDef<bool> DebugOptionVisualizerTest =
-        CVarDef.Create("debug.option_visualizer_test", false, CVar.CLIENTONLY);
-
-    /// <summary>
-    /// Set to true to disable parallel processing in the pow3r solver.
-    /// </summary>
-    public static readonly CVarDef<bool> DebugPow3rDisableParallel =
-        CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
->>>>>>> 337ef6c5aa2e2dd807ef485034244da04ecacd85
 }
