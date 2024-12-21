@@ -107,7 +107,20 @@ public sealed class HungerSystem : EntitySystem
             component.Thresholds[HungerThreshold.Dead],
             component.Thresholds[HungerThreshold.Overfed]);
         UpdateCurrentThreshold(uid, component);
-        Dirty(uid, component);
+    }
+
+    /// <summary>
+    /// Sets <see cref="HungerComponent.LastAuthoritativeHungerValue"/> and
+    /// <see cref="HungerComponent.LastAuthoritativeHungerChangeTime"/>, and dirties this entity. This "resets" the
+    /// starting point for <see cref="GetHunger"/>'s calculation.
+    /// </summary>
+    /// <param name="entity">The entity whose hunger will be set.</param>
+    /// <param name="value">The value to set the entity's hunger to.</param>
+    private void SetAuthoritativeHungerValue(Entity<HungerComponent> entity, float value)
+    {
+        entity.Comp.LastAuthoritativeHungerChangeTime = _timing.CurTime;
+        entity.Comp.LastAuthoritativeHungerValue = ClampHungerWithinThresholds(entity.Comp, value);
+        DirtyField(entity.Owner, entity.Comp, nameof(HungerComponent.LastAuthoritativeHungerChangeTime));
     }
 
     private void UpdateCurrentThreshold(EntityUid uid, HungerComponent? component = null)
@@ -118,6 +131,7 @@ public sealed class HungerSystem : EntitySystem
         var calculatedHungerThreshold = GetHungerThreshold(component);
         if (calculatedHungerThreshold == component.CurrentThreshold)
             return;
+
         component.CurrentThreshold = calculatedHungerThreshold;
         DoHungerThresholdEffects(uid, component);
         Dirty(uid, component);

@@ -331,7 +331,8 @@
   - type: Item
     size: Small
   - type: Sprite
-    state: plushie_lizard_mirrored
+    state: plushie_lizard
+    scale: -1, 1
 
 - type: entity
   parent: BasePlushie
@@ -375,6 +376,58 @@
           Quantity: 10
         - ReagentId: JuiceThatMakesYouWeh
           Quantity: 10
+
+- type: entity
+  parent: PlushieLizard
+  id: PlushieLizardInversed #Hew!
+  name: drazil plushie
+  description: An adorable stuffed toy that resembles a lizardperson from an inversed dimension. Hew!
+  components:
+  - type: Sprite
+    state: plushie_lizard_inversed
+  - type: Item
+    heldPrefix: plushielizardinversed
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/hew.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/hew.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/hew.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Items/Toys/hew.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Items/Toys/hew.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Items/Toys/hew.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceThatMakesYouHew
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: JuiceThatMakesYouHew
+          Quantity: 10
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Fun/toys.rsi
+    equippedPrefix: lizard-inversed
+    slots:
+    - HEAD
+
 
 - type: entity
   parent: BasePlushie
@@ -1546,3 +1599,52 @@
       params:
         volume: -9
         maxDistance: 3
+
+- type: entity
+  parent: BasePlushie
+  id: RubberChicken
+  name: rubber chicken
+  description: A stress inducing parody of nature's most delectable avian.
+  components:
+  - type: Sprite
+    state: rubber_chicken
+  - type: EmitSoundOnUse
+    sound:
+      collection: RubberChicken
+      params:
+        variation: 0.125
+  - type: EmitSoundOnLand
+    sound:
+      collection: RubberChicken
+      params:
+        variation: 0.125
+  - type: EmitSoundOnActivate
+    sound:
+      collection: RubberChicken
+      params:
+        variation: 0.125
+  - type: EmitSoundOnCollide
+    sound:
+      collection: RubberChicken
+      params:
+        variation: 0.125
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: RubberChicken
+      params:
+        variation: 0.125
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      collection: RubberChicken
+      params:
+        variation: 0.125
+  - type: MeleeWeapon
+    wideAnimationRotation: 110
+    soundHit:
+      collection: RubberChicken
+      params:
+        variation: 0.125
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 25

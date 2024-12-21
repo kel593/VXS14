@@ -122,7 +122,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 7
+        maxVol: 13
         reagents:
         - ReagentId: Nutriment
           Quantity: 3
@@ -615,7 +615,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 18
+        maxVol: 20
         reagents:
         - ReagentId: Vitamin
           Quantity: 4
@@ -849,7 +849,7 @@
         name: food-sequence-content-tomato
       skewer:
         name: food-sequence-content-tomato
-        sprite: 
+        sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-tomato
 
@@ -960,7 +960,7 @@
         name: food-sequence-content-tomato
       skewer:
         name: food-sequence-content-tomato
-        sprite: 
+        sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-tomato
 
@@ -1166,7 +1166,7 @@
         name: food-sequence-content-corn
       skewer:
         name: food-sequence-content-corn
-        sprite: 
+        sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-corn
 
@@ -1311,7 +1311,7 @@
         name: food-sequence-content-mushroom
       skewer:
         name: food-sequence-content-mushroom
-        sprite: 
+        sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-mushroom
 
@@ -1477,7 +1477,7 @@
         name: food-sequence-content-chili
       skewer:
         name: food-sequence-content-chili
-        sprite: 
+        sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-pepper
 
@@ -1517,7 +1517,7 @@
         name: food-sequence-content-chilly
       skewer:
         name: food-sequence-content-chilly
-        sprite: 
+        sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-bluepepper
 
@@ -1672,7 +1672,7 @@
         name: food-sequence-content-mushroom
       skewer:
         name: food-sequence-content-mushroom
-        sprite: 
+        sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-mushroom
 
@@ -1913,7 +1913,7 @@
         name: food-sequence-content-mushroom
       skewer:
         name: food-sequence-content-mushroom
-        sprite: 
+        sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-mushroom
 
@@ -2645,3 +2645,39 @@
     seedId: cherry
   - type: SpaceGarbage
   - type: BadFood
+
+- type: entity
+  name: anomaly berry
+  description: A strange blue fruit. Something about it doesn't seem right.
+  parent: FoodProduceBase
+  id: FoodAnomalyBerry
+  components:
+  - type: FlavorProfile
+    flavors:
+      - strange
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/anomaly_berry.rsi
+    state: produce
+  - type: Produce
+    seedId: anomalyBerry
+  - type: Food
+    trash:
+    - EffectAnomalyFloraBulb # Random loot
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 2
+        - ReagentId: Artifexium
+          Quantity: 1
+  - type: Tag
+    tags:
+    - Fruit
+  - type: FoodSequenceElement
+    entries:
+      Taco: AnomalyBerry
+      Burger: AnomalyBerryBurger
