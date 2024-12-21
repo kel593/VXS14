@@ -354,3 +354,26 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FireBomb
+    maxIntensity: 45
+    intensitySlope: 1
+    totalIntensity: 300
+    maxTileBreak: 1
+  - type: SmokeOnTrigger
+    duration: 4
+    spreadAmount: 6
+  - type: FlashOnTrigger
+    range: 2
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]

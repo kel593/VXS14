@@ -1,0 +1,48 @@
+# - type: accessLevel
+#   id: VXCSynd
+#   name: vxs-id-card-access-level-
+
+# - type: accessLevel
+#   id: VXCSyndMedic
+#   name: vxs-id-card-access-level-
+
+# - type: accessLevel
+#   id:  VXSSyndEngineer
+#   name: vxs-id-card-access-level-
+
+# - type: accessLevel
+#   id:  VXSSyndArtillerist
+#   name: vxs-id-card-access-level-
+
+# - type: accessLevel
+#   id:  VXSSyndCargo
+#   name: vxs-id-card-access-level-
+
+# - type: accessLevel
+#   id:  VXSSyndCargo
+#   name: vxs-id-card-access-level-
+
+# - type: accessLevel
+#   id:  VXSSyndCargo
+#   name: vxs-id-card-access-level-
+
+# - type: accessLevel
+#   id:  VXSSyndCargo
+#   name: vxs-id-card-access-level-
+
+
+
+# Synd_Artillerist
+# Synd_Officer
+
+# Synd_DroneOperator
+# Synd_Grenadier
+
+
+# NT_Infantryman
+# NT_Medic
+# NT_Engineer
+# NT_Artillerist
+# NT_Officer
+# NT_CargoTechnician
+# NT_DroneOperator

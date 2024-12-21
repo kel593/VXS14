@@ -1,2 +1,29 @@
 - type: playTimeTracker
   id: JobPeacekeeperTracker
+
+- type: playTimeTracker
+  id: JobAnarchykeeperTracker
+
+- type: playTimeTracker
+  id: JobPeacekeeperMedicTracker
+
+- type: playTimeTracker
+  id: JobAnarchykeeperMedicTracker
+
+- type: playTimeTracker
+  id: JobPeacekeeperEngineerTracker
+
+- type: playTimeTracker
+  id: JobAnarchykeeperEngineerTracker
+
+- type: playTimeTracker
+  id: JobPeacekeeperCargoTechnicianTracker
+
+- type: playTimeTracker
+  id: JobAnarchykeeperCargoTechnicianTracker
+
+- type: playTimeTracker
+  id: JobPeacekeeperOfficerTracker
+
+- type: playTimeTracker
+  id: JobAnarchykeeperOfficerTracker

@@ -150,6 +150,8 @@ entities:
           version: 6
     - type: SpreaderGrid
     - type: GridPathfinding
+    - type: BecomesStation
+      id: Ixodtibet
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg

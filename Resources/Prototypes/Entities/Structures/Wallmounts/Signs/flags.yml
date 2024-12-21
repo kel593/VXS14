@@ -54,3 +54,12 @@
   components:
   - type: Sprite
     state: pirate_flag
+
+- type: entity
+  parent: BaseFlag
+  id: ReichFlag
+  name: Reich flag
+  description: Wir müssen die Existenz unseres Volkes und eine Zukunft für weiße Kinder sichern, denn die Schönheit der weißen arischen Frau darf nicht von der Erde verschwinden!
+  components:
+  - type: Sprite
+    state: Reich_flag

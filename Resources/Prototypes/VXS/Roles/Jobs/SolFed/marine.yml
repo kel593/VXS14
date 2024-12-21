@@ -4,17 +4,148 @@
   description: job-description-peacekeeper
   playTimeTracker: JobPeacekeeperTracker
   requirements:
-  startingGear: PeacekeeperGear
-  icon: "JobIconPeacekeeper"
+  startingGear: SolfedPeacekeeperGear
+  icon: "JobIconNTSolider"
   supervisors: job-supervisors-peacekeeper
+  access:
+  - Maintenance
+  - Security
+  extendedAccess:
+  - Command
+  - Medical
+  - Engineering
+  - Cargo
+
+- type: job
+  id: SolfedPeacekeeperMedic
+  name: job-name-peacekeeper-medic
+  description: job-description-peacekeeper-medic
+  playTimeTracker: JobPeacekeeperMedicTracker
+  requirements:
+  startingGear: SolfedPeacekeeperMedicGear
+  icon: "JobIconNTParamed"
+  supervisors: job-supervisors-peacekeeper
+  access:
+  - Maintenance
+  - Medical
+  - Security
+  extendedAccess:
+  - Command
+  - Engineering
+  - Cargo
+
+- type: job
+  id: SolfedPeacekeeperEngineer
+  name: job-name-peacekeeper-engineer
+  description: job-description-peacekeeper-engineer
+  playTimeTracker: JobPeacekeeperEngineerTracker
+  requirements:
+  startingGear: SolfedPeacekeeperEngineerGear
+  icon: "JobIconNTEngineer"
+  supervisors: job-supervisors-peacekeeper
+  access:
+  - Maintenance
+  - Engineering
+  - Security
+  extendedAccess:
+  - Command
+  - Medical
+  - Cargo
+
+- type: job
+  id: SolfedPeacekeeperCargoTechnician
+  name: job-name-peacekeeper-cargotechnician
+  description: job-description-peacekeeper-cargotechnician
+  playTimeTracker: JobPeacekeeperCargoTechnicianTracker
+  requirements:
+  startingGear: SolfedPeacekeeperCargoTechnicianGear
+  icon: "JobIconNTLogistics"
+  supervisors: job-supervisors-peacekeeper
+  access:
+  - Cargo
+  - Maintenance
+  - Security
+  extendedAccess:
+  - Medical
+  - Engineering
+  - Command
+
+- type: job
+  id: SolfedPeacekeeperOfficer
+  name: job-name-peacekeeper-officer
+  description: job-description-peacekeeper-officer
+  playTimeTracker: JobPeacekeeperOfficerTracker
+  requirements:
+  startingGear: SolfedPeacekeeperOfficerGear
+  icon: "JobIconSolFed"
+  supervisors: job-supervisors-peacekeeper-officer
   access:
   - Command
   - Maintenance
-  extendedAccess:
+  - Medical
+  - Engineering
+  - Cargo
   - Security
 
+###########################################
 - type: startingGear
-  id: PeacekeeperGear
+  id: SolfedPeacekeeperGear
   equipment:
-    ears: ClothingHeadsetMedical
+    jumpsuit: ClothingUniformJumpsuitSolar
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesCombatInsulated
+    id: ERTSecurityPDA
+    ears: ClothingHeadsetAltFAST
+    head: ClothingHeadHatSolar
+
+- type: startingGear
+  id: SolfedPeacekeeperMedicGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSolar
+    back: ClothingBackpackERTMedical
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesLatex
+    id: ERTMedicPDA
+    ears: ClothingHeadsetAltFAST
     belt: ClothingBeltMedicalFilled
+    head: ClothingHeadHatBeretCmo
+    mask: ClothingMaskSterile
+
+- type: startingGear
+  id: SolfedPeacekeeperEngineerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSolarGray
+    back: ClothingBackpackERTEngineer
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorYellow
+    id: ERTEngineerPDA
+    ears: ClothingHeadsetAltFAST
+    belt: ClothingBeltChiefEngineerFilled
+    head: ClothingHeadHatHardhatBlue
+    outerClothing: ClothingOuterVestHazard
+
+- type: startingGear
+  id: SolfedPeacekeeperCargoTechnicianGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSolar
+    back: ClothingBackpackERTChaplain
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesFingerless
+    id: ERTChaplainPDA
+    ears: ClothingHeadsetAltFAST
+    head: ClothingHeadHatSolarGrayFlipped
+
+- type: startingGear
+  id: SolfedPeacekeeperOfficerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSolarGold
+    back: ClothingBackpackERTLeader
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesCombatInsulated
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltFAST
+    head: ClothingHeadHatCaptain
+    outerClothing: ClothingOuterWinterCap
+
+

@@ -43,3 +43,66 @@
         whitelist:
           tags:
             - CartridgeRifle
+
+- type: entity
+  name: AK74-U
+  parent: WeaponRifleAk
+  id: WeaponRifleAKSU
+  description: An iconic weapon of war. Uses 7.62x39 ammo.
+  components:
+  - type: Sprite
+    sprite: VXS/Weapons/Rifles/aksu.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: VXS/Weapons/Rifles/aksu.rsi
+  - type: Item
+    sprite: VXS/Weapons/Rifles/aksu.rsi
+    size: NormalLarge
+  - type: GunWieldBonus
+    minAngle: -23
+    maxAngle: 0
+    angleIncrease: -2
+  - type: Gun
+    angleDecay: 25
+    angleIncrease: 6
+    cameraRecoilScalar: 5
+    minAngle: 24
+    maxAngle: 45
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/VXS/Gunshots/Rifle/rifle1.ogg
+  - type: ChamberMagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifle
+        insertSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert2.ogg
+        ejectSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleMagout2.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifle
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Wieldable
+  - type: UseDelay
+    delay: 0.5

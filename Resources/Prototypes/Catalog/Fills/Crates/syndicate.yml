@@ -30,3 +30,22 @@
   components:
     - type: SurplusBundle
       totalPrice: 125
+
+- type: entity
+  id: CrateSyndicateFastKit
+  parent: CrateSyndicate
+  name: Syndicate fast kit
+  description: This box contains everything a regular fighter needs.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponLMGRPK
+        amount: 1
+      - id: MagazineLMGRPK
+        amount: 4
+      - id: ClothingOuterVestWeb
+        amount: 1
+      - id: ClothingBeltMilitaryWebbing
+        amount: 1
+      - id: BoxMRE
+        amount: 1

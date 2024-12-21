@@ -33,6 +33,31 @@
     - trigger:
         !type:DamageTrigger
         damage: 120
+  - type: StaticPrice
+    price: 20
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    maxIntensity: 17
+    intensitySlope: 800
+    totalIntensity: 150
+    maxTileBreak: 1
+  - type: SmokeOnTrigger
+    duration: 2
+    spreadAmount: 3
+  - type: FlashOnTrigger
+    range: 4
+  - type: ClusterGrenade
+    fillPrototype: PelletFugasStruya
+    maxGrenadesCount: 1
+    grenadeType: enum.GrenadeType.Shoot
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior
