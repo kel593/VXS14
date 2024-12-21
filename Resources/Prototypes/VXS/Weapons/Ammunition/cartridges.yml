@@ -117,9 +117,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 3
-    intensitySlope: 1
-    totalIntensity: 100
+    maxIntensity: 40
+    intensitySlope: 2
+    totalIntensity: 200
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
