@@ -767,6 +767,7 @@
       - state: grenade
   - type: FlashOnTrigger
     range: 8 # VXS
+    duration: 2
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
   - type: ActiveTimerTrigger
