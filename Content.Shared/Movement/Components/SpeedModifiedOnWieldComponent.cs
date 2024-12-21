@@ -5,7 +5,7 @@ namespace Content.Shared.Movement.Components;
 /// <summary>
 /// Modifies the speed when an entity with this component is wielded.
 /// </summary>
-[RegisterComponent, Access(typeof(WieldableSystem))]
+[RegisterComponent, Access(typeof(SharedWieldableSystem))]
 public sealed partial class SpeedModifiedOnWieldComponent : Component
 {
     /// <summary>

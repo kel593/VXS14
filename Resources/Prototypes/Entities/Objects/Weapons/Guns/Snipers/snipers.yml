@@ -93,6 +93,10 @@
   - type: SpeedModifiedOnWield
     walkModifier: 0.25
     sprintModifier: 0.25
+  - type: EyeCursorOffset
+    maxOffset: 8
+    offsetSpeed: 0.3
+    pvsIncrease: 0.8
   - type: CursorOffsetRequiresWield
 
 - type: entity
