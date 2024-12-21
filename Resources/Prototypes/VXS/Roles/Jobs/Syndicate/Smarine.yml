@@ -1,0 +1,78 @@
+- type: job
+  id: SyndAnarchykeeper # Оперативник
+  name: job-name-anarchykeeper
+  description: job-description-anarchy
+  playTimeTracker: JobAnarchykeeperTracker
+  requirements:
+  startingGear: AnarchykeeperGear
+  icon: "JobIconSyndieMarksman"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - SyndicateAgent
+  - Maintenance
+  extendedAccess:
+  - NuclearOperative
+
+- type: job
+  id: SyndAnarchykeeperMedic # Санитар
+  name: job-name-anarchykeeper-medic
+  description: job-description-anarchykeeper-medic
+  playTimeTracker: JobAnarchykeeperMedicTracker
+  requirements:
+  startingGear: AnarchykeeperMedicGear
+  icon: "JobIconSyndieMedic"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - SyndicateAgent
+  - Maintenance
+  - Medical
+  extendedAccess:
+  - NuclearOperative
+
+- type: job
+  id: SyndAnarchykeeperEngineer # Инженер
+  name: job-name-anarchykeeper-engineer
+  description: job-description-anarchykeeper-engineer
+  playTimeTracker: JobAnarchykeeperEngineerTracker
+  requirements:
+  startingGear: AnarchykeeperEngineerGear
+  icon: "JobIconSyndieEngineer"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - SyndicateAgent
+  - Maintenance
+  - Engineering
+  extendedAccess:
+  - NuclearOperative
+
+- type: job
+  id: SyndAnarchykeeperCargoTechnician # Логист
+  name: job-name-anarchykeeper-cargotechnician
+  description: job-description-anarchykeeper-cargotechnician
+  playTimeTracker: JobAnarchykeeperCargoTechnicianTracker
+  requirements:
+  startingGear: AnarchykeeperCargoTechnicianGear
+  icon: "JobIconSyndieScientist"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - SyndicateAgent
+  - Maintenance
+  - Engineering
+  - Cargo
+  - NuclearOperative
+
+- type: job
+  id: SyndAnarchykeeperOfficer # Офицер
+  name: job-name-anarchykeeper-officer
+  description: job-description-anarchykeeper-officer
+  playTimeTracker: JobAnarchykeeperOfficerTracker
+  requirements:
+  startingGear: AnarchykeeperOfficerGear
+  icon: "JobIconMasterAtArms"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - SyndicateAgent
+  - NuclearOperative
+  - Cargo
+  - Engineering
+  - Medical

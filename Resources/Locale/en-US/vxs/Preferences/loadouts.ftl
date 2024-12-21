@@ -1,0 +1,10 @@
+loadout-group-syndie-uniform = Одежда
+loadout-group-syndie-hats = Головной убор
+loadout-group-syndie-armor = Бронезащита
+loadout-group-syndie-shoes = Обувь
+loadout-group-syndie-backs = Рюкзаки
+loadout-group-syndie-masks = Маски
+loadout-group-syndie-eyes = Очки
+loadout-group-syndie-belts = Пояса
+loadout-group-syndie-gloves = Перчатки
+loadout-group-syndie-utilities = Утилитарка

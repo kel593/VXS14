@@ -1,0 +1,408 @@
+- type: roleLoadout
+  id: JobSyndAnarchykeeper # Оперативник
+  groups:
+  - GroupSyndieUniform # Униформы оперов
+  - GroupSyndieHats # Шляпки оперов
+  - GroupSyndieArmor # Броня оперов
+  - GroupSyndieShoes # Обувь оперов
+  - GroupSyndieBacks # Рюкзаки оперов
+  - GroupSyndieMasks # Масочки оперов
+  - GroupSyndieEyes # Очки оперов
+  - GroupSyndieBelt # Пояс оперов
+  - GroupSyndieGloves # Перчатки оперов
+  - GroupSyndieUtilities # Утилитарка оперов
+
+- type: loadoutGroup
+  id: GroupSyndieUniform # Униформы оперов
+  name: loadout-group-syndie-uniform
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieUniformMale # М
+  - LoadoutSyndieUniformFemale # Ж
+  - LoadoutSyndieUniformLawyerBlack # Деловой костюм
+  - LoadoutSyndieUniformHawaiBlack # Гавайка черная
+  - LoadoutSyndieUniformHawaiRed # Гавайка красная
+
+- type: loadout
+  id: LoadoutSyndieUniformMale # М
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+
+- type: loadout
+  id: LoadoutSyndieUniformFemale # Ж
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtOperative
+
+- type: loadout
+  id: LoadoutSyndieUniformHawaiBlack # Гавайка черная
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHawaiBlack
+
+- type: loadout
+  id: LoadoutSyndieUniformHawaiRed # Гавайка красная
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHawaiRed
+
+- type: loadout
+  id: LoadoutSyndieUniformLawyerBlack # Деловой костюм
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieHats # Шляпки оперов
+  name: loadout-group-syndie-hats
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieHatsHelmet # Мерк
+  - LoadoutSyndieHatsHelmetFAST # СВАТ
+  - LoadoutSyndieHatsCap # Кепарь
+
+- type: loadout
+  id: LoadoutSyndieHatsHelmet # Мерк
+  equipment:
+    head: ClothingHeadHelmetMerc
+
+- type: loadout
+  id: LoadoutSyndieHatsHelmetFAST # СВАТ
+  equipment:
+    head: ClothingHeadHelmetSwatSyndicate
+
+- type: loadout
+  id: LoadoutSyndieHatsCap # Кепарь
+  equipment:
+    head: ClothingHeadHatSyndie
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieArmor # Броня оперов
+  name: loadout-group-syndie-armor
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieArmorBallistic # Тяжелая
+  - LoadoutSyndieArmorBasic # Лёгкая
+
+- type: loadout
+  id: LoadoutSyndieArmorBasic # Лёгкая
+  equipment:
+    outerClothing: ClothingOuterArmorBasic
+
+- type: loadout
+  id: LoadoutSyndieArmorBallistic # Тяжелая
+  equipment:
+    outerClothing: ClothingOuterVestWeb
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieShoes # Обувь оперов
+  name: loadout-group-syndie-shoes
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieShoesWinterSyndie # Зима Синди
+  - LoadoutSyndieShoesWinter # Зима
+  - LoadoutSyndieShoesLaceup # Туфли
+  - LoadoutSyndieShoesCombat # Боевые
+  - LoadoutSyndieShoesBootsJack # Подковки
+
+- type: loadout
+  id: LoadoutSyndieShoesWinterSyndie # Зима Синди
+  equipment:
+    shoes: ClothingShoesBootsWinterSyndicate
+
+- type: loadout
+  id: LoadoutSyndieShoesWinter # Зима
+  equipment:
+    shoes: ClothingShoesBootsWinter
+
+- type: loadout
+  id: LoadoutSyndieShoesLaceup # Туфли
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+- type: loadout
+  id: LoadoutSyndieShoesCombat # Боевые
+  equipment:
+    shoes: ClothingShoesBootsCombat
+
+- type: loadout
+  id: LoadoutSyndieShoesBootsJack # Подковки
+  equipment:
+    shoes: ClothingShoesBootsJack
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieBacks # Рюкзаки оперов
+  name: loadout-group-syndie-backs
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieBackDuffelSyndie # Дюфель
+  - LoadoutSyndieBackLeatherbag # Кожанка
+  - LoadoutSyndieBackBackpackSyndicate # Рюкзак синди
+  - LoadoutSyndieBackBackpack # Рюкзак
+
+- type: loadout
+  id: LoadoutSyndieBackDuffelSyndie # Дюфель
+  equipment:
+    back: ClothingBackpackDuffelSyndicate
+
+- type: loadout
+  id: LoadoutSyndieBackLeatherbag # Кожанка
+  equipment:
+    back: ClothingBackpackSatchelLeather
+
+- type: loadout
+  id: LoadoutSyndieBackBackpackSyndicate # Рюкзак синди
+  equipment:
+    back: ClothingBackpackSyndicate
+
+- type: loadout
+  id: LoadoutSyndieBackBackpack # Рюкзак
+  equipment:
+    back: ClothingBackpack
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieMasks # Масочки оперов
+  name: loadout-group-syndie-masks
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieMaskBandBlack # Бандана
+  - LoadoutSyndieMaskGas # Газики
+  - LoadoutSyndieMaskNeckGaiter # Бафф
+  - LoadoutSyndieMaskSterile # Хохлид-19
+  - LoadoutSyndieMaskGasSyndicate # Газики синди
+  - LoadoutSyndieMaskBreath # Маска
+
+- type: loadout
+  id: LoadoutSyndieMaskBandBlack # Бандана
+  equipment:
+    mask: ClothingMaskBandBlack
+
+- type: loadout
+  id: LoadoutSyndieMaskGas # Газики
+  equipment:
+    mask: ClothingMaskGas
+
+- type: loadout
+  id: LoadoutSyndieMaskNeckGaiter # Бафф
+  equipment:
+    mask: ClothingMaskNeckGaiter
+
+- type: loadout
+  id: LoadoutSyndieMaskSterile # Хохлид-19
+  equipment:
+    mask: ClothingMaskSterile
+
+- type: loadout
+  id: LoadoutSyndieMaskGasSyndicate # Газики синди
+  equipment:
+    mask: ClothingMaskGasSyndicate
+
+- type: loadout
+  id: LoadoutSyndieMaskBreath # Маска
+  equipment:
+    mask: ClothingMaskBreath
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieEyes # Очки оперов
+  name: loadout-group-syndie-eyes
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieEyesGlasses # Солнечные
+  - LoadoutSyndieEyesMeson # Мезонки
+  - LoadoutSyndieEyesChem # Химические
+
+- type: loadout
+  id: LoadoutSyndieEyesGlasses # Солнечные
+  equipment:
+    eyes: ClothingEyesGlassesSunglasses
+
+- type: loadout
+  id: LoadoutSyndieEyesMeson # Мезонки
+  equipment:
+    eyes: ClothingEyesGlassesMeson
+
+- type: loadout
+  id: LoadoutSyndieEyesChem # Химические
+  equipment:
+    eyes: ClothingEyesGlassesChemical
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieBelt # Пояса оперов
+  name: loadout-group-syndie-belts
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieBeltMilitaryWebbing # Обычная
+  - LoadoutSyndieBeltMilitaryWebbingMed # Медицинский
+  - LoadoutSyndieBeltMedicalEMT # Медицинский Штурмовой
+  - LoadoutSyndieBeltUtilityEngineering # Инженерный
+  - LoadoutSyndieBeltBandolier # Дробовики
+  - LoadoutSyndieBeltAssault # Штурмовой
+
+- type: loadout
+  id: LoadoutSyndieBeltMilitaryWebbing # Обычная
+  equipment:
+    belt: ClothingBeltMilitaryWebbing
+
+- type: loadout
+  id: LoadoutSyndieBeltMilitaryWebbingMed # Медицинский
+  equipment:
+    belt: ClothingBeltMilitaryWebbingMed
+
+- type: loadout
+  id: LoadoutSyndieBeltMedicalEMT # Медицинский Штурмовой
+  equipment:
+    belt: ClothingBeltMedicalEMT
+
+- type: loadout
+  id: LoadoutSyndieBeltUtilityEngineering # Инженерный
+  equipment:
+    belt: ClothingBeltUtilityEngineering
+
+- type: loadout
+  id: LoadoutSyndieBeltBandolier # Дробовики
+  equipment:
+    belt: ClothingBeltBandolier
+
+- type: loadout
+  id: LoadoutSyndieBeltAssault # Штурмовой
+  equipment:
+    belt: ClothingBeltAssault
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieGloves # Перчатки оперов
+  name: loadout-group-syndie-gloves
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieGlovesFingerless # Безпалые
+  - LoadoutSyndieGlovesBlack # Черные
+  - LoadoutSyndieGlovesCombat # Боевые
+  - LoadoutSyndieGlovesLatex # Латексные
+  - LoadoutSyndieGlovesInsuls # Изольки
+
+- type: loadout
+  id: LoadoutSyndieGlovesFingerless # Безпалые
+  equipment:
+    gloves: ClothingHandsGlovesFingerless
+
+- type: loadout
+  id: LoadoutSyndieGlovesBlack # Черные
+  equipment:
+    gloves: ClothingHandsGlovesColorBlack
+
+- type: loadout
+  id: LoadoutSyndieGlovesCombat # Боевые
+  equipment:
+    gloves: ClothingHandsGlovesCombat
+
+- type: loadout
+  id: LoadoutSyndieGlovesLatex # Латексные
+  equipment:
+    gloves: ClothingHandsGlovesLatex
+
+- type: loadout
+  id: LoadoutSyndieGlovesInsuls # Изольки
+  equipment:
+    gloves: ClothingHandsGlovesColorYellow
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieUtilities # Утилитарка оперов
+  name: loadout-group-syndie-utilities
+  minLimit: 0
+  maxLimit: 2
+  hidden: false
+  loadouts:
+  - LoadoutSyndieAssaultAxe # Штурмовой топор
+  - LoadoutSyndieCombatKnife # Штурмовой нож
+  - LoadoutSyndieSmokeGrenade # Дымовая граната
+  - LoadoutSyndieFlashbangGrenade # Светошумовая граната
+
+- type: loadout
+  id: LoadoutSyndieAssaultAxe # Штурмовой топор
+  equipment:
+    back: AssaultAxe
+
+- type: loadout
+  id: LoadoutSyndieCombatKnife # Боевой нож
+  equipment:
+    back: CombatKnife
+
+- type: loadout
+  id: LoadoutSyndieSmokeGrenade # Дымовая граната
+  equipment:
+    back: SmokeGrenade
+
+- type: loadout
+  id: LoadoutSyndieFlashbangGrenade # Светошумовая граната
+  equipment:
+    back: GrenadeFlashBang
+
+
+
+
+
+
+
+
+
+
+- type: startingGear
+  id: AnarchykeeperGear
+  equipment:
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+
+- type: startingGear
+  id: AnarchykeeperMedicGear
+  equipment:
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+
+- type: startingGear
+  id: AnarchykeeperEngineerGear
+  equipment:
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+
+- type: startingGear
+  id: AnarchykeeperCargoTechnicianGear
+  equipment:
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+
+- type: startingGear
+  id: AnarchykeeperOfficerGear
+  equipment:
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
