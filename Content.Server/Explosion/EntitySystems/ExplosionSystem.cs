@@ -63,7 +63,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
     /// </summary>
     public const ushort DefaultTileSize = 1;
 
-    public const int MaxExplosionAudioRange = 55;
+    public const int MaxExplosionAudioRange = 120;
 
     /// <summary>
     ///     The "default" explosion prototype.
@@ -353,7 +353,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
         var visualEnt = CreateExplosionVisualEntity(pos, queued.Proto.ID, spaceMatrix, spaceData, gridData.Values, iterationIntensity);
 
         // camera shake
-        CameraShake(iterationIntensity.Count * 6f, pos, queued.TotalIntensity);
+        CameraShake(iterationIntensity.Count * 8f, pos, queued.TotalIntensity);
 
         //For whatever bloody reason, sound system requires ENTITY coordinates.
         var mapEntityCoords = EntityCoordinates.FromMap(_mapManager.GetMapEntityId(pos.MapId), pos, _transformSystem, EntityManager);
@@ -363,7 +363,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
         // + if the bomb is big enough, people outside of it too
         // this is capped to 30 because otherwise really huge bombs
         // will attempt to play regular audio for people who can't hear it anyway because the epicenter is so far away
-        var audioRange = Math.Min(iterationIntensity.Count * 2, MaxExplosionAudioRange);
+        var audioRange = Math.Min(iterationIntensity.Count * 6, MaxExplosionAudioRange);
         var filter = Filter.Pvs(pos).AddInRange(pos, audioRange);
         var sound = iterationIntensity.Count < queued.Proto.SmallSoundIterationThreshold
             ? queued.Proto.SmallSound
@@ -416,7 +416,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
                 delta = new(0.01f, 0);
 
             var distance = delta.Length();
-            var effect = 5 * MathF.Pow(totalIntensity, 0.5f) * (1 - distance / range);
+            var effect = 8 * MathF.Pow(totalIntensity, 0.5f) * (1 - distance / range);
             if (effect > 0.01f)
                 _recoilSystem.KickCamera(uid, -delta.Normalized() * effect);
         }

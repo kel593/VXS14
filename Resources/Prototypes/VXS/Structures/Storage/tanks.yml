@@ -35,7 +35,7 @@
         Heat: 10
   - type: PacifismDangerousAttack
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     totalIntensity: 150
     intensitySlope: 0.5
     maxIntensity: 100

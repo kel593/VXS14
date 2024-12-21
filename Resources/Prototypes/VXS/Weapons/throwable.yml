@@ -8,7 +8,7 @@
   components:
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 150
@@ -128,7 +128,7 @@
   components:
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 120

@@ -122,11 +122,26 @@
   id: FireBomb
   damagePerIntensity:
     types:
-      Heat: 10 # VXS
-      Blunt: 15 # VXS
-      Piercing: 4 # VXS
+      Heat: 1
+      Blunt: 2
+      Piercing: 3
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
+  fireStates: 6
+  fireStacks: 2
+
+- type: explosion # VXS
+  id: Thermobaric
+  damagePerIntensity:
+    types:
+      Heat: 10
+      Blunt: 15
+      Piercing: 4
+      Structural: 1
+  lightColor: Red
+  fireColor: Orange
+  texturePath: /Textures/Effects/fire.rsi
+  intensityPerState: 60
   fireStates: 6
   fireStacks: 2
 

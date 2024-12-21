@@ -27,7 +27,7 @@
     range: 3
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     maxIntensity: 35
     intensitySlope: 1
     totalIntensity: 100
@@ -71,7 +71,7 @@
     range: 3
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     maxIntensity: 35
     intensitySlope: 1
     totalIntensity: 100
