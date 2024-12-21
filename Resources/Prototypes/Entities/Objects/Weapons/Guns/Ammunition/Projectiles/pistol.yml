@@ -27,6 +27,9 @@
         Piercing: 20 # VXS
         Blunt: 6
         Asphyxiation: 3 # VXS
+        Heat: 3 # VXS
+  - type: StaminaDamageOnCollide # VXS
+    damage: 10
   - type: TimedDespawn # VXS
     lifetime: 10
 

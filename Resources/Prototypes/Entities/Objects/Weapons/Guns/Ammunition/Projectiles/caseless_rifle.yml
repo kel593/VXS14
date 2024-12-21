@@ -29,8 +29,9 @@
         Blunt: 14 # VXS
         Piercing: 13 # VXS
         Asphyxiation: 3 # VXS
+        Heat: 2 # VXS
   - type: StaminaDamageOnCollide # VXS
-    damage: 9
+    damage: 8
   - type: TimedDespawn # VXS
     lifetime: 10
   - type: Ammo # VXS

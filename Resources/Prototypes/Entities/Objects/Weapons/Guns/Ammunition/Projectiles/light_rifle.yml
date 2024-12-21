@@ -30,11 +30,12 @@
         Piercing: 36 # VXS
         Blunt: 12 # VXS
         Asphyxiation: 6 # VXS
+        Heat: 3 # VXS
     penetrationThreshold: 40 # VXS
     penetrationDamageTypeRequirement:
     - Piercing
   - type: StaminaDamageOnCollide # VXS
-    damage: 20
+    damage: 19
   - type: TimedDespawn # VXS
     lifetime: 15
 
