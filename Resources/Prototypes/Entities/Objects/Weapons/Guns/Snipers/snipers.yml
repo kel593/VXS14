@@ -93,6 +93,7 @@
   - type: SpeedModifiedOnWield
     walkModifier: 0.25
     sprintModifier: 0.25
+  - type: CursorOffsetRequiresWield
 
 - type: entity
   name: musket

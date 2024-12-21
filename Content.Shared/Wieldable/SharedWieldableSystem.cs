@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared.Camera;
 using Content.Shared.Examine;
 using Content.Shared.Hands;
 using Content.Shared.Hands.Components;
@@ -24,7 +25,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared.Wieldable;
 
-public sealed class WieldableSystem : EntitySystem
+public abstract class SharedWieldableSystem : EntitySystem
 {
     [Dependency] private readonly SharedVirtualItemSystem _virtualItemSystem = default!;
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
@@ -151,7 +152,7 @@ public sealed class WieldableSystem : EntitySystem
 
     private void OnExamine(EntityUid uid, GunWieldBonusComponent component, ref ExaminedEvent args)
     {
-        if (HasComp<GunRequiresWieldComponent>(uid)) 
+        if (HasComp<GunRequiresWieldComponent>(uid))
             return;
 
         if (component.WieldBonusExamineMessage != null)
