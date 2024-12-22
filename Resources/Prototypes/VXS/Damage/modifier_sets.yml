@@ -7,3 +7,16 @@
     Heat: 2.0
   flatReductions:
     Blunt: 5
+
+- type: damageModifierSet
+  id: MoodBarricades
+  coefficients:
+    Blunt: 1.5
+    Slash: 0.2
+    Piercing: 0.2
+    Heat: 0.4
+  flatReductions:
+    Blunt: 10
+    Slash: 20
+    Piercing: 20
+    Heat: 20

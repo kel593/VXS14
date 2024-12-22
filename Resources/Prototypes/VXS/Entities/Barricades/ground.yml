@@ -1,0 +1,72 @@
+- type: entity
+  id: BarricadeDirectionalGroundFull # Полный земляной накат, пули не проходят
+  name: full ground barricade
+  parent: BaseBarricade
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: VXS/Structures/barricades.rsi
+    state: barricade_full
+    noRot: false
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.39,0.49,-0.36"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Appearance
+  - type: Climbable
+  - type: Damageable
+    damageModifierSet: MoodBarricades
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: BarricadeDirectionalGroundHalf # Неполный накат, пули проходят
+  name: half ground barricade
+  parent: BaseBarricade
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: VXS/Structures/barricades.rsi
+    state: barricade_half
+    noRot: false
+    drawdepth: Mobs
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.39,0.49,-0.36"
+        mask:
+        - Impassable
+        layer:
+        - MidImpassable
+  - type: Appearance
+  - type: Climbable
+  - type: Damageable
+    damageModifierSet: MoodBarricades
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

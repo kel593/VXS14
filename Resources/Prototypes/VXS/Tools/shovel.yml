@@ -1,0 +1,37 @@
+- type: entity
+  name: MPL-70M
+  parent: BaseItem
+  id: ShovelInfantry
+  description: A legendary tool of warfare.
+  components:
+  - type: Sprite
+    sprite: VXS/Objects/Tools/shovel.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 25
+    damage:
+      types:
+        Blunt: 10
+        Slash: 15
+    soundHit:
+      collection: MetalThud
+  - type: Item
+    size: Normal
+    sprite: VXS/Objects/Tools/shovel.rsi
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 50
+  - type: StaticPrice
+    price: 40
+  - type: Shovel
+  - type: RCD
+    availablePrototypes:
+    - RCDCadeFull
+    - RCDCadeHalf
+  - type: UserInterface
+    interfaces:
+      enum.RcdUiKey.Key:
+        type: RCDMenuBoundUserInterface
+  - type: ActivatableUI
+    inHandsOnly: true
+    key: enum.RcdUiKey.Key

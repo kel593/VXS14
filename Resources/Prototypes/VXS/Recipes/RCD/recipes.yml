@@ -9,3 +9,27 @@
   collisionMask: FullTileMask
   rotation: Fixed
   fx: EffectRCDConstruct2
+
+- type: rcd
+  id: RCDCadeFull
+  category: WallsAndFlooring
+  sprite: /Textures/Interface/Radial/RCD/fullcade.png
+  mode: ConstructObject
+  prototype: BarricadeDirectionalGroundFull
+  cost: 0
+  delay: 8
+  collisionMask: FullTileMask
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: rcd
+  id: RCDCadeHalf
+  category: WallsAndFlooring
+  sprite: /Textures/Interface/Radial/RCD/halfcade.png
+  mode: ConstructObject
+  prototype: BarricadeDirectionalGroundHalf
+  cost: 0
+  delay: 8
+  collisionMask: FullTileMask
+  rotation: User
+  fx: EffectRCDConstruct2
