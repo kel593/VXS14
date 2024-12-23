@@ -1,0 +1,149 @@
+- type: job
+  id: SyndAnarchykeeper
+  name: job-name-anarchykeeper
+  description: job-description-anarchy
+  playTimeTracker: JobAnarchykeeperTracker
+  requirements:
+  startingGear: AnarchykeeperGear
+  icon: "JobIconSyndieMarksman"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - Maintenance
+  - Security
+  extendedAccess:
+  - Command
+  - Medical
+  - Engineering
+  - Cargo
+
+- type: job
+  id: SyndAnarchykeeperMedic
+  name: job-name-anarchykeeper-medic
+  description: job-description-anarchykeeper-medic
+  playTimeTracker: JobAnarchykeeperMedicTracker
+  requirements:
+  startingGear: AnarchykeeperMedicGear
+  icon: "JobIconSyndieMedic"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - Maintenance
+  - Medical
+  - Security
+  extendedAccess:
+  - Command
+  - Engineering
+  - Cargo
+
+- type: job
+  id: SyndAnarchykeeperEngineer
+  name: job-name-anarchykeeper-engineer
+  description: job-description-anarchykeeper-engineer
+  playTimeTracker: JobAnarchykeeperEngineerTracker
+  requirements:
+  startingGear: AnarchykeeperEngineerGear
+  icon: "JobIconSyndieEngineer"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - Maintenance
+  - Engineering
+  - Security
+  extendedAccess:
+  - Command
+  - Medical
+  - Cargo
+
+- type: job
+  id: SyndAnarchykeeperCargoTechnician
+  name: job-name-anarchykeeper-cargotechnician
+  description: job-description-anarchykeeper-cargotechnician
+  playTimeTracker: JobAnarchykeeperCargoTechnicianTracker
+  requirements:
+  startingGear: AnarchykeeperCargoTechnicianGear
+  icon: "JobIconSyndieScientist"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - Cargo
+  - Maintenance
+  - Security
+  extendedAccess:
+  - Medical
+  - Engineering
+  - Command
+
+- type: job
+  id: SyndAnarchykeeperOfficer
+  name: job-name-anarchykeeper-officer
+  description: job-description-anarchykeeper-officer
+  playTimeTracker: JobAnarchykeeperOfficerTracker
+  requirements:
+  startingGear: AnarchykeeperOfficerGear
+  icon: "JobIconMasterAtArms"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - Command
+  - Maintenance
+  - Medical
+  - Engineering
+  - Cargo
+  - Security
+
+#####################################
+- type: startingGear
+  id: AnarchykeeperGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsWinterSyndicate
+    gloves: ClothingHandsGlovesColorBlack
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    head: ClothingHeadHatTacticalMaidHeadband
+
+- type: startingGear
+  id: AnarchykeeperMedicGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsWinterSyndicate
+    gloves: ClothingHandsGlovesLatex
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    belt: ClothingBeltMedicalFilled
+    head: ClothingHeadHatBeretFrench
+    mask: ClothingMaskSterile
+
+- type: startingGear
+  id: AnarchykeeperEngineerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsWinterSyndicate
+    gloves: ClothingHandsGlovesColorYellow
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    belt: ClothingBeltChiefEngineerFilled
+    head: ClothingHeadHatHardhatRed
+    outerClothing: ClothingOuterVestHazard
+
+- type: startingGear
+  id: AnarchykeeperCargoTechnicianGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsWinterSyndicate
+    gloves: ClothingHandsGlovesFingerless
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    head: ClothingHeadHatSyndie
+
+- type: startingGear
+  id: AnarchykeeperOfficerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsWinterSyndicate
+    gloves: ClothingHandsGlovesColorBlack
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    head: ClothingHeadHatSyndieMAA
+    outerClothing: ClothingOuterWinterSyndieCap
