@@ -211,6 +211,7 @@
     fireRate: 3 # VXS
   - type: BallisticAmmoProvider
     capacity: 2
+    autoCycle: true # VXS
   - type: Construction
     graph: ShotgunSawn
     node: shotgunsawn
@@ -225,6 +226,7 @@
   components:
   - type: BallisticAmmoProvider
     proto: null
+    autoCycle: true # VXS
   - type: Construction
     graph: ShotgunSawn
     node: shotgunsawn
