@@ -11,6 +11,7 @@
   - GroupSyndieBelt # Пояс оперов
   - GroupSyndieGloves # Перчатки оперов
   - GroupSyndieUtilities # Утилитарка оперов
+  - GroupSyndieSidearms # Вторичка оперов
 
 - type: loadoutGroup
   id: GroupSyndieUniform # Униформы оперов
@@ -347,6 +348,9 @@
   - LoadoutSyndieCombatKnife # Штурмовой нож
   - LoadoutSyndieSmokeGrenade # Дымовая граната
   - LoadoutSyndieFlashbangGrenade # Светошумовая граната
+  - LoadoutSyndieTourniquet # Турникет
+  - LoadoutSyndieShovelInfantry # Саперная лопатка
+  - LoadoutSyndieWaterBottle # Бутылка воды
 
 - type: loadout
   id: LoadoutSyndieAssaultAxe # Штурмовой топор
@@ -368,7 +372,106 @@
   equipment:
     back: GrenadeFlashBang
 
+- type: loadout
+  id: LoadoutSyndieTourniquet # Турникет
+  equipment:
+    back: Tourniquet
 
+- type: loadout
+  id: LoadoutSyndieShovelInfantry # Саперная лопатка
+  equipment:
+    back: ShovelInfantry
+
+- type: loadout
+  id: LoadoutSyndieWaterBottle # Бутылка воды
+  equipment:
+    back: DrinkWaterBottleFull
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieSidearms # Вторичка оперов
+  name: loadout-group-syndie-sidearms
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieSidearmPython # Питон
+  - LoadoutSyndieSidearmCobra # Кобра
+  - LoadoutSyndieSidearmViper # Гадюка
+
+- type: loadout
+  id: LoadoutSyndieSidearmViper # Гадюка
+  equipment:
+    pocket1: WeaponPistolViper
+
+- type: loadout
+  id: LoadoutSyndieSidearmCobra # Кобра
+  equipment:
+    pocket1: WeaponPistolCobra
+
+- type: loadout
+  id: LoadoutSyndieSidearmPython # Питон
+  equipment:
+    pocket1: WeaponRevolverPython
+
+
+
+
+
+
+
+
+- type: roleLoadout
+  id: JobSyndAnarchykeeperCargoTechnician # Логист
+  groups:
+  - GroupSyndieUniform # Униформы офицеров
+  - GroupSyndieHats # Шляпки оперов
+  - GroupSyndieArmorSecondlines # Броня оперов
+  - GroupSyndieShoes # Обувь оперов
+  - GroupSyndieBacks # Рюкзаки оперов
+  - GroupSyndieMasks # Масочки оперов
+  - GroupSyndieEyes # Очки оперов
+  - GroupSyndieBelt # Пояс оперов
+  - GroupSyndieGloves # Перчатки оперов
+  - GroupSyndieUtilities # Утилитарка оперов
+  - GroupSyndieSidearms # Вторичка оперов
+
+  - type: loadoutGroup
+  id: GroupSyndieUniformOfficer # Униформы офицеров
+  name: loadout-group-syndie-uniform
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieUniformMale # М
+  - LoadoutSyndieUniformFemale # Ж
+  - LoadoutSyndieUniformLawyerBlack # Деловой костюм
+  - LoadoutSyndieUniformHawaiBlack # Гавайка черная
+  - LoadoutSyndieUniformHawaiRed # Гавайка красная
+  - LoadoutSyndieUniformFormalMale # МО
+  - LoadoutSyndieUniformFormalFemale # ЖО
+
+- type: loadout
+  id: LoadoutSyndieUniformFormalMale # МО
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+
+- type: loadout
+  id: LoadoutSyndieUniformFormalFemale # ЖО
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSyndieFormal
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieArmorSecondlines # Броня вторых линий
+  name: loadout-group-syndie-armor
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieArmorBasic # Лёгкая
 
 
 
@@ -382,27 +485,18 @@
   equipment:
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
-
-- type: startingGear
-  id: AnarchykeeperMedicGear
-  equipment:
-    id: SyndiPDA
-    ears: ClothingHeadsetAltSyndicate
-
-- type: startingGear
-  id: AnarchykeeperEngineerGear
-  equipment:
-    id: SyndiPDA
-    ears: ClothingHeadsetAltSyndicate
+    neck: ClothingNeckArmbandRed
 
 - type: startingGear
   id: AnarchykeeperCargoTechnicianGear
   equipment:
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
+    neck: ClothingNeckArmbandRed
 
 - type: startingGear
   id: AnarchykeeperOfficerGear
   equipment:
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
+    neck: ClothingNeckArmbandRed

@@ -16,8 +16,6 @@
           availableJobs:
             SolfedPeacekeeper: [ -1, -1 ]
             SyndAnarchykeeper: [ -1, -1 ]
-            SyndAnarchykeeperMedic: [ 3, 3 ]
-            SyndAnarchykeeperEngineer: [ 3, 3 ]
             SyndAnarchykeeperCargoTechnician: [ 3, 3 ]
             SyndAnarchykeeperOfficer: [ 1, 1 ]
             SolfedPeacekeeperMedic: [ 3, 3 ]
@@ -43,8 +41,6 @@
           availableJobs:
             SolfedPeacekeeper: [ -1, -1 ]
             SyndAnarchykeeper: [ -1, -1 ]
-            SyndAnarchykeeperMedic: [ 3, 3 ]
-            SyndAnarchykeeperEngineer: [ 3, 3 ]
             SyndAnarchykeeperCargoTechnician: [ 3, 3 ]
             SyndAnarchykeeperOfficer: [ 1, 1 ]
             SolfedPeacekeeperMedic: [ 3, 3 ]
@@ -71,8 +67,6 @@
           availableJobs:
             SolfedPeacekeeper: [ -1, -1 ]
             SyndAnarchykeeper: [ -1, -1 ]
-            SyndAnarchykeeperMedic: [ 3, 3 ]
-            SyndAnarchykeeperEngineer: [ 3, 3 ]
             SyndAnarchykeeperCargoTechnician: [ 3, 3 ]
             SyndAnarchykeeperOfficer: [ 1, 1 ]
             SolfedPeacekeeperMedic: [ 3, 3 ]

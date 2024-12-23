@@ -34,32 +34,6 @@
       - state: CargoAnarchy
 
 - type: entity
-  id: VXSSpawnPointSyndAnarchykeeperEngineer
-  parent: VXSSpawnPointJobBase
-  suffix: Synd
-  name: Engineer
-  components:
-  - type: SpawnPoint
-    job_id: SyndAnarchykeeperEngineer
-  - type: Sprite
-    layers:
-      - state: green
-      - state: EngiAnarchy
-
-- type: entity
-  id: VXSSpawnPointSyndAnarchykeeperMedic
-  parent: VXSSpawnPointJobBase
-  suffix: Synd
-  name: Medic
-  components:
-  - type: SpawnPoint
-    job_id: SyndAnarchykeeperMedic
-  - type: Sprite
-    layers:
-      - state: green
-      - state: MedicAnarchy
-
-- type: entity
   id: VXSSpawnPointSyndAnarchykeeper
   parent: VXSSpawnPointJobBase
   suffix: Synd

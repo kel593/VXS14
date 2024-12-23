@@ -14,38 +14,6 @@
   - NuclearOperative
 
 - type: job
-  id: SyndAnarchykeeperMedic # Санитар
-  name: job-name-anarchykeeper-medic
-  description: job-description-anarchykeeper-medic
-  playTimeTracker: JobAnarchykeeperMedicTracker
-  requirements:
-  startingGear: AnarchykeeperMedicGear
-  icon: "JobIconSyndieMedic"
-  supervisors: job-supervisors-anarchykeeper
-  access:
-  - SyndicateAgent
-  - Maintenance
-  - Medical
-  extendedAccess:
-  - NuclearOperative
-
-- type: job
-  id: SyndAnarchykeeperEngineer # Инженер
-  name: job-name-anarchykeeper-engineer
-  description: job-description-anarchykeeper-engineer
-  playTimeTracker: JobAnarchykeeperEngineerTracker
-  requirements:
-  startingGear: AnarchykeeperEngineerGear
-  icon: "JobIconSyndieEngineer"
-  supervisors: job-supervisors-anarchykeeper
-  access:
-  - SyndicateAgent
-  - Maintenance
-  - Engineering
-  extendedAccess:
-  - NuclearOperative
-
-- type: job
   id: SyndAnarchykeeperCargoTechnician # Логист
   name: job-name-anarchykeeper-cargotechnician
   description: job-description-anarchykeeper-cargotechnician

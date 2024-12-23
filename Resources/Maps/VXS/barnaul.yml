@@ -83003,20 +83003,6 @@ entities:
     - type: Transform
       pos: -108.5,94.5
       parent: 1
-- proto: VXSSpawnPointSyndAnarchykeeperEngineer
-  entities:
-  - uid: 10386
-    components:
-    - type: Transform
-      pos: -109.5,94.5
-      parent: 1
-- proto: VXSSpawnPointSyndAnarchykeeperMedic
-  entities:
-  - uid: 10387
-    components:
-    - type: Transform
-      pos: -110.5,94.5
-      parent: 1
 - proto: VXSSpawnPointSyndAnarchykeeperOfficer
   entities:
   - uid: 10388

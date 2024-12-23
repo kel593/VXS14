@@ -8,3 +8,4 @@ loadout-group-syndie-eyes = Очки
 loadout-group-syndie-belts = Пояса
 loadout-group-syndie-gloves = Перчатки
 loadout-group-syndie-utilities = Утилитарка
+loadout-group-syndie-sidearms = Вторичка

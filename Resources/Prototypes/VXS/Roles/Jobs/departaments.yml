@@ -17,7 +17,5 @@
   color: "#681c23"
   roles:
   - SyndAnarchykeeper
-  - SyndAnarchykeeperMedic
-  - SyndAnarchykeeperEngineer
   - SyndAnarchykeeperCargoTechnician
   - SyndAnarchykeeperOfficer
