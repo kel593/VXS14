@@ -1,0 +1,22 @@
+- type: entity
+  parent: ClothingHeadsetAltCommand
+  id: ClothingHeadsetAltSOLFEDCMD
+  name: solfed military over-ear headset
+  suffix: CMD
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: ClothingHeadsetAltCommand
+  id: ClothingHeadsetAltSOLFED
+  name: solfed military over-ear headset
+  sufffix: Common
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
