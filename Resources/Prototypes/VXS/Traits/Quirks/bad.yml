@@ -18,9 +18,9 @@
   category: Disabilities
   components:
     - type: Paracusia
-      minTimeBetweenIncidents: 2
-      maxTimeBetweenIncidents: 600
-      maxSoundDistance: 6
+      minTimeBetweenIncidents: 1
+      maxTimeBetweenIncidents: 100
+      maxSoundDistance: 8
       sounds:
         collection: PTSD
 
