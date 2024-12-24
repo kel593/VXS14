@@ -1,0 +1,534 @@
+- type: roleLoadout
+  id: JobSolfedPeacekeeper # Миротворец
+  groups:
+  - GroupUniformSolfed # Униформы стандартные
+  - GroupSolfedHats # Шляпки миротворцев
+  - GroupSolfedArmor # Броня миротворцев
+  - GroupSolfedShoes # Обувь миротворцев
+  - GroupSolfedBacks # Рюкзаки миротворцев
+  - GroupSolfedMasks # Масочки миротворцев
+  - GroupSolfedGlasses # Очки миротворцев
+  - GroupSolfedBelt # Пояса миротворцев
+  - GroupSolfedGloves # Перчатки миротворцев
+  - GroupSolfedUtilities # Утилитарка миротворцев
+
+- type: loadoutGroup
+  id: GroupUniformSolfed # Униформы стандартные
+  name: loadout-group-syndie-uniform
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutUniformSolfedGray # Серый камуфляж
+  - LoadoutUniformSolfedBlue # Офиска
+
+- type: loadout
+  id: LoadoutUniformSolfedGray # Серый камуфляж
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSolarGray
+
+- type: loadout
+  id: LoadoutUniformSolfedBlue # Офиска
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlue
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedHats # Шляпки миротворцев
+  name: loadout-group-syndie-hats
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSolfedHatsHelmet # Шлем
+  - LoadoutSolfedHatsCap # Кепка
+
+- type: loadout
+  id: LoadoutSolfedHatsHelmet # Шлем
+  equipment:
+    head: ClothingHeadHelmetTactical
+
+- type: loadout
+  id: LoadoutSolfedHatsCap # Кепка
+  equipment:
+    head: ClothingHeadHatSolarGray
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedArmor # Броня миротворцев
+  name: loadout-group-syndie-armor
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSolfedArmorBulletproof # Штурмовая
+  - LoadoutSolfedArmorWinter # Зимняя
+
+- type: loadout
+  id: LoadoutSolfedArmorBulletproof # Штурмовая
+  equipment:
+    outerClothing: ClothingOuterArmorBulletproof
+
+- type: loadout
+  id: LoadoutSolfedArmorWinter # Зимняя
+  equipment:
+    outerClothing: ClothingOuterWinterHoS
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedShoes # Обувь миротворцев
+  name: loadout-group-syndie-shoes
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieShoesCombat # Боевые
+  - LoadoutSyndieShoesBootsJack # Подковки
+  - LoadoutSyndieShoesWinter # Зима
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedBacks # Рюкзаки миротворцев
+  name: loadout-group-syndie-backs
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSolFedBackDuffel # Дюфель
+  - LoadoutSolfedBackSatchel # Сумка
+  - LoadoutSyndieBackBackpack # Рюкзак
+
+- type: loadout
+  id: LoadoutSolFedBackDuffel # Дюфель
+  equipment:
+    back: ClothingBackpackDuffel
+
+- type: loadout
+  id: LoadoutSolfedBackSatchel # Сумка
+  equipment:
+    back: ClothingBackpackSatchel
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedMasks # Масочки миротворцев
+  name: loadout-group-syndie-masks
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieMaskBandBlack # Бандана
+  - LoadoutSyndieMaskGas # Газики
+  - LoadoutSyndieMaskNeckGaiter # Бафф
+  - LoadoutSyndieMaskSterile # Хохлид-19
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedGlasses # Очки миротворцев
+  name: loadout-group-syndie-eyes
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieEyesGlasses # Солнечные
+  - LoadoutSyndieEyesMeson # Мезонки
+  - LoadoutSyndieEyesLinses # Линзы
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedBelt # Пояса миротворцев
+  name: loadout-group-syndie-belts
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieBeltMilitaryWebbing # Обычная
+  - LoadoutSyndieBeltAssault # Штурмовой
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedGloves # Перчатки миротворцев
+  name: loadout-group-syndie-gloves
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieGlovesFingerless # Безпалые
+  - LoadoutSyndieGlovesBlack # Черные
+  - LoadoutSyndieGlovesCombat # Боевые
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedUtilities # Утилитарка миротворцев
+  name: loadout-group-syndie-utilities
+  minLimit: 0
+  maxLimit: 3
+  hidden: false
+  loadouts:
+  - LoadoutSyndieAssaultAxe # Штурмовой топор
+  - LoadoutSyndieCombatKnife # Штурмовой нож
+  - LoadoutSyndieSmokeGrenade # Дымовая граната
+  - LoadoutSyndieFlashbangGrenade # Светошумовая граната
+  - LoadoutSyndieTourniquet # Турникет
+  - LoadoutSyndieShovelInfantry # Саперная лопатка
+  - LoadoutSyndieWaterBottle # Бутылка воды
+
+
+
+
+
+
+- type: roleLoadout
+  id: JobSolfedPeacekeeperMedic # Санитар
+  groups:
+  - GroupUniformSolfedCorpsman # Униформы санитарные
+  - GroupSolfedHatsCorpsman # Шляпки санитарные
+  - GroupSolfedArmorMedic # Броня санитарная
+  - GroupSolfedShoes # Обувь миротворцев
+  - GroupSolfedBacks # Рюкзаки миротворцев
+  - GroupSolfedMasks # Масочки миротворцев
+  - GroupSolfedGlasses # Очки миротворцев
+  - GroupSolfedBeltCorpsman # Пояса санитара
+  - GroupSolfedGlovesCorpsman # Перчатки санитарные
+  - GroupSolfedUtilitiesCorpsman # Утилитарка санитарная
+
+- type: loadoutGroup
+  id: GroupUniformSolfedCorpsman # Униформы санитарные
+  name: loadout-group-syndie-uniform
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutUniformSolfedCity # Городской камуфляж
+  - LoadoutUniformSolfedCorpsman # Санитарка
+
+- type: loadout
+  id: LoadoutUniformSolfedCorpsman # Санитарка
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitParamedic
+
+- type: loadout
+  id: LoadoutUniformSolfedCity # Городской камуфляж
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSolar
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedHatsCorpsman # Шляпки санитарные
+  name: loadout-group-syndie-hats
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSolfedHatsHelmet # Шлем
+  - LoadoutSolfedHatsCapParamedic # Санитарка
+  - LoadoutSolfedHatsCapCity # Городской камуфляж
+
+- type: loadout
+  id: LoadoutSolfedHatsCapParamedic # Санитарка
+  equipment:
+    head: ClothingHeadHatParamedicsoft
+
+- type: loadout
+  id: LoadoutSolfedHatsCapCity # Городской камуфляж
+  equipment:
+    head: ClothingHeadHatSolar
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedArmorMedic # Броня санитарная
+  name: loadout-group-syndie-armor
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSolfedArmorBulletproofSlim # Штурмовая
+  - LoadoutSolfedWinterMedic # Зимняя
+
+- type: loadout
+  id: LoadoutSolfedArmorBulletproofSlim # Штурмовая
+  equipment:
+    outerClothing: ClothingOuterArmorBasicSlim
+
+- type: loadout
+  id: LoadoutSolfedWinterMedic # Зимняя
+  equipment:
+    outerClothing: ClothingOuterWinterPara
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedBeltCorpsman # Пояса санитара
+  name: loadout-group-syndie-belts
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieBeltMilitaryWebbing # Обычная
+  - LoadoutSyndieBeltMedicalEMT # Медицинский Штурмовой
+  - LoadoutSolfedBeltMedical # Медицинский
+
+- type: loadout
+  id: LoadoutSolfedBeltMedical # Медицинский
+  equipment:
+    belt: ClothingBeltMedical
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedGlovesCorpsman # Перчатки санитарные
+  name: loadout-group-syndie-gloves
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieGlovesFingerless # Безпалые
+  - LoadoutSyndieGlovesBlack # Черные
+  - LoadoutSyndieGlovesCombat # Боевые
+  - LoadoutSyndieGlovesLatex # Латексные
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedUtilitiesCorpsman # Утилитарка санитарная
+  name: loadout-group-syndie-utilities
+  minLimit: 0
+  maxLimit: 3
+  hidden: false
+  loadouts:
+  - LoadoutSyndieAssaultAxe # Штурмовой топор
+  - LoadoutSyndieSmokeGrenade # Дымовая граната
+  - LoadoutSyndieTourniquet # Турникет
+  - LoadoutSyndieWaterBottle # Бутылка воды
+  - LoadoutSolfedRollerbed # Каталка
+  - LoadoutSolfedExtinguisher # Огнетушитель
+  - LoadoutSolfedHealthAnalyzer # Анализатор здоровья
+
+- type: loadout
+  id: LoadoutSolfedRollerbed # Каталка
+  storage:
+    back:
+    - EmergencyRollerBedSpawnFolded
+
+- type: loadout
+  id: LoadoutSolfedExtinguisher # Огнетушитель
+  storage:
+    back:
+    - FireExtinguisherMini
+
+- type: loadout
+  id: LoadoutSolfedHealthAnalyzer # Анализатор здоровья
+  storage:
+    back:
+    - HandheldHealthAnalyzer
+
+
+
+
+
+
+
+- type: roleLoadout
+  id: JobSolfedPeacekeeperEngineer # Инженер
+  groups:
+  - GroupUniformSolfed # Униформы стандартные
+  - GroupSolfedHats # Шляпки миротворцев
+  - GroupSolfedArmor # Броня миротворцев
+  - GroupSolfedShoes # Обувь миротворцев
+  - GroupSolfedBacks # Рюкзаки миротворцев
+  - GroupSolfedMasks # Масочки миротворцев
+  - GroupSolfedGlasses # Очки миротворцев
+  - GroupSolfedBeltEngineer # Пояса инженеров
+  - GroupSolfedGlovesEngineer # Перчатки инженерные
+  - GroupSolfedUtilitiesEngineer # Утилитарка инженерная
+
+- type: loadoutGroup
+  id: GroupSolfedBeltEngineer # Пояса инженеров
+  name: loadout-group-syndie-belts
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieBeltMilitaryWebbing # Обычная
+  - LoadoutSyndieBeltUtilityEngineering # Инженерный
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedGlovesEngineer # Перчатки инженерные
+  name: loadout-group-syndie-gloves
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieGlovesFingerless # Безпалые
+  - LoadoutSyndieGlovesCombatInsulated # Боевые изоли
+
+- type: loadout
+  id: LoadoutSyndieGlovesCombatInsulated # Боевые изоли
+  equipment:
+    gloves: ClothingHandsGlovesCombatInsulated
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedUtilitiesEngineer # Утилитарка инженерная
+  name: loadout-group-syndie-utilities
+  minLimit: 0
+  maxLimit: 5
+  hidden: false
+  loadouts:
+  - LoadoutSyndieAssaultAxe # Штурмовой топор
+  - LoadoutSyndieSmokeGrenade # Дымовая граната
+  - LoadoutSyndieTourniquet # Турникет
+  - LoadoutSyndieWaterBottle # Бутылка воды
+  - LoadoutSolfedExtinguisher # Огнетушитель
+  - LoadoutSyndieShovelInfantry # Саперная лопатка
+  - LoadoutGrenadeM1EG # Вышибной заряд
+  - LoadoutLandmineFlatpackAIL2M # Мина АИЛ-2М
+
+- type: loadout
+  id: LoadoutGrenadeM1EG # Вышибной заряд
+  storage:
+    back:
+    - SmartGrenadeM1EG
+
+- type: loadout
+  id: LoadoutLandmineFlatpackAIL2M # Мина АИЛ-2М
+  storage:
+    back:
+    - FlatpackLandmineAIL
+
+
+
+
+
+
+- type: roleLoadout
+  id: JobSolfedPeacekeeperCargoTechnician # Офицер-логист
+  groups:
+  - GroupSolfedArmorLogist # Броня логиста
+  - GroupSolfedShoes # Обувь миротворцев
+  - GroupSolfedBacks # Рюкзаки миротворцев
+  - GroupSolfedMasks # Масочки миротворцев
+  - GroupSolfedGlasses # Очки миротворцев
+  - GroupSolfedBelt # Пояса миротворцев
+  - GroupSolfedGloves # Перчатки миротворцев
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedArmorLogist # Броня логиста
+  name: loadout-group-syndie-armor
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSolfedArmorBulletproofSlim # Штурмовая
+  - LoadoutSolfedArmorWinter # Зимняя
+
+
+
+
+
+- type: roleLoadout
+  id: JobSolfedPeacekeeperOfficer # Офицер
+  groups:
+  - GroupSolfedArmorLogist # Броня логиста
+  - GroupSolfedShoes # Обувь миротворцев
+  - GroupSolfedBacks # Рюкзаки миротворцев
+  - GroupSolfedMasks # Масочки миротворцев
+  - GroupSolfedGlasses # Очки миротворцев
+  - GroupSolfedBelt # Пояса миротворцев
+  - GroupSolfedGloves # Перчатки миротворцев
+  - GroupSolfedHatsOfficer # Шляпки офицерские
+
+- type: loadoutGroup
+  id: GroupSolfedHatsOfficer # Шляпки офицерские
+  name: loadout-group-syndie-hats
+  minLimit: 1
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSolfedHatsHelmet # Шлем
+  - LoadoutSolfedHatsCapBlue # Кепка
+
+- type: loadout
+  id: LoadoutSolfedHatsCapBlue # Кепка
+  equipment:
+    head: ClothingHeadHatSolar
+
+
+
+
+
+
+- type: startingGear
+  id: SolfedPeacekeeperGear
+  equipment:
+    ears: ClothingHeadsetAltSOLFED
+    id: ERTSecurityIDCard
+    neck: ClothingNeckArmbandBlue
+    pocket1: WeaponPistolMk58
+  storage:
+    back:
+    - BoxMRE
+
+- type: startingGear
+  id: SolfedPeacekeeperMedicGear
+  equipment:
+    ears: ClothingHeadsetAltSOLFED
+    id: ERTMedicIDCard
+    neck: ClothingNeckArmbandBlue
+  storage:
+    back:
+    - BoxMRE
+
+- type: startingGear
+  id: SolfedPeacekeeperEngineerGear
+  equipment:
+    ears: ClothingHeadsetAltSOLFED
+    id: ERTEngineerIDCard
+    neck: ClothingNeckArmbandBlue
+  storage:
+    back:
+    - BoxMRE
+
+- type: startingGear
+  id: SolfedPeacekeeperCargoTechnicianGear
+  equipment:
+    ears: ClothingHeadsetAltSOLFEDCMD
+    id: ERTChaplainIDCard
+    neck: ClothingNeckArmbandYellow
+    jumpsuit: ClothingUniformJumpsuitSolar
+    head: ClothingHeadHatSolar
+    pocket1: Tourniquet
+    pocket2: FlashlightSeclite
+  inhand:
+    - WeaponSubMachineGunWt550
+  storage:
+    back:
+    - BoxMRE
+
+- type: startingGear
+  id: SolfedPeacekeeperOfficerGear
+  equipment:
+    ears: ClothingHeadsetAltSOLFEDCMD
+    id: ERTLeaderIDCard
+    neck: ClothingNeckArmbandYellow
+    jumpsuit: ClothingUniformJumpsuitSolarGold
+  inhand:
+    - WeaponSubMachineGunWt550
+  storage:
+    back:
+    - BoxMRE
