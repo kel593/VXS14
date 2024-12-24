@@ -7,8 +7,6 @@
     - quit
     - hardquit
     - svbind
-    - bind
-    - exec # if they will spam i will delete this shit
     - cls
     - vram
     - monitor
@@ -25,8 +23,6 @@
     - gcf
     - gc
     - gc_mode
-    - cvar
-    - fuckrules # becoz they sucs
     - midipanic
     - replay_recording_start
     - replay_recording_stop
@@ -42,6 +38,10 @@
 
 - Flags: DEBUG
   Commands:
+    - fuckrules
+    - bind
+    - exec
+    - cvar
     - atvrange
     - atvmode
     - atvcbm
