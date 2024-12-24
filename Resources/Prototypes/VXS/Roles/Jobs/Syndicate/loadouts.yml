@@ -90,6 +90,8 @@
   loadouts:
   - LoadoutSyndieArmorBallistic # Тяжелая
   - LoadoutSyndieArmorBasic # Лёгкая
+  - LoadoutSyndieWinterCoat # Зима
+  - LoadoutSyndieSyndicateWinterCoat # Синди зима
 
 - type: loadout
   id: LoadoutSyndieArmorBasic # Лёгкая
@@ -100,6 +102,16 @@
   id: LoadoutSyndieArmorBallistic # Тяжелая
   equipment:
     outerClothing: ClothingOuterVestWeb
+
+- type: loadout
+  id: LoadoutSyndieWinterCoat # Зима
+  equipment:
+    outerClothing: ClothingOuterWinterCoat
+
+- type: loadout
+  id: LoadoutSyndieSyndicateWinterCoat # Синди зима
+  equipment:
+    outerClothing: ClothingOuterWinterSyndie
 
 
 
@@ -233,6 +245,7 @@
   - LoadoutSyndieEyesGlasses # Солнечные
   - LoadoutSyndieEyesMeson # Мезонки
   - LoadoutSyndieEyesChem # Химические
+  - LoadoutSyndieEyesLinses # Линзы
 
 - type: loadout
   id: LoadoutSyndieEyesGlasses # Солнечные
@@ -248,6 +261,11 @@
   id: LoadoutSyndieEyesChem # Химические
   equipment:
     eyes: ClothingEyesGlassesChemical
+
+- type: loadout
+  id: LoadoutSyndieEyesLinses # Линзы
+  equipment:
+    eyes: ClothingEyesGlasses
 
 
 
@@ -425,19 +443,19 @@
 - type: roleLoadout
   id: JobSyndAnarchykeeperCargoTechnician # Логист
   groups:
-  - GroupSyndieUniform # Униформы офицеров
+  - GroupSyndieUniformOfficer # Униформы офицеров
   - GroupSyndieHats # Шляпки оперов
-  - GroupSyndieArmorSecondlines # Броня оперов
+  - GroupSyndieArmorSecondlines # Броня вторых линий
   - GroupSyndieShoes # Обувь оперов
   - GroupSyndieBacks # Рюкзаки оперов
   - GroupSyndieMasks # Масочки оперов
   - GroupSyndieEyes # Очки оперов
-  - GroupSyndieBelt # Пояс оперов
-  - GroupSyndieGloves # Перчатки оперов
+  - GroupSyndieBeltSecondLines # Пояс оперов
+  - GroupSyndieGlovesSecondLines # Перчатки вторых линий
   - GroupSyndieUtilities # Утилитарка оперов
   - GroupSyndieSidearms # Вторичка оперов
 
-  - type: loadoutGroup
+- type: loadoutGroup
   id: GroupSyndieUniformOfficer # Униформы офицеров
   name: loadout-group-syndie-uniform
   minLimit: 1
@@ -460,7 +478,7 @@
 - type: loadout
   id: LoadoutSyndieUniformFormalFemale # ЖО
   equipment:
-    jumpsuit: ClothingUniformJumpskirtSyndieFormal
+    jumpsuit: ClothingUniformJumpskirtSyndieFormalDress
 
 
 
@@ -472,6 +490,110 @@
   hidden: false
   loadouts:
   - LoadoutSyndieArmorBasic # Лёгкая
+  - LoadoutSyndieWinterCoat # Зима
+  - LoadoutSyndieSyndicateWinterCoat # Синди зима
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieGlovesSecondLines # Перчатки вторых линий
+  name: loadout-group-syndie-gloves
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieGlovesFingerless # Безпалые
+  - LoadoutSyndieGlovesBlack # Черные
+  - LoadoutSyndieGlovesCombat # Боевые
+  - LoadoutSyndieGlovesInsuls # Изольки
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieBeltSecondLines # Пояса вторых линий
+  name: loadout-group-syndie-belts
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieBeltMilitaryWebbing # Обычная
+  - LoadoutSyndieBeltUtilityEngineering # Инженерный
+
+
+
+
+
+
+
+- type: roleLoadout
+  id: JobSyndAnarchykeeperOfficer # Офицер
+  groups:
+  - GroupSyndieUniformOfficer # Униформы офицеров
+  - GroupSyndieHatsOfficer # Шляпки офицерские
+  - GroupSyndieArmorOfficer # Броня офицера синди
+  - GroupSyndieShoes # Обувь оперов
+  - GroupSyndieBacks # Рюкзаки оперов
+  - GroupSyndieMasks # Масочки оперов
+  - GroupSyndieEyes # Очки оперов
+  - GroupSyndieBelt # Пояс оперов
+  - GroupSyndieGloves # Перчатки оперов
+  - GroupSyndieUtilities # Утилитарка оперов КСМ
+
+
+- type: loadoutGroup
+  id: GroupSyndieHatsOfficer # Шляпки офицерские
+  name: loadout-group-syndie-hats
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieHatsHelmet # Мерк
+  - LoadoutSyndieHatsHelmetFAST # СВАТ
+  - LoadoutSyndieHatsCap # Кепарь
+  - LoadoutSyndieHatsMAACap # Шляпка офицерская
+
+- type: loadout
+  id: LoadoutSyndieHatsMAACap # Шляпка офицерская
+  equipment:
+    head: ClothingHeadHatSyndieMAA
+
+
+
+- type: loadoutGroup
+  id: GroupSyndieArmorOfficer # Броня офицера синди
+  name: loadout-group-syndie-armor
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieArmorBallistic # Тяжелая
+  - LoadoutSyndieArmorBasic # Лёгкая
+  - LoadoutSyndieWinterCoat # Зима
+  - LoadoutSyndieSyndicateWinterCoat # Синди зима
+  - LoadoutSyndieCoatArmored # Н1
+  - LoadoutSyndieWinterCoatArmored # Н2
+  - LoadoutSyndieCoat # Н3
+  - LoadoutSyndieWinter # Н4
+
+- type: loadout
+  id: LoadoutSyndieCoatArmored # Н1
+  equipment:
+    outerClothing: ClothingOuterCoatSyndieCapArmored
+
+- type: loadout
+  id: LoadoutSyndieWinterCoatArmored # Н2
+  equipment:
+    outerClothing: ClothingOuterWinterSyndieCapArmored
+
+- type: loadout
+  id: LoadoutSyndieCoat # Н3
+  equipment:
+    outerClothing: ClothingOuterCoatSyndieCap
+
+- type: loadout
+  id: LoadoutSyndieWinter # Н4
+  equipment:
+    outerClothing: ClothingOuterWinterSyndieCap
 
 
 
@@ -488,7 +610,7 @@
     neck: ClothingNeckArmbandRed
 
 - type: startingGear
-  id: AnarchykeeperCargoTechnicianGear
+  id: SyndieCargotechGear
   equipment:
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
@@ -500,3 +622,4 @@
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
     neck: ClothingNeckArmbandRed
+    pocket1: WeaponSMGVereskHeath

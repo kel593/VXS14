@@ -19,7 +19,7 @@
   description: job-description-anarchykeeper-cargotechnician
   playTimeTracker: JobAnarchykeeperCargoTechnicianTracker
   requirements:
-  startingGear: AnarchykeeperCargoTechnicianGear
+  startingGear: SyndieCargotechGear
   icon: "JobIconSyndieScientist"
   supervisors: job-supervisors-anarchykeeper
   access:
