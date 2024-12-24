@@ -372,38 +372,45 @@
 
 - type: loadout
   id: LoadoutSyndieAssaultAxe # Штурмовой топор
-  equipment:
-    back: AssaultAxe
+  storage:
+    back:
+    - AssaultAxe
 
 - type: loadout
   id: LoadoutSyndieCombatKnife # Боевой нож
-  equipment:
-    back: CombatKnife
+  storage:
+    back:
+    - CombatKnife
 
 - type: loadout
   id: LoadoutSyndieSmokeGrenade # Дымовая граната
-  equipment:
-    back: SmokeGrenade
+  storage:
+    back:
+    - SmokeGrenade
 
 - type: loadout
   id: LoadoutSyndieFlashbangGrenade # Светошумовая граната
-  equipment:
-    back: GrenadeFlashBang
+  storage:
+    back:
+    - GrenadeFlashBang
 
 - type: loadout
   id: LoadoutSyndieTourniquet # Турникет
-  equipment:
-    back: Tourniquet
+  storage:
+    back:
+    - Tourniquet
 
 - type: loadout
   id: LoadoutSyndieShovelInfantry # Саперная лопатка
-  equipment:
-    back: ShovelInfantry
+  storage:
+    back:
+    - ShovelInfantry
 
 - type: loadout
   id: LoadoutSyndieWaterBottle # Бутылка воды
-  equipment:
-    back: DrinkWaterBottleFull
+  storage:
+    back:
+    - DrinkWaterBottleFull
 
 
 
@@ -537,7 +544,7 @@
   - GroupSyndieEyes # Очки оперов
   - GroupSyndieBelt # Пояс оперов
   - GroupSyndieGloves # Перчатки оперов
-  - GroupSyndieUtilities # Утилитарка оперов КСМ
+  - GroupSyndieUtilities # Утилитарка оперов
 
 
 - type: loadoutGroup
