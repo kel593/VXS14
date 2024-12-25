@@ -2,3 +2,6 @@
 	path = RobustToolbox
 	url = https://github.com/space-wizards/RobustToolbox.git
 	branch = master
+[submodule "SS14.Anticheat"]
+	path = SS14.Anticheat
+	url = https://github.com/SS14AC/SS14.Anticheat
