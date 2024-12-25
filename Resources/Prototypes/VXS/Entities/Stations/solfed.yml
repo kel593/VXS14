@@ -1,0 +1,14 @@
+- type: entity
+  id: SolfedPlanet
+  parent:
+    - BaseStation
+    - BaseStationNews
+    - BaseStationCargo
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+    - BaseStationCentcomm
+    - BaseStationAlertLevels
+    - BaseStationSiliconLawCrewsimov
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Transform

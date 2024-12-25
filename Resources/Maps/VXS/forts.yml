@@ -331,7 +331,7 @@ entities:
     - type: SpreaderGrid
     - type: GridPathfinding
     - type: BecomesStation
-      id: Ixodtibet
+      id: IxodTibet
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
