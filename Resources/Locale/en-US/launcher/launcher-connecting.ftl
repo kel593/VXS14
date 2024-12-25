@@ -1,6 +1,6 @@
 ### Connecting dialog when you start up the game
 
-connecting-title = Space Station 14
+connecting-title = VXStation 14
 connecting-exit = Exit
 connecting-retry = Retry
 connecting-reconnect = Reconnect
@@ -9,8 +9,8 @@ connecting-redial = Relaunch
 connecting-redial-wait = Please wait: { TOSTRING($time, "G3") }
 connecting-in-progress = Connecting to server
 connecting-disconnected = Disconnected from server:
-connecting-tip = 76% less X8X108
-connecting-window-tip = Tip { $numberTip }
+connecting-tip = 90 seconds till midnight!
+connecting-window-tip = There's some tips from officials.
 connecting-version = VXS4
 connecting-fail-reason = Failed to connect to server:
                          { $reason }
