@@ -26,6 +26,7 @@
   - type: Shovel
   - type: RCD
     availablePrototypes:
+    - RCDCadeAbsol
     - RCDCadeFull
     - RCDCadeHalf
   - type: UserInterface

@@ -70,3 +70,38 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+
+- type: entity
+  id: BarricadeDirectionalGroundAbsol # Земляной блок
+  name: absol ground barricade
+  parent: BaseBarricade
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: VXS/Structures/barricades.rsi
+    state: barricade_absol
+    noRot: false
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 100
+        mask:
+        - Impassable
+        layer:
+        - Opaque
+        - WallLayer
+  - type: Appearance
+  - type: Occluder
+  - type: Damageable
+    damageModifierSet: MoodBarricades
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 80
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
