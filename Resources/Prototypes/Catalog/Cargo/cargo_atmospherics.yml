@@ -1,22 +1,23 @@
-# - type: cargoProduct
-#   id: AtmosphericsAir
-#   icon:
-#     sprite: Structures/Storage/canister.rsi
-#     state: grey
-#   product: AirCanister
-#   cost: 1100
-#   category: cargoproduct-category-name-atmospherics
-#   group: market
-#
-# - type: cargoProduct
-#   id: AtmosphericsOxygen
-#   icon:
-#     sprite: Structures/Storage/canister.rsi
-#     state: blue
-#   product: OxygenCanister
-#   cost: 1100
-#   category: cargoproduct-category-name-atmospherics
-#   group: market
+- type: cargoProduct
+  id: AtmosphericsAir
+  icon:
+    sprite: Structures/Storage/canister.rsi
+    state: grey
+  product: AirCanister
+  cost: 1100
+  category: cargoproduct-category-name-atmospherics
+  group: market
+
+- type: cargoProduct
+  id: AtmosphericsOxygen
+  icon:
+    sprite: Structures/Storage/canister.rsi
+    state: blue
+  product: OxygenCanister
+  cost: 1100
+  category: cargoproduct-category-name-atmospherics
+  group: market
+
 #
 # - type: cargoProduct
 #   id: AtmosphericsLiquidOxygen
