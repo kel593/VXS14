@@ -1,0 +1,142 @@
+- type: entity
+  id: CrateArmoryLecter
+  parent: CrateWeaponSecure
+  name: lecter rifle crate
+  description: Contains one Lecter-type automatic assault rifle.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifleLecterUnloaded
+        amount: 1
+
+- type: entity
+  id: CrateArmoryLecterMagazines
+  parent: CrateWeaponSecure
+  name: lecter rifle magazines
+  description: Contains four 5.45x39mm empty magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleEmpty
+        amount: 4
+
+- type: entity
+  id: CrateArmoryRifleAmmoBox
+  parent: CrateWeaponSecure
+  name: SWT20S 5.45x39 ammo box x30ammo
+  description: Contains one 5.45x39 SWT20S rifle ammo box. 30 shells. Standart rounds.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBoxRifle
+        amount: 1
+
+- type: entity
+  id: CrateArmoryRifleAmmoBoxTrasser
+  parent: CrateWeaponSecure
+  name: SWT20T 5.45x39 ammo box x30ammo
+  description: Contains one 5.45x39 SWT20T rifle ammo box. 30 shells. Trasser rounds.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBoxRiflePractice
+        amount: 1
+
+- type: entity
+  id: CrateArmorySmartGrenadeM33SG
+  parent: CrateWeaponSecure
+  name: M33SG grenades crate
+  description: Contains four M33SG type smart-grenades. Relatively large smoke radius but shorter action time.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SmartGrenadeM33SG
+        amount: 4
+
+- type: entity
+  id: CrateArmorySmartGrenadeM26SG
+  parent: CrateWeaponSecure
+  name: M26SG grenades crate
+  description: Contains four M26SG type smart-grenades. Smaller, but more acrid and thicker smoke.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SmartGrenadeM26SG
+        amount: 4
+
+- type: entity
+  id: CrateArmorySmartGrenadeM88TG
+  parent: CrateWeaponSecure
+  name: M88TG grenades crate
+  description: Contains four M88TG type smart-grenades. Designed for assaulting or smoking out enemy infantry from engineering structures.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SmartGrenadeM88TG
+        amount: 4
+
+- type: entity
+  id: CrateArmorySmartGrenadeM1EG
+  parent: CrateWeaponSecure
+  name: M1EG grenades crate
+  description: Contains four M1EG type smart-grenades. Explosive projectile for wall destruction and demining.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SmartGrenadeM1EG
+        amount: 4
+
+- type: entity
+  id: CrateArmorySmartGrenadeM18FG
+  parent: CrateWeaponSecure
+  name: M18FG grenades crate
+  description: Contains four M18FG type smart-grenades. A cloud of light shrapnel that is usually hard to penetrate plywood.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SmartGrenadeM18FG
+        amount: 4
+
+- type: entity
+  id: CrateArmorySmartGrenadeM9GP
+  parent: CrateWeaponSecure
+  name: M9GP grenades crate
+  description: Contains four M9GP type smart-grenades. Some heavy shrapnel that can penetrate most of the side armor of armored vehicles.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SmartGrenadeM9GP
+        amount: 4
+
+- type: entity
+  id: CrateArmoryEncryptionKeysCommand
+  parent: CrateWeaponSecure
+  name: command radio encryption keys
+  description: Four command radio encryption keys.
+  components:
+  - type: StorageFill
+    contents:
+      - id: EncryptionKeyCommand
+        amount: 4
+
+- type: entity
+  id: CrateArmoryNightvisionKit
+  parent: CrateWeaponSecure
+  name: night vision goggles crate
+  description: Contains one night vision kit.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesNightvision
+        amount: 1
+
+- type: entity
+  id: CrateArmoryLandmineKit
+  parent: CrateWeaponSecure
+  name: AIL-2M landmines kit
+  description: Contains six AIL-2M type landmine flatpacks.
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlatpackLandmineAIL
+        amount: 6

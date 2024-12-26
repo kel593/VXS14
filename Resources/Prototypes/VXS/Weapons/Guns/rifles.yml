@@ -106,3 +106,55 @@
   - type: Wieldable
   - type: UseDelay
     delay: 0.5
+
+- type: entity
+  name: Lecter
+  suffix: Unloaded
+  parent: [BaseWeaponRifle, BaseRestrictedContraband]
+  id: WeaponRifleLecterUnloaded
+  description: A high end military grade assault rifle.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
+  - type: Gun
+    cameraRecoilScalar: 2
+    projectileSpeed: 45
+    soundGunshot:
+      path: /Audio/VXS/Gunshots/Rifle/rifle3.ogg
+      params:
+        maxDistance: 60
+        volume: 3
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleEmpty
+        insertSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert.ogg
+        ejectSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleMagout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
