@@ -121,7 +121,7 @@
 
 - type: entity
   name: M88TG thermobaric smart-grenade
-  description: Smart Grenade. Smaller, but more acrid and thicker smoke.
+  description: Smart Grenade. Designed for assaulting or smoking out enemy infantry from engineering structures.
   suffix: Thermobaric
   parent: BaseSmartGrenade
   id: SmartGrenadeM88TG
