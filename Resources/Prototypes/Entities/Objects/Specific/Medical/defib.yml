@@ -36,10 +36,10 @@
         path: /Audio/Items/Defib/defib_safety_on.ogg
       soundDeactivate:
         path: /Audio/Items/Defib/defib_safety_off.ogg
-    - type: Defibrillator
-      zapHeal:
-        types:
-          Asphyxiation: -40
+    # - type: Defibrillator VXS
+    #   zapHeal:
+    #     types:
+    #       Asphyxiation: -40
     - type: DoAfter
     - type: UseDelay
     - type: StaticPrice
