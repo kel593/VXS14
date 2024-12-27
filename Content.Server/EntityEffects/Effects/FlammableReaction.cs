@@ -1,10 +1,7 @@
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
-using Content.Server.Explosion.EntitySystems;
-using Content.Shared.Damage;
 using Content.Shared.Database;
 using Content.Shared.EntityEffects;
-using Content.Shared.SS220.Vehicle.Components;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 
@@ -29,19 +26,6 @@ namespace Content.Server.EntityEffects.Effects
 
         public override void Effect(EntityEffectBaseArgs args)
         {
-            // SS220 vehicles-go-boom-in-lava begin
-            if (args.EntityManager.HasComponent<VehicleComponent>(args.TargetEntity))
-            {
-                args.EntityManager.System<ExplosionSystem>().QueueExplosion(args.TargetEntity, "Default", 3, 25f, 10, canCreateVacuum: false); // Not deadly to rider but still painful
-                if (args.EntityManager.TryGetComponent<DamageableComponent>(args.TargetEntity, out var damageablecomp))
-                {
-                    var damageToVehicle = 600;
-                    args.EntityManager.System<DamageableSystem>().SetAllDamage(args.TargetEntity, damageablecomp, damageToVehicle); // Hardcoded number but its enough to destroy any vehicle rn
-                }
-                return;
-            }
-            // SS220 vehicles-go-boom-in-lava end
-
             if (!args.EntityManager.TryGetComponent(args.TargetEntity, out FlammableComponent? flammable))
                 return;
 

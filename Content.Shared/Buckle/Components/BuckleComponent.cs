@@ -10,7 +10,7 @@ namespace Content.Shared.Buckle.Components;
 /// <summary>
 /// This component allows an entity to be buckled to an entity with a <see cref="StrapComponent"/>.
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
+[RegisterComponent, NetworkedComponent]
 [Access(typeof(SharedBuckleSystem))]
 public sealed partial class BuckleComponent : Component
 {
@@ -20,7 +20,7 @@ public sealed partial class BuckleComponent : Component
     /// across a table two tiles away" problem.
     /// </summary>
     [DataField]
-    public float Range = SharedInteractionSystem.InteractionRange;
+    public float Range = SharedInteractionSystem.InteractionRange / 1.4f;
 
     /// <summary>
     /// True if the entity is buckled, false otherwise.
@@ -29,16 +29,9 @@ public sealed partial class BuckleComponent : Component
     public bool Buckled => BuckledTo != null;
 
     /// <summary>
-    /// True if the object we are buckled to has a seatbelt, false otherwise.
-    /// This prevents us from being pulled by gravity (i.e. grav. anomaly).
-    /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)]
-    public bool FastenedSeatbelt;
-
-    /// <summary>
     /// Whether or not collisions should be possible with the entity we are strapped to
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public bool DontCollide;
 
     /// <summary>
@@ -46,15 +39,6 @@ public sealed partial class BuckleComponent : Component
     /// </summary>
     [DataField]
     public bool PullStrap;
-
-    //SS220-Vehicle-doafter-fix begin
-    /// <summary>
-    /// Time required for others to unbuckle us from a vehicle
-    /// </summary>
-    [DataField]
-    [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan VehicleUnbuckleTime = TimeSpan.FromSeconds(.75f);
-    //SS220-Vehicle-doafter-fix end
 
     /// <summary>
     /// The amount of time that must pass for this entity to
@@ -66,13 +50,13 @@ public sealed partial class BuckleComponent : Component
     /// <summary>
     /// The time that this entity buckled at.
     /// </summary>
-    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField, AutoNetworkedField]
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan? BuckleTime;
 
     /// <summary>
     /// The strap that this component is buckled to.
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public EntityUid? BuckledTo;
 
     /// <summary>
@@ -86,11 +70,14 @@ public sealed partial class BuckleComponent : Component
     /// Used for client rendering
     /// </summary>
     [ViewVariables] public int? OriginalDrawDepth;
+}
 
-    //SS220 Change DrawDepth on buckle begin
-    [ViewVariables]
-    public int? DrawDepthBeforeBuckle;
-    //SS220 Change DrawDepth on buckle end
+[Serializable, NetSerializable]
+public sealed class BuckleState(NetEntity? buckledTo, bool dontCollide, TimeSpan? buckleTime) : ComponentState
+{
+    public readonly NetEntity? BuckledTo = buckledTo;
+    public readonly bool DontCollide = dontCollide;
+    public readonly TimeSpan? BuckleTime = buckleTime;
 }
 
 public sealed partial class UnbuckleAlertEvent : BaseAlertEvent;
@@ -174,6 +161,5 @@ public readonly record struct UnbuckledEvent(Entity<StrapComponent> Strap, Entit
 [Serializable, NetSerializable]
 public enum BuckleVisuals
 {
-    Buckled,
-    DrawDepth //SS220 Change DrawDepth on buckle
+    Buckled
 }
