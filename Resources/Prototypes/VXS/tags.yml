@@ -36,6 +36,9 @@
 - type: Tag
   id: MagazineSniperSupressorTag
 
+- type: Tag
+  id: CartridgeRocketDisposably
+
 # Armor
 
 - type: Tag

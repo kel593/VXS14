@@ -252,6 +252,62 @@
     intensitySlope: 10
     totalIntensity: 60
 
+- type: entity
+  id: CartridgeRocketHADGLThermobaric
+  name: HADGL-T
+  suffix: Thermobaric
+  parent: [BaseItem, CartridgeRocket]
+  components:
+  - type: Item
+    size: Normal
+  - type: CartridgeAmmo
+    proto: BulletRocketHADGLThermobaric
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: VXS/Weapons/Launchers/hadgl.rsi
+    state: bullet
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 120
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Tag
+    tags:
+      - CartridgeRocketDisposably
+
+- type: entity
+  id: CartridgeRocketHADGLCumulative
+  name: HADGL-C
+  suffix: Cumulative
+  parent: [BaseItem, CartridgeRocket]
+  components:
+  - type: Item
+    size: Normal
+  - type: CartridgeAmmo
+    proto: BulletRocketHADGLCumulative
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: VXS/Weapons/Launchers/hadgl.rsi
+    state: bullet
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 120
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Tag
+    tags:
+      - CartridgeRocketDisposably
+
 # Boolets
 - type: entity
   parent: BaseCartridge

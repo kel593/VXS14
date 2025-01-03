@@ -1,0 +1,69 @@
+# HADGL
+
+- type: entity
+  name: HADGL-100T Lancer # Термобарический
+  parent: BaseWeaponLauncher
+  id: WeaponLauncherHandheldDisposalThermobaric
+  description: Handheld Assault Disposable Grenade Launcher Thermobaric. Used against enemy fortifications and infantry. Shoot and forget.
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: VXS/Weapons/Launchers/hadgl.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: VXS/Weapons/Launchers/hadgl.rsi
+  - type: Gun
+    cameraRecoilScalar: 6
+    projectileSpeed: 50
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/VXS/Gunshots/Launcher/launcher2.ogg
+      params:
+        maxDistance: 50
+        volume: 2
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeRocketDisposably
+    cycleable: false
+    autoCycle: false
+    proto: CartridgeRocketHADGLThermobaric
+    capacity: 1
+  - type: Appearance
+
+- type: entity
+  name: HADGL-100C Basalt # Противотанковый
+  parent: BaseWeaponLauncher
+  id: WeaponLauncherHandheldDisposalCumulative
+  description: Handheld Assault Disposable Grenade Launcher Cumulative. Used against heavy fortifications and armored vehicles. Shoot and forget.
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: VXS/Weapons/Launchers/hadgl.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: VXS/Weapons/Launchers/hadgl.rsi
+  - type: Gun
+    cameraRecoilScalar: 6
+    projectileSpeed: 50
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/VXS/Gunshots/Launcher/launcher2.ogg
+      params:
+        maxDistance: 50
+        volume: 2
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeRocketDisposably
+    cycleable: false
+    autoCycle: false
+    proto: CartridgeRocketHADGLCumulative
+    capacity: 1
+  - type: Appearance

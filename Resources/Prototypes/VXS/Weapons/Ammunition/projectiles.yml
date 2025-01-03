@@ -219,6 +219,50 @@
   - type: TimedDespawn
     lifetime: 20
 
+- type: entity
+  id: BulletRocketHADGLThermobaric
+  name: rocket
+  parent: BaseBulletTrigger
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: VXS/Weapons/Launchers/hadgl.rsi
+    state: bullet
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Thermobaric
+    maxIntensity: 45
+    intensitySlope: 1
+    totalIntensity: 200
+    maxTileBreak: 1
+  - type: SmokeOnTrigger
+    duration: 1
+    spreadAmount: 8
+  - type: FlashOnTrigger
+    range: 4
+
+- type: entity
+  id: BulletRocketHADGLCumulative
+  name: rocket
+  parent: BaseBulletTrigger
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: VXS/Weapons/Launchers/hadgl.rsi
+    state: bullet
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    maxIntensity: 100
+    intensitySlope: 800
+    totalIntensity: 300
+    maxTileBreak: 1
+  - type: SmokeOnTrigger
+    duration: 1
+    spreadAmount: 2
+  - type: FlashOnTrigger
+    range: 2
+
 # Energy
 
 - type: entity
