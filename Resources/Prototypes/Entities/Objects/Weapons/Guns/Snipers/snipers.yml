@@ -96,7 +96,7 @@
   - type: EyeCursorOffset
     maxOffset: 16
     offsetSpeed: 0.2
-    pvsIncrease: 0.8
+    pvsIncrease: 16
   - type: CursorOffsetRequiresWield
 
 - type: entity
