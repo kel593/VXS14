@@ -1,0 +1,88 @@
+- type: entity
+  id: VXSMortar
+  parent: BaseStructure
+  name: Mortar
+  suffix: DEBUG
+  description: pizdec
+  components:
+  - type: Sprite
+    sprite: VXS/Structures/mortar.rsi
+    state: mortar
+  - type: Mortar
+    accuracy: 0.5
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        startingItem: VXSMortarShell
+        priority: 1
+        whitelist:
+          tags:
+            - MortarShell
+
+- type: entity
+  id: VXSMortarShell
+  parent: BaseItem
+  name: Mortar Shell
+  description: Mortar Shell
+  components:
+  - type: Tag
+    tags:
+      - MortarShell
+  - type: Sprite
+    sprite: VXS/Structures/mortar.rsi
+    state: shell
+  - type: MortarShell
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 5
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+
+- type: Tag
+  id: MortarShell
+
+- type: entity
+  id: VXSFortStruct
+  parent: BaseStructure
+  name: Fort Struct
+  description: Fort Struct
+  components:
+  - type: VXSFortStruct
+    team: Синдикат
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Sprite
+    sprite: Structures/Decoration/showcase.rsi
+    state: showcase_1
+
+- type: damageModifierSet
+  id: VXSFort
+  coefficients:
+    Blunt: 0.7
+    Slash: 0.7
+    Piercing: 0.7
+    Heat: 0.1
+  flatReductions:
+    Blunt: 5
+    Heat: 1000
