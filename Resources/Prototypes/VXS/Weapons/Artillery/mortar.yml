@@ -1,6 +1,6 @@
 - type: entity
   id: VXSMortar
-  parent: BaseStructure
+  parent: BaseStructureDynamic
   name: Mortar
   suffix: DEBUG
   description: pizdec
@@ -17,16 +17,27 @@
     slots:
       mortar_chamber:
         name: Chamber
-        startingItem: VXSMortarShell
+        # startingItem: VXSMortarShell
         priority: 1
         whitelist:
           tags:
             - MortarShell
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
 
 - type: entity
   id: VXSMortarShell
   parent: BaseItem
   name: Mortar Shell
+  suffix: DEBUG
   description: Mortar Shell
   components:
   - type: Tag
@@ -36,16 +47,105 @@
     sprite: VXS/Structures/mortar.rsi
     state: shell
   - type: MortarShell
+    explosionType: Default
+    totalIntensity: 105
+    slope: 200
+    maxTileIntensity: 2
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 5
+        Blunt: 10
+  - type: Damageable
+    damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 40
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
-      - !type:ExplodeBehavior
+      - !type:TriggerBehavior
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 150
+    intensitySlope: 2
+    maxIntensity: 60
+  - type: DeleteOnTrigger
+
+- type: entity
+  id: VXSMortarShellTwo
+  parent: BaseItem
+  name: Mortar Shell Two
+  suffix: DEBUG
+  description: Mortar Shell
+  components:
+  - type: Tag
+    tags:
+      - MortarShell
+  - type: Sprite
+    sprite: VXS/Structures/mortar.rsi
+    state: shell2
+  - type: MortarShell
+    explosionType: Default
+    totalIntensity: 500
+    slope: 2
+    maxTileIntensity: 2
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 10
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:TriggerBehavior
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 5000
+    intensitySlope: 1
+    maxIntensity: 100
+  - type: DeleteOnTrigger
+
+
+
+
+
+- type: entity
+  id: V500Mortar
+  parent: VXSMortar
+  name: V-500 Type Mortar
+  suffix: 0.5
+  description: pizdec
+  components:
+  - type: Mortar
+    accuracy: 0.5
+
+- type: entity
+  id: MortarShellExplosive
+  parent: VXSMortarShell
+  name: AM-82F
+  suffix: Frag
+  description: Explosive artillery mine of 82 mm caliber.
+  components:
+  - type: Sprite
+    sprite: VXS/Structures/mortar.rsi
+    state: shell
+  - type: MortarShell
+    explosionType: Default
+    totalIntensity: 150
+    slope: 5
+    maxTileIntensity: 100
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 150
+    intensitySlope: 4
+    maxIntensity: 30

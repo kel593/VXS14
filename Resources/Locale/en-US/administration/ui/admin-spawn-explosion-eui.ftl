@@ -13,4 +13,4 @@ admin-explosion-eui-label-directional = Directional
 admin-explosion-eui-label-angle = Angle
 admin-explosion-eui-label-spread = Spread
 admin-explosion-eui-label-distance = Distance
-admin-explosion-eui-label-spawn = Kabloom!
+admin-explosion-eui-label-spawn = Fuck them up

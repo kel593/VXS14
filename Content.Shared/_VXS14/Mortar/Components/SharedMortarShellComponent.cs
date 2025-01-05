@@ -11,7 +11,7 @@ namespace Content.Shared._VXS14.Mortar
     public partial class SharedMortarShellComponent : Component
     {
 
-        [ViewVariables(VVAccess.ReadWrite), DataField("type"), AutoNetworkedField]
+        [ViewVariables(VVAccess.ReadWrite), DataField("explosionType"), AutoNetworkedField]
         public string Type = "Default";
 
         [ViewVariables(VVAccess.ReadWrite), DataField("totalIntensity"), AutoNetworkedField]
