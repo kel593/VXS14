@@ -1,0 +1,90 @@
+- type: entity
+  parent: BaseHealingItem
+  id: GauzeCohesive
+  name: cohesive gauze
+  description: A tight bandage that tightens itself on the wound providing quick relief from bleeding.
+  components:
+    - type: Sprite
+      sprite: VXS/Objects/Medical/medical.rsi
+      state: cohesive
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: -5
+      bloodlossModifier: -5
+      delay: 2
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+
+- type: entity
+  parent: BaseHealingItem
+  id: TamponadeBandage
+  name: tamponade bandage
+  description: Stuff it in the wound > ??? > Profit!
+  components:
+    - type: Item
+      size: Tiny
+    - type: Sprite
+      sprite: VXS/Objects/Medical/medical.rsi
+      state: tamponade
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: -30
+        types:
+          Asphyxiation: 10
+      bloodlossModifier: -5
+      delay: 6
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+
+- type: entity
+  parent: BaseHealingItem
+  id: MedBandage
+  name: bandage
+  description: Secure pressure bandage.
+  components:
+    - type: Sprite
+      sprite: VXS/Objects/Medical/medical.rsi
+      state: bandage
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: -5
+      bloodlossModifier: -6
+      delay: 4
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+
+- type: entity
+  parent: BaseHealingItem
+  id: MedicalCast
+  name: cast
+  description: Universal cast with tighteners to securely immobilize any limb of any size.
+  components:
+    - type: Sprite
+      sprite: VXS/Objects/Medical/medical.rsi
+      state: cast
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: -20
+      delay: 5
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"

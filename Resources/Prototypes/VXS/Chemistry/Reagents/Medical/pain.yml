@@ -1,0 +1,41 @@
+- type: reagent
+  id: Trimeperidine
+  name: promedol
+  desc: u sure u want know this?
+  group: Medicine
+  flavor: medicine
+  physicalDesc: reagent-physical-desc-translucent
+  color: "#FFFFFF"
+  metabolisms:
+    Medicine:
+      metabolismRate: 1.00
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: -3
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 60
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 2
+      - !type:Drunk
+        slurSpeech: false
+        boozePower: 50
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: ScrambledAccent
+    Poison:
+      metabolismRate: 2.00
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          types:
+            Poison: 5
+            Asphyxiation: 5

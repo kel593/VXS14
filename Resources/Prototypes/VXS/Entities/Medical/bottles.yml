@@ -1,0 +1,27 @@
+- type: entity
+  id: NalipidemDermaChemistryBottle
+  name: nalipidem derma bottle
+  description: Thats small bottle.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: NalipidemDermaAntiburn
+          Quantity: 30
+
+- type: entity
+  id: NalipidemCausticChemistryBottle
+  name: nalipidem caustic bottle
+  description: Thats small bottle.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: NalipidemAnticaustic
+          Quantity: 30
