@@ -39,6 +39,9 @@
 - type: Tag
   id: CartridgeRocketDisposably
 
+- type: Tag
+  id: MortarShell
+
 # Armor
 
 - type: Tag

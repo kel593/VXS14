@@ -1,0 +1,38 @@
+- type: entity
+  id: VXSFortStruct
+  parent: BaseStructure
+  name: Fort Struct Syndicate
+  description: Placeholder
+  components:
+  - type: VXSFortStruct
+    team: Triglav Forces
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Sprite
+    sprite: VXS/Structures/fort.rsi
+    state: icon
+  - type: Construction
+    graph: VXForts
+    node: Fullhealth
+
+- type: damageModifierSet
+  id: VXSFort
+  coefficients:
+    Blunt: 0.9
+    Slash: 0.9
+    Piercing: 0.9
+    Heat: 0.9
+  flatReductions:
+    Slash: 1000
+    Blunt: 1000
+    Piercing: 1000
+    Heat: 1000
