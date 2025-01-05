@@ -83,7 +83,7 @@
       damage:
         groups:
           Brute: -20
-      delay: 5
+      delay: 10
       healingBeginSound:
         path: "/Audio/Items/Medical/brutepack_begin.ogg"
       healingEndSound:
