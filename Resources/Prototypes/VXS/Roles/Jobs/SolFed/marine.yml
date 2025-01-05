@@ -15,6 +15,7 @@
   - Medical
   - Engineering
   - Cargo
+  - Armory
 
 - type: job
   id: SolfedPeacekeeperMedic
@@ -51,6 +52,7 @@
   - Command
   - Medical
   - Cargo
+  - Armory
 
 - type: job
   id: SolfedPeacekeeperCargoTechnician
@@ -65,6 +67,7 @@
   - Cargo
   - Maintenance
   - Security
+  - Armory
   extendedAccess:
   - Medical
   - Engineering
@@ -86,3 +89,4 @@
   - Engineering
   - Cargo
   - Security
+  - Armory
