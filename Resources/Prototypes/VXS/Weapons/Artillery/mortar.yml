@@ -124,7 +124,7 @@
   parent: VXSMortar
   name: V-500 Type Mortar
   suffix: 0.5
-  description: pizdec
+  description: A decrepit old mortar that knocks the scope off every time it's fired. Equipped with a special defense system that requires you to manually initiate the launch of the projectile, uses GPS coordinates for guidance and has a firing radius in the observable universe.
   components:
   - type: Mortar
     accuracy: 0.5
@@ -134,7 +134,7 @@
   parent: VXSMortarShell
   name: AM-82F
   suffix: Frag
-  description: Explosive artillery mine of 82 mm caliber.
+  description: Explosive artillery mine of 82 mm caliber. Quietly falling, very dangerous stuff.
   components:
   - type: Sprite
     sprite: VXS/Structures/mortar.rsi
