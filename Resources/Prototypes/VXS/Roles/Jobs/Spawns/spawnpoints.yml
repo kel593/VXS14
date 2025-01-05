@@ -112,3 +112,116 @@
       - state: green
       - state: MedicSolfed
 
+# LATEJOIN
+
+- type: entity
+  id: VXSSpawnPointSyndAnarchykeeperOfficerLateJoin
+  parent: VXSSpawnPointJobBase
+  suffix: Synd LateJoin
+  name: Officer
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+    job_id: SyndAnarchykeeperOfficer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: OfficerAnarchy
+
+- type: entity
+  id: VXSSpawnPointSyndAnarchykeeperCargoTechnicianLateJoin
+  parent: VXSSpawnPointJobBase
+  suffix: Synd LateJoin
+  name: Cargo Technician
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+    job_id: SyndAnarchykeeperCargoTechnician
+  - type: Sprite
+    layers:
+      - state: green
+      - state: CargoAnarchy
+
+- type: entity
+  id: VXSSpawnPointSyndAnarchykeeperLateJoin
+  parent: VXSSpawnPointJobBase
+  suffix: Synd LateJoin
+  name: Anarchykeeper
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+    job_id: SyndAnarchykeeper
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Anarchy
+
+- type: entity
+  id: VXSSpawnPointSolfedPeacekeeperLateJoin
+  parent: VXSSpawnPointJobBase
+  suffix: Solfed LateJoin
+  name: Peacekeeper
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+    job_id: SolfedPeacekeeper
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Solfed
+
+- type: entity
+  id: VXSSpawnPointSolfedPeacekeeperOfficerLateJoin
+  parent: VXSSpawnPointJobBase
+  suffix: Solfed LateJoin
+  name: Officer
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+    job_id: SolfedPeacekeeperOfficer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: OfficerSolfed
+
+- type: entity
+  id: VXSSpawnPointSolfedPeacekeeperCargoTechnicianLateJoin
+  parent: VXSSpawnPointJobBase
+  suffix: Solfed LateJoin
+  name: Cargo Technician
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+    job_id: SolfedPeacekeeperCargoTechnician
+  - type: Sprite
+    layers:
+      - state: green
+      - state: CargoSolfed
+
+- type: entity
+  id: VXSSpawnPointSolfedPeacekeeperEngineerLateJoin
+  parent: VXSSpawnPointJobBase
+  suffix: Solfed LateJoin
+  name: Engineer
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+    job_id: SolfedPeacekeeperEngineer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: EngiSolfed
+
+- type: entity
+  id: VXSSpawnPointSolfedPeacekeeperMedicLateJoin
+  parent: VXSSpawnPointJobBase
+  suffix: Solfed LateJoin
+  name: Medic
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+    job_id: SolfedPeacekeeperMedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: MedicSolfed
