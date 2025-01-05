@@ -12,12 +12,7 @@
 - type: loadout
   id: HeadofSecurityJumpsuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitHoS
-
-- type: loadout
-  id: HeadofSecurityJumpskirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtHoS
+    jumpsuit: ClothingUniformJumpsuitSolarGold
 
 - type: loadout
   id: HeadofSecurityTurtleneck
@@ -25,19 +20,9 @@
     jumpsuit: ClothingUniformJumpsuitHoSAlt
 
 - type: loadout
-  id: HeadofSecurityTurtleneckSkirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtHoSAlt
-
-- type: loadout
   id: HeadofSecurityFormalSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHosFormal
-
-- type: loadout
-  id: HeadofSecurityFormalSkirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtHosFormal
 
 # Head
 - type: loadout

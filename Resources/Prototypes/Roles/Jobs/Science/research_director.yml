@@ -1,17 +1,8 @@
 - type: job
   id: ResearchDirector
   name: job-name-rd
-  setPreference: false # VXS
   description: job-description-rd
   playTimeTracker: JobResearchDirector
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 36000 #10 hrs
-    - !type:OverallPlaytimeRequirement
-      time: 144000 #40 hrs
-    - !type:AgeRequirement
-      requiredAge: 21
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

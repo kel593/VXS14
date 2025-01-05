@@ -1,6 +1,6 @@
 ### Connecting dialog when you start up the game
 
-connecting-title = VXStation 14
+connecting-title = TerraStation
 connecting-exit = Exit
 connecting-retry = Retry
 connecting-reconnect = Reconnect
@@ -11,7 +11,7 @@ connecting-in-progress = Connecting to server
 connecting-disconnected = Disconnected from server:
 connecting-tip = 90 seconds till midnight!
 connecting-window-tip = There's some tips from officials.
-connecting-version = VXS4
+connecting-version = TS14
 connecting-fail-reason = Failed to connect to server:
                          { $reason }
 connecting-state-NotConnecting = Not connecting

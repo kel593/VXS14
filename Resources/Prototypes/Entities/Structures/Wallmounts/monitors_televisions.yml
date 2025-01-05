@@ -83,6 +83,11 @@
         acts: [ "Destruction" ]
   - type: Transform
     anchored: true
+  - type: EmitSoundOnActivate
+    sound:
+      collection: SeregaPirat
+  - type: UseDelay
+    delay: 190.0
 
 - type: entity
   parent: WallmountTelescreenFrame

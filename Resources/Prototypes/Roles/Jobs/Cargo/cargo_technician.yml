@@ -1,7 +1,6 @@
 - type: job
   id: CargoTechnician
   name: job-name-cargotech
-  setPreference: false # VXS
   description: job-description-cargotech
   playTimeTracker: JobCargoTechnician
   startingGear: CargoTechGear

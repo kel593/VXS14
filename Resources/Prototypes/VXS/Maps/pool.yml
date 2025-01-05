@@ -76,3 +76,42 @@
             SolfedPeacekeeperEngineer: [ 2, 2 ]
             SolfedPeacekeeperCargoTechnician: [ 1, 1 ]
             SolfedPeacekeeperOfficer: [ 2, 2 ]
+
+
+
+- type: gameMap
+  id: Petrokrakow17
+  mapName: Petrokrakow-17 (RP)
+  mapPath: /Maps/VXS/petrokrakow17.yml
+  minPlayers: 0
+  stations:
+    Petrokrakow17:
+      stationProto: SolfedPlanet
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "SOLFED14A1 Petrokrakow-17"
+        - type: StationJobs
+          overflowJobs:
+            - Passenger
+          availableJobs:
+            Passenger: [ -1, -1 ]
+            Musician: [ 1, 1 ]
+            Janitor: [ 2, 2 ]
+            Lawyer: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            ServiceWorker: [ 4, 4 ]
+            Bartender: [ 2, 2 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Captain: [ 1, 1 ]
+            ChiefEngineer: [ 1, 1 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 4, 4 ]
+            Detective: [ 1, 1 ]
+            Quartermaster: [ 1, 1 ]
+            StationEngineer: [ 3, 3 ]
+            CargoTechnician: [ 3, 3 ]
+            MedicalDoctor: [ 3, 3 ]
+            Scientist: [ 3, 3 ]
+            ResearchDirector: [ 1, 1 ]

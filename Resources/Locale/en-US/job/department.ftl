@@ -1,9 +1,9 @@
-department-Cargo = Cargo
-department-Civilian = Civilian
-department-Command = Command
-department-Engineering = Engineering
-department-Medical = Medical
-department-Security = Security
-department-Science = Science
-department-Silicon = Silicon
+department-Cargo = Завод
+department-Civilian = Граждане
+department-Command = Городская администрация
+department-Engineering = ЖКХ
+department-Medical = Госпиталь
+department-Security = Полиция
+department-Science = Наука
+department-Silicon = Андроиды
 department-Specific = Station specific

@@ -1,13 +1,8 @@
 - type: job
   id: Scientist
   name: job-name-scientist
-  setPreference: false # VXS
   description: job-description-scientist
   playTimeTracker: JobScientist
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 14400 #4 hrs
   startingGear: ScientistGear
   icon: "JobIconScientist"
   supervisors: job-supervisors-rd

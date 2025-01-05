@@ -1,7 +1,6 @@
 ﻿- type: job
   id: ServiceWorker
   name: job-name-serviceworker
-  setPreference: false # VXS
   description: job-description-serviceworker
   playTimeTracker: JobServiceWorker
   startingGear: ServiceWorkerGear

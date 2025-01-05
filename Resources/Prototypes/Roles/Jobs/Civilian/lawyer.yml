@@ -1,12 +1,8 @@
 - type: job
   id: Lawyer
   name: job-name-lawyer
-  setPreference: false # VXS
   description: job-description-lawyer
   playTimeTracker: JobLawyer
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 36000 # 10 hrs
   startingGear: LawyerGear
   icon: "JobIconLawyer"
   supervisors: job-supervisors-hop

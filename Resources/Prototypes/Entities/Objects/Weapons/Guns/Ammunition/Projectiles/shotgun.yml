@@ -31,7 +31,7 @@
       types:
         Blunt: 15 # VXS
   - type: StaminaDamageOnCollide
-    damage: 30 # VXS
+    damage: 50
 
 - type: entity
   id: PelletShotgun

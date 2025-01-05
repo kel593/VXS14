@@ -1,13 +1,8 @@
 - type: job
   id: Detective
   name: job-name-detective
-  setPreference: false # VXS
   description: job-description-detective
   playTimeTracker: JobDetective
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 54000 # 15 hours
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

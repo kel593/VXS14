@@ -131,7 +131,7 @@
 
 - type: entity
   parent: DefaultStationBeaconCommand
-  id: DefaultStationBeaconVault
+  id: DefaultStationVault
   suffix: Vault
   components:
   - type: NavMapBeacon

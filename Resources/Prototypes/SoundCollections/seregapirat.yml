@@ -1,0 +1,11 @@
+- type: soundCollection
+  id: SeregaPirat
+  files:
+    - /Audio/VXS/Fun/vibeman.ogg
+    - /Audio/VXS/Fun/moi-topor.ogg
+    - /Audio/VXS/Fun/ostanovite-katku.ogg
+    - /Audio/VXS/Fun/fp-am-sliv-klipa.ogg
+    - /Audio/VXS/Fun/skyline-ryodan.ogg
+    - /Audio/VXS/Fun/quinque.ogg
+    - /Audio/VXS/Fun/world-of-dota.ogg
+

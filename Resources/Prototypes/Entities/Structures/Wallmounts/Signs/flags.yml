@@ -72,6 +72,7 @@
   components:
   - type: Sprite
     state: lgbtq_flag
+  noSpawn: true
 
 - type: entity
   parent: BaseFlag

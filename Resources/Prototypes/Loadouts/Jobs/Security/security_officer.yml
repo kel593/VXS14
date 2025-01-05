@@ -43,22 +43,12 @@
 - type: loadout
   id: SecurityJumpsuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSec
-
-- type: loadout
-  id: SecurityJumpskirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtSec
+    jumpsuit: ClothingUniformJumpsuitSolar
 
 - type: loadout
   id: SecurityJumpsuitGrey
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSecGrey
-
-- type: loadout
-  id: SecurityJumpskirtGrey
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtSecGrey
+    jumpsuit: ClothingUniformJumpsuitSolarGray
 
 - type: loadout
   id: SeniorOfficerJumpsuit
@@ -67,14 +57,6 @@
     proto: SeniorOfficer
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorOfficer
-
-- type: loadout
-  id: SeniorOfficerJumpskirt
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorOfficer
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtSeniorOfficer
 
 # Back
 - type: loadout

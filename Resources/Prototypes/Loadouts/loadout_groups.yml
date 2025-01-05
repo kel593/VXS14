@@ -89,14 +89,6 @@
   - CaptainMantle
 
 - type: loadoutGroup
-  id: CaptainBackpack
-  name: loadout-group-captain-backpack
-  loadouts:
-  - CaptainBackpack
-  - CaptainSatchel
-  - CaptainDuffel
-
-- type: loadoutGroup
   id: CaptainOuterClothing
   name: loadout-group-captain-outerclothing
   loadouts:
@@ -124,15 +116,6 @@
   loadouts:
   - HoPCloak
   - HoPMantle
-
-- type: loadoutGroup
-  id: HoPBackpack
-  name: loadout-group-hop-backpack
-  loadouts:
-  - CommonBackpack
-  - CommonSatchel
-  - CommonDuffel
-  - HoPBackpackIan
 
 - type: loadoutGroup
   id: HoPOuterClothing
@@ -164,14 +147,6 @@
   minLimit: 0
   loadouts:
   - PassengerGloves
-
-- type: loadoutGroup
-  id: CommonBackpack
-  name: loadout-group-backpack
-  loadouts:
-  - CommonBackpack
-  - CommonSatchel
-  - CommonDuffel
 
 - type: loadoutGroup
   id: PassengerNeck
@@ -378,14 +353,6 @@
   - BotanistOveralls
 
 - type: loadoutGroup
-  id: BotanistBackpack
-  name: loadout-group-botanist-backpack
-  loadouts:
-  - BotanistBackpack
-  - BotanistSatchel
-  - BotanistDuffel
-
-- type: loadoutGroup
   id: BotanistOuterClothing
   name: loadout-group-botanist-outerclothing
   minLimit: 0
@@ -409,14 +376,6 @@
   - ClownSkirt
   - JesterSuit
   - JesterAltSuit
-
-- type: loadoutGroup
-  id: ClownBackpack
-  name: loadout-group-clown-backpack
-  loadouts:
-  - ClownBackpack
-  - ClownSatchel
-  - ClownDuffel
 
 - type: loadoutGroup
   id: ClownOuterClothing
@@ -468,14 +427,6 @@
   - MimeJumpskirt
 
 - type: loadoutGroup
-  id: MimeBackpack
-  name: loadout-group-mime-backpack
-  loadouts:
-  - MimeBackpack
-  - MimeSatchel
-  - MimeDuffel
-
-- type: loadoutGroup
   id: MimeOuterClothing
   name: loadout-group-mime-outerclothing
   minLimit: 0
@@ -488,7 +439,7 @@
   loadouts:
   - MimeSuspendersRed
   - MimeSuspendersBlack
-  
+
 - type: loadoutGroup
   id: SurvivalMime
   name: loadout-group-survival-mime
@@ -604,14 +555,6 @@
   - CargoTechnicianJumpskirt
 
 - type: loadoutGroup
-  id: CargoTechnicianBackpack
-  name: loadout-group-cargo-technician-backpack
-  loadouts:
-  - CargoTechnicianBackpack
-  - CargoTechnicianSatchel
-  - CargoTechnicianDuffel
-
-- type: loadoutGroup
   id: CargoTechnicianOuterClothing
   name: loadout-group-cargo-technician-outerclothing
   minLimit: 0
@@ -624,14 +567,6 @@
   loadouts:
   - BlackShoes
   - CargoWinterBoots
-
-- type: loadoutGroup
-  id: SalvageSpecialistBackpack
-  name: loadout-group-salvage-specialist-backpack
-  loadouts:
-  - SalvageSpecialistBackpack
-  - SalvageSpecialistSatchel
-  - SalvageSpecialistDuffel
 
 - type: loadoutGroup
   id: SalvageSpecialistOuterClothing
@@ -714,14 +649,6 @@
   - SeniorEngineerJumpskirt
 
 - type: loadoutGroup
-  id: StationEngineerBackpack
-  name: loadout-group-station-engineer-backpack
-  loadouts:
-  - StationEngineerBackpack
-  - StationEngineerSatchel
-  - StationEngineerDuffel
-
-- type: loadoutGroup
   id: StationEngineerOuterClothing
   name: loadout-group-station-engineer-outerclothing
   minLimit: 0
@@ -757,14 +684,6 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
-
-- type: loadoutGroup
-  id: AtmosphericTechnicianBackpack
-  name: loadout-group-atmospheric-technician-backpack
-  loadouts:
-  - AtmosphericTechnicianBackpack
-  - AtmosphericTechnicianSatchel
-  - AtmosphericTechnicianDuffel
 
 - type: loadoutGroup
   id: AtmosphericTechnicianShoes
@@ -847,14 +766,6 @@
   - RoboticistJumpskirt
   - SeniorResearcherJumpsuit
   - SeniorResearcherJumpskirt
-
-- type: loadoutGroup
-  id: ScientistBackpack
-  name: loadout-group-scientist-backpack
-  loadouts:
-  - ScientistBackpack
-  - ScientistSatchel
-  - ScientistDuffel
 
 - type: loadoutGroup
   id: ScientistOuterClothing
@@ -975,14 +886,6 @@
   - SecurityJumpskirtGrey
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
-
-- type: loadoutGroup
-  id: SecurityBackpack
-  name: loadout-group-security-backpack
-  loadouts:
-  - SecurityBackpack
-  - SecuritySatchel
-  - SecurityDuffel
 
 - type: loadoutGroup
   id: SecurityBelt
@@ -1145,14 +1048,6 @@
   - SeniorPhysicianLabCoat
 
 - type: loadoutGroup
-  id: MedicalBackpack
-  name: loadout-group-medical-doctor-backpack
-  loadouts:
-  - MedicalDoctorBackpack
-  - MedicalDoctorSatchel
-  - MedicalDoctorDuffel
-
-- type: loadoutGroup
   id: MedicalShoes
   name: loadout-group-medical-doctor-shoes
   loadouts:
@@ -1203,14 +1098,6 @@
   - RegularLabCoat
   - ChemistLabCoat
   - ChemistWintercoat
-
-- type: loadoutGroup
-  id: ChemistBackpack
-  name: loadout-group-chemist-backpack
-  loadouts:
-  - ChemistBackpack
-  - ChemistSatchel
-  - ChemistDuffel
 
 - type: loadoutGroup
   id: ParamedicHead

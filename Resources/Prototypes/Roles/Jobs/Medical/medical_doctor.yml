@@ -1,13 +1,8 @@
 - type: job
   id: MedicalDoctor
   name: job-name-doctor
-  setPreference: false # VXS
   description: job-description-doctor
   playTimeTracker: JobMedicalDoctor
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 14400 #4 hrs
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo

@@ -16,9 +16,9 @@
       map: ["enum.NukeVisualLayers.Unlit"]
       shader: unshaded
       visible: false
-    - state: nuclearbomb_gay
-      map: ["pride"]
-      visible: false
+#    - state: nuclearbomb_gay
+#      map: ["pride"]             VXS
+#      visible: false
     - state: nukefestive
       map: ["christmas"]
       visible: false

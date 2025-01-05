@@ -93,7 +93,7 @@ public sealed partial class ShuttleSystem
         _xformQuery = GetEntityQuery<TransformComponent>();
 
         _cfg.OnValueChanged(CCVars.FTLStartupTime, time => DefaultStartupTime = time, true);
-        _cfg.OnValueChanged(CCVars.FTLTravelTime, time => DefaultTravelTime = time, true);
+        _cfg.OnValueChanged(CCVars.FTLTravelTime, time => DefaultTravelTime = 180f, true);
         _cfg.OnValueChanged(CCVars.FTLArrivalTime, time => DefaultArrivalTime = time, true);
         _cfg.OnValueChanged(CCVars.FTLCooldown, time => FTLCooldown = time, true);
         _cfg.OnValueChanged(CCVars.FTLMassLimit, time => FTLMassLimit = time, true);

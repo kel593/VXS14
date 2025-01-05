@@ -1,7 +1,7 @@
 ﻿- type: soundCollection
   id: NukeMusic
   files:
-    - /Audio/StationEvents/running_out.ogg
+#    - /Audio/StationEvents/running_out.ogg      VXS
     - /Audio/StationEvents/countdown.ogg
-    - /Audio/StationEvents/clearly_nuclear.ogg    
-    - /Audio/StationEvents/sound_station_14.ogg
+#    - /Audio/StationEvents/clearly_nuclear.ogg  VXS
+#    - /Audio/StationEvents/sound_station_14.ogg VXS

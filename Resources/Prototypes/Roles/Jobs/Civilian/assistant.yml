@@ -1,7 +1,6 @@
 - type: job
   id: Passenger
   name: job-name-passenger
-  setPreference: false # VXS
   description: job-description-passenger
   playTimeTracker: JobPassenger
   startingGear: PassengerGear

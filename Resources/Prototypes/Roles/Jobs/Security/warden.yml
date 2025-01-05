@@ -1,13 +1,8 @@
 - type: job
   id: Warden
   name: job-name-warden
-  setPreference: false # VXS
   description: job-description-warden
   playTimeTracker: JobWarden
-  requirements:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 36000 #10 hrs
   startingGear: WardenGear
   icon: "JobIconWarden"
   requireAdminNotify: true

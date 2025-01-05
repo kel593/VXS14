@@ -1,8 +1,15 @@
 - type: soundCollection
   id: LobbyMusic
   files:
-    - /Audio/VXS/Lobby/collection1.ogg # VXS
-    - /Audio/VXS/Lobby/collection2.ogg # VXS
+    - /Audio/VXS/Lobby/team-spirit.ogg # VXS
+    - /Audio/VXS/Lobby/tp-na-ame.ogg # VXS
+    - /Audio/VXS/Lobby/ticktock.ogg # VXS
+    - /Audio/VXS/Lobby/tilt.ogg # VXS
+    - /Audio/VXS/Lobby/zemlya.ogg # VXS
+    - /Audio/VXS/Lobby/линия-жизни.ogg # VXS
+    - /Audio/VXS/Lobby/вечно-молодой.ogg # VXS
+    - /Audio/VXS/Lobby/pnnp.ogg # VXS
+    - /Audio/VXS/Lobby/Я-российский-спецназ.ogg # VXS
     #- /Audio/Lobby/thunderdome.ogg VXS
     #- /Audio/Lobby/absconditus.ogg
     #- /Audio/Lobby/space_asshole.ogg

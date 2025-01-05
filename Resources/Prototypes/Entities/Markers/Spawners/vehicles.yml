@@ -1,0 +1,55 @@
+- type: entity
+  name: ATV spawner
+  id: SpawnVehicleATV
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Vehicles/atv.rsi
+        state: vehicle
+  - type: ConditionalSpawner
+    prototypes:
+      - VehicleATV
+
+- type: entity
+  name: Secway spawner
+  id: SpawnVehicleSecway
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Vehicles/secway.rsi
+        state: vehicle
+  - type: ConditionalSpawner
+    prototypes:
+      - VehicleSecway
+
+- type: entity
+  name: ATV key spawner
+  id: SpawnVehicleATVKey
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Vehicles/atv.rsi
+        state: vehicle
+  - type: ConditionalSpawner
+    prototypes:
+      - VehicleKeyATV
+
+- type: entity
+  name: Secway key spawner
+  id: SpawnVehicleSecwayKey
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Vehicles/secway.rsi
+        state: vehicle
+  - type: ConditionalSpawner
+    prototypes:
+      - VehicleKeySecway
