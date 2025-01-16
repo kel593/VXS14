@@ -145,10 +145,12 @@
         reagents:
           - ReagentId: Estrinidap
             Quantity: 100
+  - type: Label
+    currentLabel: Estrinidap
 
 - type: entity
   name: glass solution bottle
-  suffix: colloidal silicon dioxide, small
+  suffix: Colloidal silicon dioxide, small
   parent: SolutionGlassBottleSmall
   description: Standard glass bottle for solutions manufactured by SolFed Medical Group. It has a sealed rubber cap for syringes.
   id: SolutionGlassBottleSmallSiliconDioxideColloidal
@@ -159,3 +161,21 @@
         reagents:
           - ReagentId: SiliconDioxideColloidal
             Quantity: 50
+  - type: Label
+    currentLabel: CSD Antitox
+
+- type: entity
+  name: glass solution bottle
+  suffix: Promedol, small
+  parent: SolutionGlassBottleSmall
+  description: Standard glass bottle for solutions manufactured by SolFed Medical Group. It has a sealed rubber cap for syringes.
+  id: SolutionGlassBottleSmallPromedol
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        reagents:
+          - ReagentId: Trimeperidine
+            Quantity: 50
+  - type: Label
+    currentLabel: Promedol

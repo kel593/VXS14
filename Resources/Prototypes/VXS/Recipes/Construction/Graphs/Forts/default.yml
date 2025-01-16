@@ -1,0 +1,32 @@
+- type: constructionGraph
+  id: VXForts
+  start: Fullhealth
+  graph:
+    - node: Fullhealth
+      entity: VXSFortStruct
+      edges:
+        - to: reinforcedGirder
+          completed:
+            - !type:DestroyEntity {}
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 1
+          steps:
+            - tool: Welding
+              doAfter: 1
+            - tool: Cutting
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 5
+            - tool: Prying
+              doAfter: 1
+            - tool: Cutting
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 5
+            - tool: Prying
+              doAfter: 1

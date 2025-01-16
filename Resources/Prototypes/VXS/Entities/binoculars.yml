@@ -1,0 +1,41 @@
+- type: entity
+  name: binoculars
+  parent: BaseItem
+  id: HandheldBinocularsBasic
+  description: Some cheap binoculars. Very popular nowadays.
+  components:
+  - type: Sprite
+    sprite: VXS/Objects/binoculars.rsi
+    layers:
+    - state: icon
+  - type: Item
+    size: Small
+    sprite: VXS/Objects/binoculars.rsi
+  - type: EyeCursorOffset
+    maxOffset: 8
+    offsetSpeed: 0.1
+    pvsIncrease: 8
+  - type: CursorOffsetRequiresWield
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.25
+    sprintModifier: 0.25
+  - type: Wieldable
+    unwieldOnUse: false
+
+- type: entity
+  name: binoculars
+  parent: HandheldBinocularsBasic
+  id: HandheldBinocularsAdvanced
+  description: Some expensive binoculars. They look pretty familiar.
+  components:
+  - type: Sprite
+    sprite: VXS/Objects/binoculars.rsi
+    layers:
+    - state: advanced
+  - type: EyeCursorOffset
+    maxOffset: 12
+    offsetSpeed: 0.3
+    pvsIncrease: 20
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.5
+    sprintModifier: 0.5

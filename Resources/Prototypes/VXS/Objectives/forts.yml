@@ -1,0 +1,14 @@
+- type: entity
+  id: VXSFortStruct
+  parent: BaseStructure
+  name: Fort Struct Syndicate
+  description: Placeholder
+  components:
+  - type: VXSFortStruct
+    team: Triglav Forces
+  - type: Sprite
+    sprite: VXS/Structures/fort.rsi
+    state: icon
+  - type: Construction
+    graph: VXForts
+    node: Fullhealth
