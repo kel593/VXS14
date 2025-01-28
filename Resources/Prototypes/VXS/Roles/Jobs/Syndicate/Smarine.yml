@@ -35,6 +35,9 @@
   description: job-description-anarchykeeper-officer
   playTimeTracker: JobAnarchykeeperOfficerTracker
   requirements:
+  - !type:SpeciesRequirement # Only humans
+    species:
+    - Human
   startingGear: AnarchykeeperOfficerGear
   icon: "JobIconMasterAtArms"
   supervisors: job-supervisors-anarchykeeper

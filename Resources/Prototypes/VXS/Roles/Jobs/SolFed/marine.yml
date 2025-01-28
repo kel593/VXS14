@@ -4,6 +4,14 @@
   description: job-description-peacekeeper
   playTimeTracker: JobPeacekeeperTracker
   requirements:
+  - !type:AgeRequirement # Minimum 18
+    requiredAge: 18
+  - !type:AgeRequirement # Maximum 45
+    requiredAge: 45
+    inverted: true
+  - !type:SpeciesRequirement # Only humans
+    species:
+    - Human
   startingGear: SolfedPeacekeeperGear
   icon: "JobIconNTSolider"
   supervisors: job-supervisors-peacekeeper
@@ -23,6 +31,15 @@
   description: job-description-peacekeeper-medic
   playTimeTracker: JobPeacekeeperMedicTracker
   requirements:
+  - !type:AgeRequirement # Minimum 20
+    requiredAge: 20
+  - !type:AgeRequirement # Maximum 45
+    requiredAge: 45
+    inverted: true
+  - !type:SpeciesRequirement # Only humans or moths
+    species:
+    - Human
+    - Moth
   startingGear: SolfedPeacekeeperMedicGear
   icon: "JobIconNTParamed"
   supervisors: job-supervisors-peacekeeper
@@ -41,6 +58,15 @@
   description: job-description-peacekeeper-engineer
   playTimeTracker: JobPeacekeeperEngineerTracker
   requirements:
+  - !type:AgeRequirement # Minimum 20
+    requiredAge: 20
+  - !type:AgeRequirement # Maximum 45
+    requiredAge: 45
+    inverted: true
+  - !type:SpeciesRequirement # Only humans or reptilians
+    species:
+    - Human
+    - Reptilian
   startingGear: SolfedPeacekeeperEngineerGear
   icon: "JobIconNTEngineer"
   supervisors: job-supervisors-peacekeeper
@@ -60,6 +86,16 @@
   description: job-description-peacekeeper-cargotechnician
   playTimeTracker: JobPeacekeeperCargoTechnicianTracker
   requirements:
+  - !type:AgeRequirement # Minimum 19
+    requiredAge: 19
+  - !type:AgeRequirement # Maximum 45
+    requiredAge: 50
+    inverted: true
+  - !type:SpeciesRequirement # Only humans or moths or reptilians
+    species:
+    - Human
+    - Moth
+    - Reptilian
   startingGear: SolfedPeacekeeperCargoTechnicianGear
   icon: "JobIconNTLogistics"
   supervisors: job-supervisors-peacekeeper
@@ -79,6 +115,14 @@
   description: job-description-peacekeeper-officer
   playTimeTracker: JobPeacekeeperOfficerTracker
   requirements:
+  - !type:AgeRequirement # Minimum 25
+    requiredAge: 25
+  - !type:AgeRequirement # Maximum 45
+    requiredAge: 50
+    inverted: true
+  - !type:SpeciesRequirement # Only humans
+    species:
+    - Human
   startingGear: SolfedPeacekeeperOfficerGear
   icon: "JobIconSolFed"
   supervisors: job-supervisors-peacekeeper-officer
