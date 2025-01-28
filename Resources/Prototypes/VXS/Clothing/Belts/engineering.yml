@@ -1,0 +1,13 @@
+- type: entity
+  id: ClothingBeltMilitaryWebbingEngineering
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Filled, Toolbelt
+  components:
+  - type: StorageFill
+    contents:
+      - id: CrowbarYellow
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: Welder
+      - id: Multitool

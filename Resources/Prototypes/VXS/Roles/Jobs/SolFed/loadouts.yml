@@ -359,10 +359,13 @@
   maxLimit: 1
   hidden: false
   loadouts:
-  - LoadoutSyndieBeltMilitaryWebbing # Обычная
+  - LoadoutSyndieBeltMilitaryWebbingEngineering # Инженерный РПС
   - LoadoutSyndieBeltUtilityEngineering # Инженерный
 
-
+- type: loadout
+  id: LoadoutSyndieBeltMilitaryWebbingEngineering # Инженерный РПС
+  equipment:
+    belt: ClothingBeltMilitaryWebbingEngineering
 
 - type: loadoutGroup
   id: GroupSolfedGlovesEngineer # Перчатки инженерные
