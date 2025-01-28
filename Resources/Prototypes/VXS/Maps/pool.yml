@@ -115,3 +115,4 @@
             MedicalDoctor: [ 3, 3 ]
             Scientist: [ 3, 3 ]
             ResearchDirector: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]

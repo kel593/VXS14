@@ -33,3 +33,26 @@
     sprite: Clothing/Ears/Headsets/command.rsi
   - type: EncryptionKeyHolder
     keySlots: 2
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetFSS
+  name: FSS helmet
+  description: Спасет ваши мозги от любых видов угроз, в том числе и психологических.
+  components:
+  - type: ToggleableClothing
+    stripDelay: 4
+    clothingPrototype: ClothingHeadsetAltFAST
+    requiredSlot:
+    - HEAD
+    slot: ears
+  - type: Sprite
+    sprite: VXS/Clothing/Head/Hard/fss.rsi
+  - type: Clothing
+    sprite: VXS/Clothing/Head/Hard/fss.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8

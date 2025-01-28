@@ -364,3 +364,24 @@
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET
 
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseCommandContraband]
+  id: ClothingOuterArmorFSS
+  name: FSS armor
+  description: Ты неубиваем. - Team spirit
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/FSSarmor.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/FSSarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Caustic: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: GroupExamine

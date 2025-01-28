@@ -1,9 +1,10 @@
 department-Cargo = Завод
-department-Civilian = Граждане
-department-Command = Городская администрация
+department-Civilian = Сервис
+department-Command = Начальство
+department-CentralCommand = Правительство
 department-Engineering = ЖКХ
-department-Medical = Госпиталь
+department-Medical = Здравоохранение
 department-Security = Полиция
 department-Science = Наука
-department-Silicon = Андроиды
-department-Specific = Station specific
+department-Silicon = Синтетики
+department-Specific = На определённых станциях

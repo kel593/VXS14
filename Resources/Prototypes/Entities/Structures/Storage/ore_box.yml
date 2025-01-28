@@ -55,10 +55,6 @@
     maxItemSize: Normal
     storageOpenSound: /Audio/Effects/closetopen.ogg
     storageCloseSound: /Audio/Effects/closetclose.ogg
-    whitelist:
-      tags:
-      - Ore
-      - ArtifactFragment
   - type: MagnetPickup
     slotFlags: NONE
     range: 1.5

@@ -1312,3 +1312,14 @@
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
+
+- type: entity
+  parent: [UnsensoredClothingUniformBase, BaseSyndicateContraband]
+  id: ClothingUniformJumpsuitFSS
+  name: FSS jumpsuit
+  description: Нет ума - штурмуй дома.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/FSSjumpsuit.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/FSSjumpsuit.rsi

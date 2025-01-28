@@ -545,6 +545,7 @@
     access: [[ "Command" ]]
   - type: CommunicationsConsole
     title: comms-console-announcement-title-station
+    global: true
   - type: DeviceNetwork
     transmitFrequencyId: ShuttleTimer
   - type: ActivatableUI

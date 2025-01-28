@@ -266,3 +266,12 @@
   components:
   - type: BarSign
     current: Spacebucks
+
+- type: entity
+  parent: BaseBarSign
+  id: BarSignBlueShampour
+  name: BlueShampour
+  description: Здесь выпивают чечленцы и сам рамзан додыров!
+  components:
+  - type: BarSign
+    current: BlueShampour

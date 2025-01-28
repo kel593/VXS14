@@ -466,3 +466,22 @@
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterFSS
+  name: FSS jacket
+  description: Ты есть закон.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/FSSjacket.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/FSSjacket.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.7
+        Heat: 0.7
+        Caustic: 0.7

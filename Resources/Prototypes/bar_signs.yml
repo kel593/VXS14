@@ -181,3 +181,11 @@
     sprite: Structures/Wallmounts/barsign.rsi
     state: spacebucks
   description: barsign-prototype-description-spacebucks
+
+- type: barSign
+  id: BlueShampour
+  name: Голубой шампур
+  icon:
+    sprite: Structures/Wallmounts/barsign.rsi
+    state: blueshampour
+  description: Здесь выпивают чечленцы и сам рамзан додыров!
