@@ -107,22 +107,22 @@ ent-SyndiPDA = кроваво-красный КПК
 
 # Corvax-HiddenDesc-End
 
-ent-ERTLeaderPDA = КПК ОБР
+ent-ERTLeaderPDA = КПК СОБР
     .desc = Красный значит мощный.
     .suffix = Лидер
-ent-ERTChaplainPDA = КПК священника ОБР
+ent-ERTChaplainPDA = КПК священника СОБР
     .suffix = Священник
     .desc = Красный значит мощный. Он благословен.
-ent-ERTEngineerPDA = КПК инженера ОБР
+ent-ERTEngineerPDA = КПК инженера СОБР
     .suffix = Инженер
     .desc = Красный значит мощный. Он изрядно потрёпан.
-ent-ERTJanitorPDA = КПК уборщика ОБР
+ent-ERTJanitorPDA = КПК уборщика СОБР
     .suffix = Уборщик
     .desc = Красный значит мощный. Чистый аж поскрипывает.
-ent-ERTMedicPDA = КПК врача ОБР
+ent-ERTMedicPDA = КПК врача СОБР
     .suffix = Врач
     .desc = Красный значит мощный. Он блестит и стерилен.
-ent-ERTSecurityPDA = КПК офицера безопасности ОБР
+ent-ERTSecurityPDA = КПК офицера безопасности СОБР
     .suffix = Офицер безопасности
     .desc = Красный значит мощный. На боку нацарапаны метки подсчёта.
 ent-CBURNPDA = КПК РХБЗЗ
