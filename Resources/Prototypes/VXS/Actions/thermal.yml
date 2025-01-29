@@ -1,14 +1,12 @@
 - type: entity
   id: ActionActivateThermalVision
-  name: ThermalVision
-  description: I CAN SEE EVERYTYNG
+  name: Toggle thermal vision
+  description: No armor will save them anymore.
   noSpawn: true
   components:
   - type: InstantAction
     itemIconStyle: BigAction
     priority: -20
-    icon:
-      sprite: /Textures/SS220/Misc/ThermalEye.rsi
-      state: EyeON
+    sprite: Interface/Actions/blight.png
     event: !type:UseThermalVisionEvent
     useDelay: 4
