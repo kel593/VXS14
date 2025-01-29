@@ -15,7 +15,7 @@ job-name-peacekeeper-officer = Solfed Staff Officer
 
 
 job-name-anarchykeeper = Syndicate Operative
-job-description-anarchy = Убедитесь что все помрут при проведении боевых действий в городе. Выполнение поставленных задач при этом опционально.
+job-description-anarchy = Make sure everyone dies while conducting combat operations in the city. Completion of assigned tasks is optional.
 
 job-name-anarchykeeper-medic = Syndicate Corpsman
 job-description-anarchykeeper-medic = Treat the wounded, support your team and make sure everyone dies while doing battle in the city.
