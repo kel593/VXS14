@@ -11,7 +11,7 @@ connecting-in-progress = Connecting to server
 connecting-disconnected = Disconnected from server:
 connecting-tip = 89 seconds till midnight!
 connecting-window-tip = There's some tips from officials.
-connecting-version = VXS4
+connecting-version = VXS5
 connecting-fail-reason = Failed to connect to server:
                          { $reason }
 connecting-state-NotConnecting = Not connecting
