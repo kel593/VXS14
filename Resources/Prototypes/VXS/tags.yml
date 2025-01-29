@@ -46,3 +46,8 @@
 
 - type: Tag
   id: Armorplate
+
+# Implants
+
+- type: Tag
+  id: ThermalImplant
