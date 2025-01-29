@@ -131,7 +131,7 @@
       noise:
         seed: 3
         noiseType: OpenSimplex2
-        frequency: 0.001
+        frequency: 0.0003
         lacunarity: 1.50
         fractalType: Ridged
         octaves: 1
