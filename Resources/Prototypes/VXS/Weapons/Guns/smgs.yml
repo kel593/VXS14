@@ -14,7 +14,7 @@
   - type: Clothing
     sprite: VXS/Weapons/SMGs/veresk.rsi
   - type: Gun
-    projectileSpeed: 30
+    projectileSpeed: 35
     fireRate: 8
     minAngle: 6
     maxAngle: 19

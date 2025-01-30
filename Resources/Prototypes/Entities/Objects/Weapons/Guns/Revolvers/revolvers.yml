@@ -23,7 +23,7 @@
     - Belt
   #- type: AmmoCounter VXS
   - type: Gun
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 45 # VXS
     selectedMode: SemiAuto
     fireRate: 1.5
     availableModes:
@@ -70,7 +70,7 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Gun
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 45 # VXS
     fireRate: 2
   - type: RevolverAmmoProvider
     capacity: 5
@@ -110,7 +110,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
   - type: Gun
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 45 # VXS
     fireRate: 3
     soundGunshot:
       path: /Audio/VXS/Gunshots/Revolver/revolver2.ogg # VXS
@@ -129,7 +129,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi
   - type: Gun
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 45 # VXS
     selectedMode: SemiAuto
     fireRate: 2
     availableModes:

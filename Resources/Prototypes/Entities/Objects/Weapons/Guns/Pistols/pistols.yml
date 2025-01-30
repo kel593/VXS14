@@ -26,6 +26,7 @@
     - suitStorage
     - Belt
   - type: Gun
+    projectileSpeed: 40 # VXS
     fireRate: 6
     selectedMode: SemiAuto
     availableModes:
@@ -159,6 +160,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun
+    projectileSpeed: 35 # VXS
     fireRate: 4
     soundGunshot:
       path: /Audio/VXS/Gunshots/Pistol/pistolSupressed.ogg # VXS
@@ -207,6 +209,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
   - type: Gun
+    projectileSpeed: 40 # VXS
     fireRate: 5
     availableModes:
     - SemiAuto
@@ -255,6 +258,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
   - type: Gun
+    projectileSpeed: 45 # VXS
     minAngle: 1
     maxAngle: 20
     angleIncrease: 8
