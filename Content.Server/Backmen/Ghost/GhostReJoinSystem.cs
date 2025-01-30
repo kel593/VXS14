@@ -258,59 +258,49 @@ public sealed class GhostReJoinSystem : SharedGhostReJoinSystem
     }
 
     [AnyCommand]
-    private void ReturnToRoundCommand(IConsoleShell shell, string argstr, string[] args)
+private void ReturnToRoundCommand(IConsoleShell shell, string argstr, string[] args)
+{
+    if (shell.Player?.AttachedEntity is not { } entity || !TryComp<GhostComponent>(entity, out var ghostComponent))
     {
-        if (shell.Player?.AttachedEntity is not { } entity || !TryComp<GhostComponent>(entity, out var ghostComponent))
-        {
-            shell.WriteError("This command can only be ran by a player with an attached entity.");
-            return;
-        }
-
-        if (_playerManager.PlayerCount >= _ghostRespawnMaxPlayers)
-        {
-            SendChatMsg(shell.Player,
-                Loc.GetString("ghost-respawn-max-players", ("players", _ghostRespawnMaxPlayers))
-            );
-            return;
-        }
-
-        var userId = shell.Player.UserId;
-
-        if (!_deathTime.TryGetValue(userId, out var deathTime))
-        {
-            _deathTime[userId] = ghostComponent.TimeOfDeath;
-            deathTime = ghostComponent.TimeOfDeath;
-        }
-
-        var timeOffset = _gameTiming.CurTime - deathTime;
-
-        if (timeOffset >= _ghostRespawnTime)
-        {
-            if (_eUi.ContainsKey(userId))
-            {
-                _euiManager.CloseEui(_eUi[userId]);
-                _eUi.Remove(userId);
-            }
-            _eUi.Add(userId, new GhostReJoinEui(this, (entity, ghostComponent)));
-            _euiManager.OpenEui(_eUi[userId], shell.Player);
-            _eUi[userId].StateDirty();
-            /*
-            _deathTime.Remove(userId);
-            _adminLogger.Add(LogType.Mind,
-                LogImpact.Extreme,
-                $"{shell.Player.Channel.UserName} вернулся в лобби посредством гост респавна.");
-            SendChatMsg(shell.Player,
-                Loc.GetString("ghost-respawn-window-rules-footer")
-            );
-            _gameTicker.Respawn(shell.Player);
-            */
-            return;
-        }
-
-        SendChatMsg(shell.Player,
-            Loc.GetString("ghost-respawn-time-left", ("time", (_ghostRespawnTime - timeOffset).ToString()))
-        );
+        shell.WriteError("This command can only be ran by a player with an attached entity.");
+        return;
     }
+
+    if (_playerManager.PlayerCount >= _ghostRespawnMaxPlayers)
+    {
+        SendChatMsg(shell.Player,
+            Loc.GetString("ghost-respawn-max-players", ("players", _ghostRespawnMaxPlayers))
+        );
+        return;
+    }
+
+    var userId = shell.Player.UserId;
+
+    if (!_deathTime.TryGetValue(userId, out var deathTime))
+    {
+        _deathTime[userId] = ghostComponent.TimeOfDeath;
+        deathTime = ghostComponent.TimeOfDeath;
+    }
+
+    var timeOffset = _gameTiming.CurTime - deathTime;
+
+    if (timeOffset >= _ghostRespawnTime)
+    {
+        _deathTime.Remove(userId);
+        _adminLogger.Add(LogType.Mind,
+            LogImpact.Extreme,
+            $"{shell.Player.Channel.UserName} вернулся в лобби посредством гост респавна.");
+        SendChatMsg(shell.Player,
+            Loc.GetString("ghost-respawn-window-rules-footer")
+        );
+        _gameTicker.Respawn(shell.Player);
+        return;
+    }
+
+    SendChatMsg(shell.Player,
+        Loc.GetString("ghost-respawn-time-left", ("time", (_ghostRespawnTime - timeOffset).ToString()))
+    );
+}
 
     private int _ghostRespawnMaxPlayers;
     private readonly Dictionary<NetUserId, TimeSpan> _deathTime = new();
