@@ -51,7 +51,7 @@
   - type: GunRequiresWield # VXS
   - type: Gun
     cameraRecoilScalar: 2
-    projectileSpeed: 50 # VXS
+    projectileSpeed: 55 # VXS
     fireRate: 1
     selectedMode: SemiAuto
     availableModes:
@@ -73,7 +73,7 @@
   components:
   - type: Gun
     cameraRecoilScalar: 3
-    projectileSpeed: 75 # VXS
+    projectileSpeed: 100 # VXS
     soundGunshot:
       path: /Audio/VXS/Gunshots/Sniper/sniper2.ogg # VXS
       params: # VXS
@@ -96,7 +96,7 @@
   - type: EyeCursorOffset
     maxOffset: 16
     offsetSpeed: 0.2
-    pvsIncrease: 16
+    pvsIncrease: 32
   - type: CursorOffsetRequiresWield
 
 - type: entity

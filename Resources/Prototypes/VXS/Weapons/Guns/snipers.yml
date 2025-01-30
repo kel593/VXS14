@@ -24,7 +24,7 @@
   - type: GunRequiresWield
   - type: Gun
     cameraRecoilScalar: 2
-    projectileSpeed: 50
+    projectileSpeed: 75
     fireRate: 1.5
     selectedMode: SemiAuto
     availableModes:
@@ -60,7 +60,7 @@
   - type: Appearance
   - type: EyeCursorOffset
     maxOffset: 8
-    pvsIncrease: 8
+    pvsIncrease: 12
   - type: CursorOffsetRequiresWield
 
 - type: entity
@@ -88,7 +88,7 @@
   - type: GunRequiresWield
   - type: Gun
     cameraRecoilScalar: 1
-    projectileSpeed: 55
+    projectileSpeed: 80
     fireRate: 1
     selectedMode: SemiAuto
     availableModes:

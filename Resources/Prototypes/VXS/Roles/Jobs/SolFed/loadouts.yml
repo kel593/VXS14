@@ -131,7 +131,7 @@
 - type: loadoutGroup
   id: GroupSolfedGlasses # Очки миротворцев
   name: loadout-group-syndie-eyes
-  minLimit: 1
+  minLimit: 0
   maxLimit: 1
   hidden: false
   loadouts:
@@ -195,7 +195,7 @@
   - GroupSolfedShoes # Обувь миротворцев
   - GroupSolfedBacks # Рюкзаки миротворцев
   - GroupSolfedMasks # Масочки миротворцев
-  - GroupSolfedGlasses # Очки миротворцев
+  - GroupSolfedGlassesCorpsman # Очки санитарные
   - GroupSolfedBeltCorpsman # Пояса санитара
   - GroupSolfedGlovesCorpsman # Перчатки санитарные
   - GroupSolfedUtilitiesCorpsman # Утилитарка санитарная
@@ -219,6 +219,25 @@
   id: LoadoutUniformSolfedCity # Городской камуфляж
   equipment:
     jumpsuit: ClothingUniformJumpsuitSolar
+
+
+
+- type: loadoutGroup
+  id: GroupSolfedGlassesCorpsman # Очки санитарные
+  name: loadout-group-syndie-eyes
+  minLimit: 0
+  maxLimit: 1
+  hidden: false
+  loadouts:
+  - LoadoutSyndieEyesGlasses # Солнечные
+  - LoadoutSyndieEyesMeson # Мезонки
+  - LoadoutSyndieEyesLinses # Линзы
+  - LoadoutSolfedEyesMedical # Медбаллистические
+
+- type: loadout
+  id: LoadoutSolfedEyesMedical # Медбаллистические
+  equipment:
+    eyes: ClothingEyesMedMesons
 
 
 
@@ -359,10 +378,13 @@
   maxLimit: 1
   hidden: false
   loadouts:
-  - LoadoutSyndieBeltMilitaryWebbing # Обычная
+  - LoadoutSyndieBeltMilitaryWebbingEngineering # Инженерный РПС
   - LoadoutSyndieBeltUtilityEngineering # Инженерный
 
-
+- type: loadout
+  id: LoadoutSyndieBeltMilitaryWebbingEngineering # Инженерный РПС
+  equipment:
+    belt: ClothingBeltMilitaryWebbingEngineering
 
 - type: loadoutGroup
   id: GroupSolfedGlovesEngineer # Перчатки инженерные

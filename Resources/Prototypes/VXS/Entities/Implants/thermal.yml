@@ -1,0 +1,22 @@
+- type: entity
+  parent: BaseSubdermalImplant
+  id: ThermalVisionImplant
+  name: thermal-vision implant
+  noSpawn: true
+  components:
+    - type: SubdermalImplant
+      implantAction: ActionActivateThermalVision
+    - type: TriggerImplantAction
+    - type: ThermalVisionImplant
+    - type: Tag
+      tags:
+        - ThermalImplant
+
+- type: entity
+  id: ThermalVisorImplanter
+  name: thermal-vision Implanter
+  description: thermal-vision right in your brain!
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+    - type: Implanter
+      implant: ThermalVisionImplant

@@ -1,0 +1,12 @@
+- type: entity
+  id: ActionActivateThermalVision
+  name: Toggle thermal vision
+  description: No armor will save them anymore.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    itemIconStyle: BigAction
+    priority: -20
+    sprite: Interface/Actions/blight.png
+    event: !type:UseThermalVisionEvent
+    useDelay: 4

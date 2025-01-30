@@ -19,7 +19,7 @@
     minAngle: -4 # VXS
     maxAngle: -18 # VXS
   - type: Gun
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 50 # VXS
     minAngle: 14 # VXS
     maxAngle: 35 # VXS
     angleIncrease: 4
@@ -94,7 +94,7 @@
   description: A L6 SAW for use by cyborgs. Creates .30 rifle ammo on the fly from an internal ammo fabricator, which slowly self-charges.
   components:
     - type: Gun
-      projectileSpeed: 35 # VXS
+      projectileSpeed: 50 # VXS
       minAngle: 4
       maxAngle: 25
       angleIncrease: 4

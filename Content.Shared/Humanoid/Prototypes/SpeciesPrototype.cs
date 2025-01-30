@@ -100,7 +100,7 @@ public sealed partial class SpeciesPrototype : IPrototype
     ///     Characters younger than this are too young to be hired by Nanotrasen.
     /// </summary>
     [DataField]
-    public int MinAge = 18;
+    public int MinAge = 16;
 
     /// <summary>
     ///     Characters younger than this appear young.
@@ -112,14 +112,14 @@ public sealed partial class SpeciesPrototype : IPrototype
     ///     Characters older than this appear old. Characters in between young and old age appear middle aged.
     /// </summary>
     [DataField]
-    public int OldAge = 60;
+    public int OldAge = 50;
 
     /// <summary>
     ///     Characters cannot be older than this. Only used for restrictions...
     ///     although imagine if ghosts could age people WYCI...
     /// </summary>
     [DataField]
-    public int MaxAge = 120;
+    public int MaxAge = 100;
 }
 
 public enum SpeciesNaming : byte

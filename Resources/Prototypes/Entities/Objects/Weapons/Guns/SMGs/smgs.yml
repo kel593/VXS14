@@ -16,7 +16,7 @@
     - suitStorage
   #- type: AmmoCounter VXS
   - type: Gun
-    projectileSpeed: 30 # VXS
+    projectileSpeed: 40 # VXS
     minAngle: 2
     maxAngle: 16
     fireRate: 8
@@ -75,7 +75,7 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    projectileSpeed: 30 # VXS
+    projectileSpeed: 35 # VXS
     fireRate: 10
     soundGunshot:
       path: /Audio/VXS/Gunshots/SMG/smg1.ogg # VXS
@@ -112,7 +112,7 @@
   - type: Gun
     fireRate: 9 # VXS
     cameraRecoilScalar: 1 # VXS
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 40 # VXS
     minAngle: 21
     maxAngle: 32
     shotsPerBurst: 5
@@ -155,7 +155,7 @@
       minAngle: -19
       maxAngle: -16
     - type: Gun
-      projectileSpeed: 30 # VXS
+      projectileSpeed: 35 # VXS
       minAngle: 21
       maxAngle: 32
       fireRate: 12
@@ -210,7 +210,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
   - type: Gun
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 40 # VXS
     fireRate: 7 # VXS
     selectedMode: FullAuto
     soundGunshot:
@@ -269,7 +269,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun
-    projectileSpeed: 30 # VXS
+    projectileSpeed: 40 # VXS
     fireRate: 5.5
     minAngle: 1
     maxAngle: 6

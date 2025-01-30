@@ -1,40 +1,40 @@
 # Jobname, jobdesc, supervisors
 # SOLFED
-job-name-peacekeeper = Солдат Солфеда
-job-description-peacekeeper = Выполняйте поставленные боевые задачи. Вы официально из миротворческого контингента, не подстрелите случайно мирного жителя.
-job-description-peacekeeper-officer = Командуйте войсками и убедитесь что мирные жители не пострадают от проведения боевых действий в городе.
-job-supervisors-peacekeeper = Штаб-офицеру СолФеда
-job-supervisors-peacekeeper-officer = Своему Эго
-job-name-peacekeeper-medic = Санитар Солфеда
-job-description-peacekeeper-medic = Лечите раненных, поддерживайте свою команду и убедитесь что мирные жители не пострадают от проведения боевых действий в городе.
-job-name-peacekeeper-engineer = Инженер Солфеда
-job-description-peacekeeper-engineer = Вы видите красную дверь - вы красите её в чёрный, этим всё сказано. Устройте им ад и помогите своим товарищам пережить обстрел.
-job-name-peacekeeper-cargotechnician = Офицер логистики Солфеда
-job-description-peacekeeper-cargotechnician = Обеспечьте своих союзников всем необходимым снаряжением.
-job-name-peacekeeper-officer = Штаб-офицер Солфеда
+job-name-peacekeeper = Peacekeeper
+job-description-peacekeeper = Carry out your assigned combat missions. You're officially a peacekeeper, don't accidentally shoot a civilian.
+job-description-peacekeeper-officer = Command your troops and make sure that civilians are not harmed by the fighting in the city.
+job-supervisors-peacekeeper = SolFed Staff Officer
+job-supervisors-peacekeeper-officer = your Ego
+job-name-peacekeeper-medic = Solfed Corpsman
+job-description-peacekeeper-medic = Treat the wounded, support your team and make sure that civilians are not harmed by the fighting in the city.
+job-name-peacekeeper-engineer = Solfed Combat Technician
+job-description-peacekeeper-engineer = You see a red door - you paint it black, that says it all. Give them hell and help your comrades survive the shelling.
+job-name-peacekeeper-cargotechnician = Solfed Logistics Officer
+job-description-peacekeeper-cargotechnician = Provide your allies with all the equipment they need. Money doesn't smell.
+job-name-peacekeeper-officer = Solfed Staff Officer
 
 
-job-name-anarchykeeper = Оперативник синдиката
-job-description-anarchy = Убедитесь что все помрут при проведении боевых действий в городе. Выполнение поставленных задач при этом опционально.
+job-name-anarchykeeper = Syndicate Operative
+job-description-anarchy = Make sure everyone dies while conducting combat operations in the city. Completion of assigned tasks is optional.
 
-job-name-anarchykeeper-medic = Медик Синдикат
-job-description-anarchykeeper-medic = Лечите раненных, поддерживайте свою команду и убедитесь что все помрут при проведении боевых действий в городе.
+job-name-anarchykeeper-medic = Syndicate Corpsman
+job-description-anarchykeeper-medic = Treat the wounded, support your team and make sure everyone dies while doing battle in the city.
 
-job-name-anarchykeeper-engineer = Инженер Синдикат
-job-description-anarchykeeper-engineer = Стройте укрепления, миномёты, помогайте своей команде и убедитесь что все помрут при проведении боевых действий в городе.
+job-name-anarchykeeper-engineer = Syndicate Engineer
+job-description-anarchykeeper-engineer = Build fortifications, mortars, help your team and make sure everyone dies while doing battle in the city.
 
-job-name-anarchykeeper-cargotechnician = Логист Синдикат
-job-description-anarchykeeper-cargotechnician = Заказывайте снаряжение для своей команды и обороняйте базу.
+job-name-anarchykeeper-cargotechnician = Syndicate Cargo Technician
+job-description-anarchykeeper-cargotechnician = Order equipment for your team and defend your base.
 
-job-name-anarchykeeper-officer = Офицер Синдиката
-job-description-anarchykeeper-officer = Командуйте войсками и убедитесь что все помрут при проведении боевых действий в городе.
-job-supervisors-anarchykeeper-officer = Жажде крови
+job-name-anarchykeeper-officer = Syndicate Sergeant
+job-description-anarchykeeper-officer = Command your troops and make sure everyone dies while doing battle in the city.
+job-supervisors-anarchykeeper-officer = bloodlust.
 
-department-solfed = СолФед
-department-solfed-description = Противодействуйте террористическим силам Триглава
+department-solfed = Solar Federation
+department-solfed-description = Counter the terrorist forces of the Triglav.
 
-department-anarchy = Синдикат
-department-anarchy-description = Уничтожьте солдат миротворческого контингента
+department-anarchy = Syndicate
+department-anarchy-description = Destroy the soldiers of the peacekeeping contingent.
 
 department-AnarchyFederation = Syndicate
-department-SolarFederation = Solfed
+department-SolarFederation = SolFed

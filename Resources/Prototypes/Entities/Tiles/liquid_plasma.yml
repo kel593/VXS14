@@ -52,3 +52,8 @@
   - type: Tag
     tags:
     - HideContextMenu
+  - type: PointLight # VXS
+    enabled: true
+    radius: 6
+    energy: 0.1
+    color: "#C24194"

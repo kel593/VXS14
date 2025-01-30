@@ -24,7 +24,7 @@
     angleIncrease: 1.5 # VXS
     angleDecay: 6 # VXS
     cameraRecoilScalar: 2
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 50 # VXS
     fireRate: 5
     selectedMode: SemiAuto # VXS
     availableModes:
@@ -79,7 +79,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     cameraRecoilScalar: 2
-    projectileSpeed: 35 # VXS
+    projectileSpeed: 45 # VXS
     fireRate: 5
     soundGunshot:
       path: /Audio/VXS/Gunshots/Rifle/rifle1.ogg # VXS
@@ -187,7 +187,15 @@
     sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
   - type: Gun
     cameraRecoilScalar: 2
-    projectileSpeed: 45 # VXS
+    projectileSpeed: 50 # VXS
+    shotsPerBurst: 2 # VXS
+    burstCooldown: 0.1 # VXS
+    burstFireRateModifier: 1.5 # VXS
+    selectedMode: Burst # VXS
+    availableModes: # VXS
+    - SemiAuto
+    - Burst
+    - FullAuto
     soundGunshot:
       path: /Audio/VXS/Gunshots/Rifle/rifle3.ogg # VXS
       params: # VXS
