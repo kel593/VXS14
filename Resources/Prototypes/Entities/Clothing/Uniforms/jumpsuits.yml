@@ -1323,3 +1323,14 @@
     sprite: Clothing/Uniforms/Jumpsuit/FSSjumpsuit.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/FSSjumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDelkante
+  name: Delkante uniform
+  description: Одежда членов преступной семьи Дельканте
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/delkante.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/delkante.rsi

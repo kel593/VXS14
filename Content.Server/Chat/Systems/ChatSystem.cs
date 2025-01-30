@@ -384,13 +384,13 @@ public sealed partial class ChatSystem : SharedChatSystem
         sender ??= Loc.GetString("chat-manager-sender-announcement");
 
         var wrappedMessage = Loc.GetString("chat-manager-sender-announcement-wrap-message", ("sender", sender), ("message", FormattedMessage.EscapeText(message)));
-        var station = _stationSystem.GetOwningStation(source);
+       var station = _stationSystem.GetOwningStation(source);
 
-        if (station == null)
-        {
-            // you can't make a station announcement without a station
-            return;
-        }
+//        if (station == null)
+//        {
+//            // you can't make a station announcement without a station
+//            return;
+//        }
 
         if (!EntityManager.TryGetComponent<StationDataComponent>(station, out var stationDataComp)) return;
 

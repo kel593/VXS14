@@ -1103,3 +1103,14 @@
     sprite: Clothing/Head/Hats/beret_medic.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_medic.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatDelkante
+  name: Delkante hat
+  description: Шляпа членов преступной семьи Дельканте
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/hat_delkante.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/hat_delkante.rsi
