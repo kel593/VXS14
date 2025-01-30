@@ -188,6 +188,14 @@
   - type: Gun
     cameraRecoilScalar: 2
     projectileSpeed: 50 # VXS
+    shotsPerBurst: 2 # VXS
+    burstCooldown: 0.1 # VXS
+    burstFireRateModifier: 1.5 # VXS
+    selectedMode: Burst # VXS
+    availableModes: # VXS
+    - SemiAuto
+    - Burst
+    - FullAuto
     soundGunshot:
       path: /Audio/VXS/Gunshots/Rifle/rifle3.ogg # VXS
       params: # VXS
