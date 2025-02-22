@@ -209,7 +209,7 @@
   group: market
 
 - type: cargoProduct
-  id: ArmoryMarksmanAmmoBox
+  id: ArmoryMarksmanAmmoBoxTrasser
   icon:
     sprite: Objects/Weapons/Guns/Ammunition/Boxes/anti_materiel.rsi
     state: base
