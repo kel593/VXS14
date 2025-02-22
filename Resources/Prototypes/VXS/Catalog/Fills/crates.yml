@@ -140,3 +140,58 @@
     contents:
       - id: FlatpackLandmineAIL
         amount: 6
+
+- type: entity
+  id: CrateArmoryThermalvisionKit
+  parent: CrateWeaponSecure
+  name: thermal vision goggles crate
+  description: Contains one thermal vision kit.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesGlassesThermal
+        amount: 1
+
+- type: entity
+  id: CrateArmoryArtilleryCrate
+  parent: CrateWeaponSecure
+  name: AM-82mm Frag crate
+  description: Contains four artillery shells.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MortarShellExplosive
+        amount: 4
+
+- type: entity
+  id: CrateArmoryWeaponHristov
+  parent: CrateWeaponSecure
+  name: Hristov gun kit
+  description: Marksman gun woo-hoo!!
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSniperHristov
+        amount: 1
+
+- type: entity
+  id: CrateArmoryAmmoMarksmanFifty
+  parent: CrateWeaponSecure
+  name: M50S 12.7x99 ammo box x10ammo
+  description: Contains ten ammo for high-caliber marksman rifles.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBoxAntiMateriel
+        amount: 1
+
+- type: entity
+  id: CrateArmoryAmmoMarksmanFiftyTrasser
+  parent: CrateWeaponSecure
+  name: M50T 12.7x99 ammo box x10ammo
+  description: Contains ten ammo for high-caliber marksman rifles. With trassers!
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBoxAntiMaterielTrasser
+        amount: 1
