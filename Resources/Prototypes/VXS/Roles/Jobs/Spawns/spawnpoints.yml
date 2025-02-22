@@ -121,7 +121,7 @@
   name: Officer
   components:
   - type: SpawnPoint
-    spawn_type: LateJoin
+#     spawn_type: LateJoin TEMPORARY
     job_id: SyndAnarchykeeperOfficer
   - type: Sprite
     layers:
@@ -135,7 +135,7 @@
   name: Cargo Technician
   components:
   - type: SpawnPoint
-    spawn_type: LateJoin
+#     spawn_type: LateJoin TEMPORARY
     job_id: SyndAnarchykeeperCargoTechnician
   - type: Sprite
     layers:
@@ -149,7 +149,7 @@
   name: Anarchykeeper
   components:
   - type: SpawnPoint
-    spawn_type: LateJoin
+#     spawn_type: LateJoin TEMPORARY
     job_id: SyndAnarchykeeper
   - type: Sprite
     layers:
@@ -163,7 +163,7 @@
   name: Peacekeeper
   components:
   - type: SpawnPoint
-    spawn_type: LateJoin
+#     spawn_type: LateJoin TEMPORARY
     job_id: SolfedPeacekeeper
   - type: Sprite
     layers:
@@ -177,7 +177,7 @@
   name: Officer
   components:
   - type: SpawnPoint
-    spawn_type: LateJoin
+#     spawn_type: LateJoin TEMPORARY
     job_id: SolfedPeacekeeperOfficer
   - type: Sprite
     layers:
@@ -191,7 +191,7 @@
   name: Cargo Technician
   components:
   - type: SpawnPoint
-    spawn_type: LateJoin
+#     spawn_type: LateJoin TEMPORARY
     job_id: SolfedPeacekeeperCargoTechnician
   - type: Sprite
     layers:
@@ -205,7 +205,7 @@
   name: Engineer
   components:
   - type: SpawnPoint
-    spawn_type: LateJoin
+#     spawn_type: LateJoin TEMPORARY
     job_id: SolfedPeacekeeperEngineer
   - type: Sprite
     layers:
@@ -219,7 +219,7 @@
   name: Medic
   components:
   - type: SpawnPoint
-    spawn_type: LateJoin
+#     spawn_type: LateJoin TEMPORARY
     job_id: SolfedPeacekeeperMedic
   - type: Sprite
     layers:
