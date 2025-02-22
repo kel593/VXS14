@@ -1,3 +1,15 @@
 - type: lobbyBackground
-  id: PlaceholderLobby
+  id: Nestrelyanniy
   background: /Textures/LobbyScreens/towebp.webp
+
+- type: lobbyBackground
+  id: Kozel
+  background: /Textures/LobbyScreens/kozelblyad.webp
+
+- type: lobbyBackground
+  id: PTSD
+  background: /Textures/LobbyScreens/PTSD.webp
+
+- type: lobbyBackground
+  id: Izokorteks
+  background: /Textures/LobbyScreens/izocortex.webp

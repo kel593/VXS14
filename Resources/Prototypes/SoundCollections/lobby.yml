@@ -1,6 +1,14 @@
 - type: soundCollection
   id: LobbyMusic
   files:
+    - /Audio/VXS/Lobby/doroga.ogg # VXS
+    - /Audio/VXS/Lobby/prosvistela.ogg # VXS
+    - /Audio/VXS/Lobby/noch.ogg # VXS
+    - /Audio/VXS/Lobby/cvetok.ogg # VXS
+    - /Audio/VXS/Lobby/patroni.ogg # VXS
+    - /Audio/VXS/Lobby/pechal.ogg # VXS
+    - /Audio/VXS/Lobby/poteri.ogg # VXS
+    - /Audio/VXS/Lobby/dvestidvesti.ogg # VXS
     - /Audio/VXS/Lobby/collection1.ogg # VXS
     - /Audio/VXS/Lobby/collection2.ogg # VXS
     #- /Audio/Lobby/thunderdome.ogg VXS
