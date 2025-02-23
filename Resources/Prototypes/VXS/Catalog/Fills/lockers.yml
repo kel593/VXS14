@@ -7,8 +7,6 @@
     contents:
     - id: WeaponLauncherRocket
       amount: 1
-    - id: CartridgeRocket
-      amount: 1
 
 - type: entity
   parent: GunSafe
@@ -32,4 +30,4 @@
     - id: WeaponRifleAk742M
       amount: 2
     - id: MagazineRifle
-      amount: 4
+      amount: 8
