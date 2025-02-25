@@ -16,8 +16,10 @@
   - type: TileEntityEffect
     effects:
     - !type:FlammableReaction
-      multiplier: 3.75
-      multiplierOnExisting: 0.75
+      multiplier: 8
+      multiplierOnExisting: 2
+    - !type:AdjustTemperature
+      amount: 120000
     - !type:Ignite
   - type: Transform
     anchored: true
