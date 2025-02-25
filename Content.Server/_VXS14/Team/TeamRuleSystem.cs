@@ -68,11 +68,22 @@ namespace Content.Server.VXS.Team
                             }
                         }
                     }
-                    else if(ev.JobId.Contains("SyndAnarchy"))
+                    else if(ev.JobId.Contains("Synd"))
                     {
                         foreach (var spawn in EntityQuery<TransformComponent>())
                         {
                             if (EntityManager.GetComponentOrNull<MetaDataComponent>(spawn.Owner)?.EntityPrototype?.ID == "VXSSpawnPointSyndAnarchykeeper")
+                            {
+                                spawnCoordinates = Transform(spawn.Owner).Coordinates;
+                                break;
+                            }
+                        }
+                    }
+                    else if(ev.JobId.Contains("Neutral"))
+                    {
+                        foreach (var spawn in EntityQuery<TransformComponent>())
+                        {
+                            if (EntityManager.GetComponentOrNull<MetaDataComponent>(spawn.Owner)?.EntityPrototype?.ID == "VXSSpawnPointSyndAnarchykeeper") // TODO: Add Civilians
                             {
                                 spawnCoordinates = Transform(spawn.Owner).Coordinates;
                                 break;
