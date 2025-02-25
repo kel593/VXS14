@@ -1,0 +1,169 @@
+- type: entity
+  id: InflatableWallMilitary
+  name: military inflatable barricade
+  description: An inflated membrane. Activate to deflate. Do not puncture.
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Objects/Misc/inflatable_wall.rsi
+    state: inflatable_wall
+    color: "#1B8B3B"
+  - type: Occluder
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 100
+        layer:
+        - Opaque
+        - WallLayer
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Inflatable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DisassembleOnAltVerb
+    prototype: InflatableWallStack1
+    doAfter: 3
+  - type: Airtight
+  - type: Transform
+    anchored: true
+  placement:
+    mode: SnapgridCenter
+
+- type: entity
+  id: InflatableDoorMilitary
+  name: military inflatable door
+  parent: BaseMaterialDoor
+  description: An inflated membrane. Activate to deflate. Now with a door. Do not puncture.
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Objects/Misc/inflatable_door.rsi
+    state: closed
+    color: "#1B8B3B"
+  - type: Occluder
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 100
+        layer:
+        - Opaque
+        - WallLayer
+  - type: Door
+    openSound:
+      path: /Audio/Misc/zip.ogg
+    closeSound:
+      path: /Audio/Misc/zip.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Inflatable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DisassembleOnAltVerb
+    prototype: InflatableDoorStack1
+    doAfter: 3
+
+
+
+- type: entity
+  id: InflatableWallStackMilitary
+  parent: BaseItem
+  name: military inflatable barricade
+  description: A folded membrane which rapidly expands into a large cubical shape on activation.
+  suffix: Full
+  components:
+    - type: Stack
+      stackType: InflatableWall
+      count: 10
+    - type: Sprite
+      sprite: Objects/Misc/inflatable_wall.rsi
+      state: item_wall
+      color: "#1B8B3B"
+    - type: Item
+      sprite: Objects/Misc/inflatable_wall.rsi
+      size: Small
+    - type: SpawnAfterInteract
+      prototype: InflatableWallMilitary
+      doAfter: 1
+      removeOnInteract: true
+    - type: Clickable
+
+- type: entity
+  id: InflatableDoorStackMilitary
+  parent: BaseItem
+  name: military inflatable door
+  description: A folded membrane which rapidly expands into a large cubical shape on activation.
+  suffix: Full
+  components:
+    - type: Stack
+      stackType: InflatableDoor
+      count: 4
+    - type: Sprite
+      sprite: Objects/Misc/inflatable_door.rsi
+      state: item_door
+      color: "#1B8B3B"
+    - type: Item
+      sprite: Objects/Misc/inflatable_door.rsi
+      size: Small
+    - type: SpawnAfterInteract
+      prototype: InflatableDoorMilitary
+      doAfter: 1
+      removeOnInteract: true
+    - type: Clickable
+
+- type: entity
+  parent: InflatableWallStackMilitary
+  id: InflatableWallStackMilitary5
+  suffix: 5
+  components:
+    - type: Sprite
+      state: item_wall
+      color: "#1B8B3B"
+    - type: Stack
+      count: 5
+
+- type: entity
+  parent: InflatableWallStackMilitary
+  id: InflatableWallStackMilitary1
+  suffix: 1
+  components:
+    - type: Sprite
+      state: item_wall
+      color: "#1B8B3B"
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: InflatableDoorStackMilitary
+  id: InflatableDoorStackMilitary1
+  suffix: 1
+  components:
+    - type: Sprite
+      state: item_door
+      color: "#1B8B3B"
+    - type: Stack
+      count: 1
