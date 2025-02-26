@@ -43,8 +43,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineLightRifle
-        insertSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert.ogg # VXS
-        ejectSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleMagout.ogg # VXS
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg # VXS
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg # VXS
         priority: 2
         whitelist:
           tags:
@@ -94,7 +94,7 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineLightRifle
-        insertSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert2.ogg # VXS
+        insertSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert.ogg # VXS
         ejectSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleMagout2.ogg # VXS
         priority: 2
         whitelist:
@@ -206,8 +206,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineRifle
-        insertSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert.ogg # VXS
-        ejectSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleMagout.ogg # VXS
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg # VXS
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg # VXS
         priority: 2
         whitelist:
           tags:
@@ -272,8 +272,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineRifleRubber
-        insertSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleInsert.ogg # VXS
-        ejectSound: /Audio/VXS/Gunshots/Gunsounds/Rifle/rifleMagout.ogg # VXS
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg # VXS
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg # VXS
         priority: 2
         whitelist:
           tags:

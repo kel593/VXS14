@@ -347,8 +347,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineMagnumSubMachineGunRubber
-        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        insertSound: /Audio/VXS/Gunshots/Gunsounds/SMG/smgInsert2.ogg # VXS
+        ejectSound: /Audio/VXS/Gunshots/Gunsounds/SMG/smgMagout.ogg # VXS
         priority: 2
         whitelist:
           tags:
