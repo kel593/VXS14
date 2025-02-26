@@ -20,8 +20,8 @@
     maxAngle: -18 # VXS
   - type: Gun
     projectileSpeed: 50 # VXS
-    minAngle: 14 # VXS
-    maxAngle: 35 # VXS
+    minAngle: 6 # VXS
+    maxAngle: 28 # VXS
     angleIncrease: 4
     angleDecay: 16
     fireRate: 8
