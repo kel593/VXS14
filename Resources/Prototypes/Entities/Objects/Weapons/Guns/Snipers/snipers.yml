@@ -93,11 +93,11 @@
   - type: SpeedModifiedOnWield
     walkModifier: 0.25
     sprintModifier: 0.25
-  - type: EyeCursorOffset
+  - type: EyeCursorOffset # VXS
     maxOffset: 16
     offsetSpeed: 0.2
-    pvsIncrease: 32
-  - type: CursorOffsetRequiresWield
+    pvsIncrease: 64
+  - type: CursorOffsetRequiresWield # VXS
 
 - type: entity
   name: musket

@@ -59,8 +59,8 @@
     zeroVisible: true
   - type: Appearance
   - type: EyeCursorOffset
-    maxOffset: 8
-    pvsIncrease: 12
+    maxOffset: 12
+    pvsIncrease: 24
   - type: CursorOffsetRequiresWield
 
 - type: entity
@@ -124,6 +124,6 @@
     zeroVisible: true
   - type: Appearance
   - type: EyeCursorOffset
-    maxOffset: 2
-    pvsIncrease: 0.2
+    maxOffset: 6
+    pvsIncrease: 12
   - type: CursorOffsetRequiresWield
