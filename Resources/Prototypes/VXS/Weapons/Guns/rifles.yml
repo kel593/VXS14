@@ -43,9 +43,9 @@
         whitelist:
           tags:
             - CartridgeRifle
-  - type: ClothingGrant
-    component:
-    - type: OpticZoomEffect
+  # - type: ClothingGrant TODO: FIX
+  #   component:
+  #   - type: OpticZoomEffect
 
 - type: entity
   name: Lecter
