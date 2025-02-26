@@ -1,64 +1,10 @@
 - type: gameMap
-  id: VXSForts
-  mapName: Forts
-  mapPath: /Maps/VXS/forts.yml
-  minPlayers: 0
-  stations:
-    IxodTibet:
-      stationProto: StandardStationArena
-      components:
-        - type: StationNameSetup
-          mapNameTemplate: "Ixodtibet"
-        - type: StationJobs
-          overflowJobs:
-            - SolfedPeacekeeper
-            - SyndAnarchykeeper
-          availableJobs:
-            SolfedPeacekeeper: [ -1, -1 ]
-            SyndAnarchykeeper: [ -1, -1 ]
-            SyndAnarchykeeperCargoTechnician: [ 3, 3 ]
-            SyndAnarchykeeperOfficer: [ 1, 1 ]
-            SolfedPeacekeeperMedic: [ 3, 3 ]
-            SolfedPeacekeeperEngineer: [ 3, 3 ]
-            SolfedPeacekeeperCargoTechnician: [ 3, 3 ]
-            SolfedPeacekeeperOfficer: [ 1, 1 ]
-
-
-
-- type: gameMap
   id: Barnaul
-  mapName: Barnaul (CQB)
+  mapName: Ixod-Tibet
   mapPath: /Maps/VXS/barnaul.yml
   minPlayers: 0
   stations:
     Barnaul:
-      stationProto: SolfedPlanet
-      components:
-        - type: StationNameSetup
-          mapNameTemplate: "Barnaul"
-        - type: StationJobs
-          overflowJobs:
-            - SolfedPeacekeeper
-            - SyndAnarchykeeper
-          availableJobs:
-            SolfedPeacekeeper: [ -1, -1 ]
-            SyndAnarchykeeper: [ -1, -1 ]
-            SyndAnarchykeeperCargoTechnician: [ 3, 3 ]
-            SyndAnarchykeeperOfficer: [ 1, 1 ]
-            SolfedPeacekeeperMedic: [ 3, 3 ]
-            SolfedPeacekeeperEngineer: [ 3, 3 ]
-            SolfedPeacekeeperCargoTechnician: [ 3, 3 ]
-            SolfedPeacekeeperOfficer: [ 1, 1 ]
-
-
-
-- type: gameMap
-  id: IxodTibet
-  mapName: Ixod-Tibet (RP)
-  mapPath: /Maps/VXS/ixodtibet.yml
-  minPlayers: 0
-  stations:
-    IxodTibet:
       stationProto: SolfedPlanet
       components:
         - type: StationNameSetup
@@ -72,7 +18,30 @@
             SyndAnarchykeeper: [ -1, -1 ]
             SyndAnarchykeeperCargoTechnician: [ 2, 2 ]
             SyndAnarchykeeperOfficer: [ 1, 1 ]
-            SolfedPeacekeeperMedic: [ 2, 2 ]
-            SolfedPeacekeeperEngineer: [ 2, 2 ]
-            SolfedPeacekeeperCargoTechnician: [ 1, 1 ]
-            SolfedPeacekeeperOfficer: [ 2, 2 ]
+            SolfedPeacekeeperMedic: [ 3, 3 ]
+            SolfedPeacekeeperEngineer: [ 3, 3 ]
+            SolfedPeacekeeperCargoTechnician: [ 2, 2 ]
+            SolfedPeacekeeperOfficer: [ 1, 1 ]
+
+- type: gameMap
+  id: Omsk
+  mapName: Ixod-Nakat
+  mapPath: /Maps/VXS/omsk.yml
+  minPlayers: 0
+  stations:
+    Omsk:
+      stationProto: SolfedPlanet
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "SOLFED14A5 IXOD-NAKAT"
+        - type: StationJobs
+          overflowJobs:
+            - SolfedPeacekeeper
+            - SyndAnarchykeeper
+          availableJobs:
+            SolfedPeacekeeper: [ -1, -1 ]
+            SyndAnarchykeeper: [ -1, -1 ]
+            SyndAnarchykeeperOfficer: [ 1, 1 ]
+            SolfedPeacekeeperMedic: [ 3, 3 ]
+            SolfedPeacekeeperEngineer: [ 3, 3 ]
+            SolfedPeacekeeperOfficer: [ 1, 1 ]
