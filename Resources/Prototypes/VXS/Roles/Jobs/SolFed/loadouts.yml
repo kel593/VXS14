@@ -505,6 +505,7 @@
   storage:
     back:
     - BoxMRE
+    - GlowstickBlue
 
 - type: startingGear
   id: SolfedPeacekeeperMedicGear
@@ -515,6 +516,7 @@
   storage:
     back:
     - BoxMRE
+    - GlowstickBlue
 
 - type: startingGear
   id: SolfedPeacekeeperEngineerGear
@@ -525,6 +527,7 @@
   storage:
     back:
     - BoxMRE
+    - GlowstickBlue
 
 - type: startingGear
   id: SolfedPeacekeeperCargoTechnicianGear
@@ -541,6 +544,7 @@
   storage:
     back:
     - BoxMRE
+    - GlowstickBlue
 
 - type: startingGear
   id: SolfedPeacekeeperOfficerGear
@@ -554,3 +558,4 @@
   storage:
     back:
     - BoxMRE
+    - GlowstickBlue

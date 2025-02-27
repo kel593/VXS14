@@ -615,6 +615,10 @@
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
     neck: ClothingNeckArmbandRed
+  storage:
+    back:
+    - BoxMRE
+    - GlowstickRed
 
 - type: startingGear
   id: SyndieCargotechGear
@@ -622,6 +626,10 @@
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
     neck: ClothingNeckArmbandRed
+  storage:
+    back:
+    - BoxMRE
+    - GlowstickRed
 
 - type: startingGear
   id: AnarchykeeperOfficerGear
@@ -630,3 +638,7 @@
     ears: ClothingHeadsetAltSyndicate
     neck: ClothingNeckArmbandRed
     pocket1: WeaponSMGVereskHeath
+  storage:
+    back:
+    - BoxMRE
+    - GlowstickRed
