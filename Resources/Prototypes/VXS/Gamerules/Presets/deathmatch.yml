@@ -1,0 +1,14 @@
+- type: gamePreset
+  id: VXSWarOnTerror
+  alias:
+  - waronterror
+  - wot
+  - dethmach
+  name: War On Terror
+  showInVote: true
+  description: Силы Триглава заняли поселение. СолФед ввёл свой миротворческий контингент для обеспечения стабилизации региона.
+  rules:
+  - BasicStationEventScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+  - TeamRule

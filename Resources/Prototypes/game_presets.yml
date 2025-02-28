@@ -11,6 +11,7 @@
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
+    - TeamRule
 
 - type: gamePreset
   id: KesslerSyndrome
@@ -26,6 +27,7 @@
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
+    - TeamRule
 
 - type: gamePreset
   id: AllAtOnce
@@ -43,6 +45,7 @@
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
+    - TeamRule
 
 - type: gamePreset
   id: AllerAtOnce
@@ -67,6 +70,7 @@
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
+    - TeamRule
 
 - type: gamePreset
   id: Extended
@@ -81,6 +85,7 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
+  - TeamRule
 
 - type: gamePreset
   id: Greenshift
@@ -93,6 +98,7 @@
   rules:
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
+  - TeamRule
 
 - type: gamePreset
   id: Secret
@@ -100,10 +106,11 @@
     - secret
     - sekrit
   name: secret-title
-  showInVote: true
+  showInVote: false #2boring2vote
   description: secret-description
   rules:
     - Secret
+    - TeamRule
 
 - type: gamePreset
   id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
@@ -117,6 +124,7 @@
     - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
+    - TeamRule
 
 - type: gamePreset
   id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
@@ -128,6 +136,7 @@
   rules:
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
+  - TeamRule
 
 - type: gamePreset
   id: Sandbox
@@ -139,6 +148,7 @@
   maxPlayers: 5
   rules:
     - Sandbox
+    - TeamRule
 
 - type: gamePreset
   id: Traitor
@@ -155,6 +165,7 @@
     - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
+    - TeamRule
 
 - type: gamePreset
   id: Deathmatch
@@ -164,10 +175,11 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
+    - TeamRule
 
 - type: gamePreset
   id: Nukeops
@@ -183,6 +195,7 @@
     - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
+    - TeamRule
 
 - type: gamePreset
   id: Revolutionary
@@ -200,6 +213,7 @@
     - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
+    - TeamRule
 
 - type: gamePreset
   id: Zombie
@@ -218,6 +232,7 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
+  - TeamRule
 
 - type: gamePreset
   id: Zombieteors
@@ -234,6 +249,7 @@
   - KesslerSyndromeScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
+  - TeamRule
 
 
 
