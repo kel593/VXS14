@@ -754,7 +754,7 @@ entities:
     - type: SpreaderGrid
     - type: GridPathfinding
     - type: BecomesStation
-      id: IxodTibet
+      id: Omsk
     - type: StationBankAccount
       increasePerSecond: 0
       balance: 5000
