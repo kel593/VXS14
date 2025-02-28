@@ -5,17 +5,19 @@
   - type: Store
     name: store-preset-name-uplink
     categories:
-    - UplinkWeaponry
-    - UplinkAmmo
-    - UplinkExplosives
-    - UplinkChemicals
-    - UplinkDeception
-    - UplinkDisruption
-    - UplinkImplants
-    - UplinkAllies
-    - UplinkWearables
-    - UplinkJob
-    - UplinkPointless
+    # - UplinkWeaponry VXS
+    # - UplinkAmmo
+    # - UplinkExplosives
+    # - UplinkChemicals
+    # - UplinkDeception
+    # - UplinkDisruption
+    # - UplinkImplants
+    # - UplinkAllies
+    # - UplinkWearables
+    # - UplinkJob
+    # - UplinkPointless
+    - UplinkWeaponsCategory
+    - UplinkAmmunitionCategory
     currencyWhitelist:
     - Telecrystal
     balance:

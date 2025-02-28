@@ -6,3 +6,6 @@
 #
 # - /Prototypes/Guidebook
 # - /Prototypes/Catalog/uplink_catalog.yml
+
+- /Prototypes/Catalog/uplink_catalog.yml # VXS
+- /Prototypes/Store/categories.yml # VXS

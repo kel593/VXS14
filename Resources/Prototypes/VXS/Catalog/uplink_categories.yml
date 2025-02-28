@@ -1,0 +1,29 @@
+- type: storeCategory
+  id: UplinkWeaponsCategory
+  name: Weaponry
+  priority: 0
+
+- type: storeCategory
+  id: UplinkAmmunitionCategory
+  name: Ammunition
+  priority: 1
+
+# - type: storeCategory
+#   id: UplinkExplosivesCategory
+#   name: Explosives
+#   priority: 2
+#
+# - type: storeCategory
+#   id: UplinkArmorCategory
+#   name: Armor
+#   priority: 3
+#
+# - type: storeCategory
+#   id: UplinkMedicineCategory
+#   name: Medicine
+#   priority: 4
+#
+# - type: storeCategory
+#   id: UplinkEngineering
+#   name: Engineering
+#   priority: 5

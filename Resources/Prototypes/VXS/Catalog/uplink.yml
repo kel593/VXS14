@@ -1,0 +1,290 @@
+# WEAPONS #
+
+- type: listing
+  id: UplinkC20RGun
+  name: C-20R SMG 9x19mm
+  description: C-20R, classic submachine gun chambered in 9x19mm.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/SMGs/c20r.rsi, state: icon }
+  productEntity: WeaponSubMachineGunC20r
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponsCategory
+
+- type: listing
+  id: UplinkVectorGun
+  name: Vector SMG 9x19mm
+  description: A simple submachine gun, quite old but still looks futuristic. Chambered in 9x19mm.
+  icon: { sprite: Objects/Weapons/Guns/SMGs/vector.rsi, state: icon }
+  productEntity: WeaponSubMachineGunVector
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponsCategory
+
+- type: listing
+  id: UplinkHeathGun
+  name: Heath SMG 6.35x15mm
+  description: Machinepistol with integrated silencer, has good armor penetration parameters at medium ranges, chambered in 6.35x15mm.
+  icon: { sprite: VXS/Weapons/SMGs/veresk.rsi, state: icon }
+  productEntity: WeaponSMGVereskHeath
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponsCategory
+
+- type: listing
+  id: UplinkBulldogGun
+  name: Bulldog shotgun 12g
+  description: Bulldog, semi-automatic shotgun chambered in 9x19mm.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
+  productEntity: WeaponShotgunBulldog
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponsCategory
+
+- type: listing
+  id: UplinkM90Gun
+  name: M90GL carbine 5.45x39mm
+  description: A great gun with a non-working grenade launcher welded to it. Nevertheless, it's still a handy weapon. Chambered in 5.45x39mm.
+  icon: { sprite: Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
+  productEntity: WeaponRifleM90GrenadeLauncher
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponsCategory
+
+- type: listing
+  id: UplinkRPKGun
+  name: RPK-43M machinegun 5.45x39mm
+  description: Light machine gun. Excelled in both suppressive shooting and direct fire combat. Chambered in 5.45x39mm.
+  icon: { sprite: VXS/Weapons/LMGs/rpk.rsi, state: icon }
+  productEntity: WeaponLMGRPK
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkWeaponsCategory
+
+- type: listing
+  id: UplinkSvyatGun
+  name: Svyat marksman rifle 8.6x70mm
+  description: Relatively lightweight Marksman rifle, equipped with integrated optics and muzzle brake. Chambered in 8.6x70mm aka 338 Lapua Magnum.
+  icon: { sprite: VXS/Weapons/Snipers/svyat.rsi, state: icon }
+  productEntity: WeaponSniperSvyat
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkWeaponsCategory
+
+- type: listing
+  id: UplinkChinaLakeGun
+  name: China-lake grenade launcher 40mm
+  description: Hand lever multi-shot grenade launcher. Great performance in storming fortifications. Chambered in 40mm.
+  icon: { sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
+  productEntity: WeaponLauncherChinaLake
+  cost:
+    Telecrystal: 40
+  categories:
+  - UplinkWeaponsCategory
+
+# AMMUNITION #
+
+- type: listing
+  id: UplinkSMGMagazine
+  name: 30pts 9x19 M35S Mag
+  description: Can be used with C-20R! Filled with M35S 9x19mm rounds.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red }
+  productEntity: MagazinePistolSubMachineGun
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkSMGMagazineTrassers
+  name: 30pts 9x19 M35T Mag
+  description: Can be used with C-20R! Filled with M35T 9x19mm rounds.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: practice }
+  productEntity: MagazinePistolSubMachineGunPractice
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAmmunitionCategory
+
+
+
+- type: listing
+  id: UplinkSMGMagazineVector
+  name: 30pts Vector 9x19 M35T Mag
+  description: Can be used with Vector SMG! Filled with M35T 9x19mm rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_smg_mag.rsi, state: red }
+  productEntity: MagazineMagnumSubMachineGun
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkSMGMagazineVectorTrassers
+  name: 30pts Vector 9x19 M35T Mag
+  description: Can be used with Vector SMG! Filled with M35T 9x19mm rounds.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: practice }
+  productEntity: MagazineMagnumSubMachineGunPractice
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAmmunitionCategory
+
+
+
+- type: listing
+  id: UplinkPistolMagazine
+  name: 15pts Pistol 9x19 M35S Mag
+  description: Can be used with Viper! Filled with M35S 9x19mm rounds.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red }
+  productEntity: MagazinePistol
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkPistolMagazineTrasser
+  name: 15pts Pistol 9x19 M35T Mag
+  description: Can be used with Viper! Filled with M35T 9x19mm rounds.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: practice }
+  productEntity: MagazinePistolPractice
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkPistolMagazineUranium
+  name: 15pts Pistol 9x19 M35U Mag
+  description: Can be used with Viper! Filled with M35U 9x19mm rounds.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: uranium }
+  productEntity: MagazinePistolUranium
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAmmunitionCategory
+
+
+
+- type: listing
+  id: UplinkPistolAmmoBox
+  name: 60pts 9x19 M35S ammo box
+  description: Filled with M35S 9x19mm rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi, state: base }
+  productEntity: MagazineBoxPistol
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkPistolAmmoBoxPractice
+  name: 60pts 9x19 M35T ammo box
+  description: Filled with M35T 9x19mm rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi, state: practice }
+  productEntity: MagazineBoxPistolPractice
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkPistolAmmoBoxIncendiary
+  name: 60pts 9x19 M35I ammo box
+  description: Filled with M35I 9x19mm rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi, state: incendiary }
+  productEntity: MagazineBoxPistolIncendiary
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkPistolAmmoBoxUranium
+  name: 60pts 9x19 M35U ammo box
+  description: Filled with M35U 9x19mm rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi, state: uranium }
+  productEntity: MagazineBoxPistolUranium
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkAmmunitionCategory
+
+
+
+- type: listing
+  id: UplinkPistolMagazineSMGHeath
+  name: 20pts Heath SMG 6.35x15 AWR25S Mag
+  description: Can be used with Heath! Filled with AWR25S 6.35x15 rounds.
+  icon: { sprite: VXS/Weapons/Ammunition/Magazines/veresk.rsi, state: base }
+  productEntity: PistolMagazineVereskHeath
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmunitionCategory
+
+
+
+- type: listing
+  id: UplinkCobraMagazine
+  name: 10pts Cobra 6.35x15 AWR25S Mag
+  description: Can be used with Cobra! Filled with AWR25S 6.35x15 rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: red }
+  productEntity: MagazinePistolCaselessRifle
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkCobraMagazineTrasser
+  name: 10pts Cobra 6.35x15 AWR25T Mag
+  description: Can be used with Cobra! Filled with AWR25T 6.35x15 rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: practice }
+  productEntity: MagazinePistolCaselessRiflePractice
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmunitionCategory
+
+
+
+- type: listing
+  id: UplinkCaselessAmmoBox
+  name: 60pts 6.35x15 AWR25S Box
+  description: Filled with AWR25S 6.35x15 rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi, state: base }
+  productEntity: MagazineBoxCaselessRifle
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkCaselessAmmoBoxTrasser
+  name: 60pts 6.35x15 AWR25T Box
+  description: Filled with AWR25T 6.35x15 rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi, state: practice }
+  productEntity: MagazineBoxCaselessRiflePractice
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkAmmunitionCategory
+
+- type: listing
+  id: UplinkCaselessAmmoBoxIncendiary
+  name: 60pts 6.35x15 AWR25I Box
+  description: Filled with AWR25I 6.35x15 rounds.
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi, state: red }
+  productEntity: MagazineBoxCaselessRifleIncendiary
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkAmmunitionCategory
