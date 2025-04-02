@@ -1,11 +1,44 @@
 - type: entity
   id: VXSFortStruct
   parent: BaseStructure
-  name: Fort Struct Syndicate
+  name: Fort Struct
+  suffix: DEBUG
   description: Placeholder
   components:
   - type: VXSFortStruct
-    team: Triglav Forces
+    team: DEBUG
+  - type: Sprite
+    sprite: VXS/Structures/fort.rsi
+    state: icon
+  - type: Construction
+    graph: VXForts
+    node: Fullhealth
+
+- type: entity
+  id: VXSFortStructSolFed
+  parent: BaseStructure
+  name: Fort Struct Solfed
+  suffix: SOLFED
+  description: Placeholder
+  components:
+  - type: VXSFortStruct
+    team: Solfed
+  - type: Sprite
+    sprite: VXS/Structures/fort.rsi
+    state: icon
+  - type: Construction
+    graph: VXForts
+    node: Fullhealth
+
+- type: entity
+  id: VXSFortStructSyndie
+  parent: BaseStructure
+  name: Fort Struct Syndicate
+  suffix: SYNDIE
+  description: Placeholder
+  components:
+  - type: VXSFortStruct
+    team: Syndicate
   - type: Sprite
     sprite: VXS/Structures/fort.rsi
     state: icon

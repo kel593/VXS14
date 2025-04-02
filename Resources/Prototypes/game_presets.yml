@@ -273,3 +273,10 @@
   parent: BaseGameRule
   components:
   - type: VXSTeamRule
+
+- type: entity
+  id: VXForts
+  parent: BaseGameRule
+  components:
+  - type: VXSFortsGameRule
+
