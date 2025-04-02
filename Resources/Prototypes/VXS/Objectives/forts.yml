@@ -22,7 +22,7 @@
   description: Placeholder
   components:
   - type: VXSFortStruct
-    team: Solfed
+    team: солфеда
   - type: Sprite
     sprite: VXS/Structures/fort.rsi
     state: icon
@@ -38,7 +38,7 @@
   description: Placeholder
   components:
   - type: VXSFortStruct
-    team: Syndicate
+    team: синдиката
   - type: Sprite
     sprite: VXS/Structures/fort.rsi
     state: icon
