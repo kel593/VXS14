@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Shared.Movement.Components;
+using Content.Shared.Movement.Systems;
 using JetBrains.Annotations;
 using Robust.Shared.Network;
 using Robust.Shared.Serialization;
@@ -12,24 +13,24 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
     /// <summary>
     ///     Maximum rate of magnitude restore towards 0 kick.
     /// </summary>
-    private const float RestoreRateMax = 40f;
+    private const float RestoreRateMax = 30f;
 
     /// <summary>
     ///     Minimum rate of magnitude restore towards 0 kick.
     /// </summary>
-    private const float RestoreRateMin = 1f;
+    private const float RestoreRateMin = 0.1f;
 
     /// <summary>
     ///     Time in seconds since the last kick that lerps RestoreRateMin and RestoreRateMax
     /// </summary>
-    private const float RestoreRateRamp = 6f;
+    private const float RestoreRateRamp = 4f;
 
     /// <summary>
     ///     The maximum magnitude of the kick applied to the camera at any point.
     /// </summary>
-    protected const float KickMagnitudeMax = 4.5f;
+    protected const float KickMagnitudeMax = 1f;
 
-    [Dependency] private readonly SharedEyeSystem _eye = default!;
+    [Dependency] private readonly SharedContentEyeSystem _eye = default!;
     [Dependency] private readonly INetManager _net = default!;
 
     public override void Initialize()
@@ -53,9 +54,9 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
 
     private void UpdateEyes(float frameTime)
     {
-        var query = AllEntityQuery<CameraRecoilComponent>();
+        var query = AllEntityQuery<CameraRecoilComponent, EyeComponent>();
 
-        while (query.MoveNext(out var uid, out var recoil))
+        while (query.MoveNext(out var uid, out var recoil, out var eye))
         {
             var magnitude = recoil.CurrentKick.Length();
             if (magnitude <= 0.005f)
@@ -82,6 +83,7 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
                 continue;
 
             recoil.LastKick = recoil.CurrentKick;
+            _eye.UpdateEyeOffset((uid, eye));
         }
     }
 
