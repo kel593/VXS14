@@ -21,3 +21,29 @@
   products:
     Nitrogen: 2
     Oxygen: 1
+
+- type: reaction # VXS
+  id: OxygenEvaporation
+  minTemp: -183.1
+  reactants:
+    Oxygen:
+      amount: 1
+  effects:
+  - !type:CreateGas
+    gas: Oxygen
+  products:
+    Oxygen: 0.1
+
+- type: reaction # VXS
+  id: NitrogenEvaporation
+  minTemp: -195.9
+  reactants:
+    Nitrogen:
+      amount: 1
+  effects:
+  - !type:CreateGas
+    gas: Nitrogen
+  products:
+    Nitrogen: 0.1
+
+# TODO: Bromine
