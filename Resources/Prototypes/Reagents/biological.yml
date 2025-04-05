@@ -11,7 +11,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  evaporates: true
+  # evaporates: true
   recognizable: true
   physicalDesc: reagent-physical-desc-ferrous
   slippery: false
