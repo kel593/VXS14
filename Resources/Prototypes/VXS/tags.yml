@@ -42,6 +42,9 @@
 - type: Tag
   id: MortarShell
 
+- type: Tag
+  id: HMGMagBox
+
 # Armor
 
 - type: Tag

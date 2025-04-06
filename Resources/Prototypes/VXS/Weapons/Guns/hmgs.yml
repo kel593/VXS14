@@ -1,0 +1,91 @@
+- type: entity
+  name: BaseWeaponHeavyMachineGun
+  parent: BaseItem
+  id: BaseWeaponHeavyPullableMachineGun
+  description: A rooty tooty point and shooty.
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: Gun
+    projectileSpeed: 50 # VXS
+    minAngle: 6 # VXS
+    maxAngle: 28 # VXS
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 8
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/VXS/Gunshots/Rifle/rifle4.ogg # VXS
+      params: # VXS
+        maxDistance: 60
+        volume: 4
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/lmg_cock.ogg
+  - type: AmmoCounter
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineHMGMagBox
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - HMGMagBox
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeAntiMateriel
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeAntiMateriel
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: UseDelay
+    delay: 5
+  - type: Anchorable
+  - type: GunRequiresWield
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/LMGs/l6.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+  - type: HeldSpeedModifier
+    walkModifier: 0
+    sprintModifier: 0.2
+
+- type: entity
+  id: MagazineHMGMagBox
+  name: "machinegun munitions box (12.7x99mm M50S)" # VXS
+  parent: BaseMagazineLightRifle
+  components:
+  - type: Tag
+    tags:
+      - HMGMagBox
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/pk_box.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 7
+    zeroVisible: false
+  - type: Appearance
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeAntiMateriel
+    proto: CartridgeAntiMateriel
+    capacity: 50
