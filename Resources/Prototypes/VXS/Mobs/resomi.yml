@@ -62,6 +62,8 @@
     damage:
       types:
         Slash: 5
+  - type: FlashModifier
+    modifier: 3
   - type: Temperature
     heatDamageThreshold: 315
     coldDamageThreshold: 230
@@ -73,15 +75,75 @@
     heatDamage:
       types:
         Heat : 1.5 #per second, scales with temperature & other constants
+  - type: Hands
+    handDisplacement:
+      sizeMaps:
+        32:
+          sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+          state: inHand
   - type: Inventory
     speciesId: resomi
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: jumpsuit
+      eyes:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: eyes
+      gloves:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: hands
+      head:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: head
+      back:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: back
+      ears:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: ears
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: feet
+      neck:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: neck
+      mask:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: mask
+      suitstorage:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: suitStorage
+      belt:
+        sizeMaps:
+          32:
+            sprite: _CorvaxNext/Mobs/Species/Resomi/displacement.rsi
+            state: belt
   - type: Vocal
     sounds:
       Male: MaleResomi
       Female: FemaleResomi
       Unsexed: MaleResomi
-  - type: FlashModifier
-    modifier: 2
 - type: entity
   parent: BaseSpeciesDummy
   id: MobResomiDummy
