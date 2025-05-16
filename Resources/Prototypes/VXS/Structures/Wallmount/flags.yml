@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseFlag
+  id: SolFedArmedForcesFlag
+  name: SFAF flag
+  description: The flag of the armed forces of the solar federation.
+  components:
+  - type: Sprite
+    state: SFAF_flag
+
+- type: entity
+  parent: BaseFlag
+  id: SolFedFlag
+  name: solfed Flag
+  description: The national flag of the solar federation. It depicts the sun and millet on a dark blue background.
+  components:
+  - type: Sprite
+    state: SF_flag
