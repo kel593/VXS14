@@ -1,0 +1,25 @@
+- type: entity
+  name: promedol syringe
+  parent: PrefilledSyringe
+  id: SyringePromedol
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: Trimeperidine
+          Quantity: 15
+
+- type: entity
+  name: estrinidap syringe
+  parent: PrefilledSyringe
+  id: SyringeEstrinidap
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: Estrinidap
+          Quantity: 15

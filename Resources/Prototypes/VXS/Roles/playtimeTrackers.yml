@@ -27,3 +27,12 @@
 
 - type: playTimeTracker
   id: JobAnarchykeeperOfficerTracker
+
+- type: playTimeTracker
+  id: JobSpecMarksmanTracker
+
+- type: playTimeTracker
+  id: JobSpecMachinegunnerTracker
+
+- type: playTimeTracker
+  id: JobSpecMedicTracker

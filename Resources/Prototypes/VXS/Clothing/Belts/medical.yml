@@ -1,0 +1,15 @@
+- type: entity
+  id: ClothingBeltMilitaryWebbingSyndieMedical
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Filled, Medical
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringePromedol
+      - id: SyringeTranexamicAcid
+      - id: Tourniquet
+        amount: 2
+      - id: SyringeInaprovaline
+        amount: 2
+      - id: GauzeCohesive
+        amount: 2

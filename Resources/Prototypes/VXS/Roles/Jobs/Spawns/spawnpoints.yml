@@ -22,13 +22,39 @@
       - state: OfficerAnarchy
 
 - type: entity
-  id: VXSSpawnPointSyndAnarchykeeperCargoTechnician
+  id: VXSSpawnPointSyndAnarchykeeperSpecMarksman
+  parent: VXSSpawnPointJobBase
+  suffix: Synd
+  name: Officer
+  components:
+  - type: SpawnPoint
+    job_id: SyndAnarchykeeperSpecMarksman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: OfficerAnarchy
+
+- type: entity
+  id: VXSSpawnPointSyndAnarchykeeperSpecMedic
+  parent: VXSSpawnPointJobBase
+  suffix: Synd
+  name: Officer
+  components:
+  - type: SpawnPoint
+    job_id: SyndAnarchykeeperSpecMedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: OfficerAnarchy
+
+- type: entity
+  id: VXSSpawnPointSyndAnarchykeeperSpecMachinegunner
   parent: VXSSpawnPointJobBase
   suffix: Synd
   name: Cargo Technician
   components:
   - type: SpawnPoint
-    job_id: SyndAnarchykeeperCargoTechnician
+    job_id: SyndAnarchykeeperSpecMachinegunner
   - type: Sprite
     layers:
       - state: green

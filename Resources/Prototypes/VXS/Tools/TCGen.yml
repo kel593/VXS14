@@ -1,0 +1,17 @@
+- type: entity
+  name: TC Timed Spawner
+  id: TCTimeddSpawner
+  parent: BaseElectronics
+  components:
+    - type: Sprite
+      layers:
+        - sprite: Objects/Misc/module.rsi
+          state: charger_APC
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+        - Telecrystal1
+      chance: 1
+      intervalSeconds: 60
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1

@@ -28,6 +28,54 @@
   - Engineering
   - Cargo
   - NuclearOperative
+  special:
+  - !type:AddImplantSpecial
+    implants: [ UplinkImplant ]
+
+- type: job
+  id: SyndAnarchykeeperSpecMarksman # Специалист - марксман
+  name: Specialist Marksman
+  description: job-description-anarchy
+  playTimeTracker: JobSpecMarksmanTracker
+  requirements:
+  startingGear: AnarchykeeperGear
+  icon: "JobIconSyndieMarksman"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - SyndicateAgent
+  - Maintenance
+  extendedAccess:
+  - NuclearOperative
+
+- type: job
+  id: SyndAnarchykeeperSpecMachinegunner # Специалист - пулеметчик
+  name: Specialist Machinegunner
+  description: job-description-anarchy
+  playTimeTracker: JobSpecMachinegunnerTracker
+  requirements:
+  startingGear: AnarchykeeperGear
+  icon: "JobIconSyndieMarksman"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - SyndicateAgent
+  - Maintenance
+  extendedAccess:
+  - NuclearOperative
+
+- type: job
+  id: SyndAnarchykeeperSpecMedic # Специалист - санитар
+  name: Specialist Corpsman
+  description: job-description-anarchy
+  playTimeTracker: JobSpecMedicTracker
+  requirements:
+  startingGear: AnarchykeeperGear
+  icon: "JobIconSyndieMarksman"
+  supervisors: job-supervisors-anarchykeeper
+  access:
+  - SyndicateAgent
+  - Maintenance
+  extendedAccess:
+  - NuclearOperative
 
 - type: job
   id: SyndAnarchykeeperOfficer # Офицер

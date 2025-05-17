@@ -1,0 +1,19 @@
+- type: entity
+  name: Target Pinpointer
+  description: Показывает куда надо воевать. Чтоб разобрать консоль необходимо её разварить, потом следовать инструкциям через осмотр консоли.
+  id: VXSTargetPinpointer
+  parent: [ PinpointerSyndicateNuclear ]
+  components:
+  - type: Sprite
+    layers:
+    - state: pinpointer-syndicate
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    state: pinpointer-syndicate
+  - type: Pinpointer
+    component: VXSFortStruct
+    targetName: Team Console

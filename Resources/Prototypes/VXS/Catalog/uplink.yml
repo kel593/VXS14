@@ -7,7 +7,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/SMGs/c20r.rsi, state: icon }
   productEntity: WeaponSubMachineGunC20r
   cost:
-    Telecrystal: 10
+    Telecrystal: 2
   categories:
   - UplinkWeaponsCategory
 
@@ -18,7 +18,7 @@
   icon: { sprite: Objects/Weapons/Guns/SMGs/vector.rsi, state: icon }
   productEntity: WeaponSubMachineGunVector
   cost:
-    Telecrystal: 10
+    Telecrystal: 2
   categories:
   - UplinkWeaponsCategory
 
@@ -29,7 +29,7 @@
   icon: { sprite: VXS/Weapons/SMGs/veresk.rsi, state: icon }
   productEntity: WeaponSMGVereskHeath
   cost:
-    Telecrystal: 10
+    Telecrystal: 2
   categories:
   - UplinkWeaponsCategory
 
@@ -40,7 +40,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
   productEntity: WeaponShotgunBulldog
   cost:
-    Telecrystal: 10
+    Telecrystal: 3
   categories:
   - UplinkWeaponsCategory
 
@@ -51,7 +51,7 @@
   icon: { sprite: Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
   productEntity: WeaponRifleM90GrenadeLauncher
   cost:
-    Telecrystal: 10
+    Telecrystal: 2
   categories:
   - UplinkWeaponsCategory
 
@@ -62,7 +62,7 @@
   icon: { sprite: VXS/Weapons/LMGs/rpk.rsi, state: icon }
   productEntity: WeaponLMGRPK
   cost:
-    Telecrystal: 25
+    Telecrystal: 3
   categories:
   - UplinkWeaponsCategory
 
@@ -73,7 +73,7 @@
   icon: { sprite: VXS/Weapons/Snipers/svyat.rsi, state: icon }
   productEntity: WeaponSniperSvyat
   cost:
-    Telecrystal: 25
+    Telecrystal: 3
   categories:
   - UplinkWeaponsCategory
 
@@ -84,7 +84,7 @@
   icon: { sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
   productEntity: WeaponLauncherChinaLake
   cost:
-    Telecrystal: 40
+    Telecrystal: 10
   categories:
   - UplinkWeaponsCategory
 
@@ -180,7 +180,7 @@
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi, state: base }
   productEntity: MagazineBoxPistol
   cost:
-    Telecrystal: 4
+    Telecrystal: 2
   categories:
   - UplinkAmmunitionCategory
 
@@ -191,7 +191,7 @@
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi, state: practice }
   productEntity: MagazineBoxPistolPractice
   cost:
-    Telecrystal: 4
+    Telecrystal: 2
   categories:
   - UplinkAmmunitionCategory
 
@@ -202,7 +202,7 @@
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi, state: incendiary }
   productEntity: MagazineBoxPistolIncendiary
   cost:
-    Telecrystal: 4
+    Telecrystal: 3
   categories:
   - UplinkAmmunitionCategory
 
@@ -213,7 +213,7 @@
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi, state: uranium }
   productEntity: MagazineBoxPistolUranium
   cost:
-    Telecrystal: 4
+    Telecrystal: 2
   categories:
   - UplinkAmmunitionCategory
 
@@ -226,7 +226,7 @@
   icon: { sprite: VXS/Weapons/Ammunition/Magazines/veresk.rsi, state: base }
   productEntity: PistolMagazineVereskHeath
   cost:
-    Telecrystal: 2
+    Telecrystal: 1
   categories:
   - UplinkAmmunitionCategory
 
@@ -239,7 +239,7 @@
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: red }
   productEntity: MagazinePistolCaselessRifle
   cost:
-    Telecrystal: 2
+    Telecrystal: 1
   categories:
   - UplinkAmmunitionCategory
 
@@ -250,7 +250,7 @@
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: practice }
   productEntity: MagazinePistolCaselessRiflePractice
   cost:
-    Telecrystal: 2
+    Telecrystal: 1
   categories:
   - UplinkAmmunitionCategory
 
@@ -263,7 +263,7 @@
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi, state: base }
   productEntity: MagazineBoxCaselessRifle
   cost:
-    Telecrystal: 8
+    Telecrystal: 3
   categories:
   - UplinkAmmunitionCategory
 
@@ -274,7 +274,7 @@
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi, state: practice }
   productEntity: MagazineBoxCaselessRiflePractice
   cost:
-    Telecrystal: 8
+    Telecrystal: 3
   categories:
   - UplinkAmmunitionCategory
 
@@ -282,9 +282,9 @@
   id: UplinkCaselessAmmoBoxIncendiary
   name: 60pts 6.35x15 AWR25I Box
   description: Filled with AWR25I 6.35x15 rounds.
-  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi, state: red }
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi, state: practice }
   productEntity: MagazineBoxCaselessRifleIncendiary
   cost:
-    Telecrystal: 8
+    Telecrystal: 3
   categories:
   - UplinkAmmunitionCategory

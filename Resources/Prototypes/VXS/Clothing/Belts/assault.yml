@@ -1,0 +1,19 @@
+- type: entity
+  id: ClothingBeltMilitaryWebbingRPKMG
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Filled, RPK
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineLMGRPK
+        amount: 4
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingSvyat
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Filled, Svyat
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineSniper
+        amount: 4

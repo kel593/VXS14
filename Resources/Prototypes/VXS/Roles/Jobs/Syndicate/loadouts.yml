@@ -604,7 +604,45 @@
 
 
 
+- type: roleLoadout
+  id: JobSyndAnarchykeeperSpecMachinegunner # Спец - пулеметчик
+  groups:
+  - GroupSyndieUniform # Униформы оперов
+  - GroupSyndieHats # Шляпки оперов
+  - GroupSyndieArmor # Броня оперов
+  - GroupSyndieShoes # Обувь оперов
+  - GroupSyndieBacks # Рюкзаки оперов
+  - GroupSyndieMasks # Масочки оперов
+  - GroupSyndieEyes # Очки оперов
+  - GroupSyndieGloves # Перчатки оперов
+  - GroupSyndieUtilities # Утилитарка оперов
+  - GroupSyndieSidearms # Вторичка оперов
 
+- type: roleLoadout
+  id: JobSyndAnarchykeeperSpecMarksman # Спец - марксман
+  groups:
+  - GroupSyndieUniform # Униформы оперов
+  - GroupSyndieHats # Шляпки оперов
+  - GroupSyndieArmor # Броня оперов
+  - GroupSyndieShoes # Обувь оперов
+  - GroupSyndieBacks # Рюкзаки оперов
+  - GroupSyndieMasks # Масочки оперов
+  - GroupSyndieEyes # Очки оперов
+  - GroupSyndieGloves # Перчатки оперов
+  - GroupSyndieUtilities # Утилитарка оперов
+  - GroupSyndieSidearms # Вторичка оперов
+
+- type: roleLoadout
+  id: JobSyndAnarchykeeperSpecMedic # Спец - санитар
+  groups:
+  - GroupSyndieUniform # Униформы оперов
+  - GroupSyndieHats # Шляпки оперов
+  - GroupSyndieArmor # Броня оперов
+  - GroupSyndieShoes # Обувь оперов
+  - GroupSyndieBacks # Рюкзаки оперов
+  - GroupSyndieMasks # Масочки оперов
+  - GroupSyndieGloves # Перчатки оперов
+  - GroupSyndieUtilities # Утилитарка оперов
 
 
 
@@ -617,8 +655,8 @@
     neck: ClothingNeckArmbandRed
   storage:
     back:
-    - BoxMRE
     - GlowstickRed
+    - VXSTargetPinpointer
 
 - type: startingGear
   id: SyndieCargotechGear
@@ -628,8 +666,9 @@
     neck: ClothingNeckArmbandRed
   storage:
     back:
-    - BoxMRE
     - GlowstickRed
+    - VXSTargetPinpointer
+    - BaseUplinkRadio
 
 - type: startingGear
   id: AnarchykeeperOfficerGear
@@ -640,5 +679,47 @@
     pocket1: WeaponSMGVereskHeath
   storage:
     back:
-    - BoxMRE
     - GlowstickRed
+    - VXSTargetPinpointer
+
+- type: startingGear
+  id: AnarchykeeperSpecMachinegunnerGear
+  equipment:
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    neck: ClothingNeckArmbandRed
+    belt: ClothingBeltMilitaryWebbingRPKMG
+  storage:
+    back:
+    - GlowstickRed
+    - VXSTargetPinpointer
+  inhand:
+    - WeaponLMGRPK
+
+- type: startingGear
+  id: AnarchykeeperSpecMarksmanGear
+  equipment:
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    neck: ClothingNeckArmbandRed
+    belt: ClothingBeltMilitaryWebbingSvyat
+  storage:
+    back:
+    - GlowstickRed
+    - VXSTargetPinpointer
+  inhand:
+    - WeaponSniperSvyat
+
+- type: startingGear
+  id: AnarchykeeperSpecMedicGear
+  equipment:
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    neck: ClothingNeckArmbandRed
+    belt: ClothingBeltMilitaryWebbingSyndieMedical
+    eyes: ClothingEyesMedMesons
+    pocket1: WeaponSMGVereskHeath
+  storage:
+    back:
+    - GlowstickRed
+    - VXSTargetPinpointer
