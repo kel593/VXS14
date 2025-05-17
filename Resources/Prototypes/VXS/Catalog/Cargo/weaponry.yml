@@ -4,7 +4,7 @@
     sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
     state: base
   product: CrateArmoryLecter
-  cost: 300
+  cost: 600
   category: cargoproduct-category-name-armory
   group: market
 
