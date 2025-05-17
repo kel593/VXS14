@@ -38,7 +38,7 @@
   description: job-description-anarchy
   playTimeTracker: JobSpecMarksmanTracker
   requirements:
-  startingGear: AnarchykeeperGear
+  startingGear: AnarchykeeperSpecMarksmanGear
   icon: "JobIconSyndieMarksman"
   supervisors: job-supervisors-anarchykeeper
   access:
@@ -53,7 +53,7 @@
   description: job-description-anarchy
   playTimeTracker: JobSpecMachinegunnerTracker
   requirements:
-  startingGear: AnarchykeeperGear
+  startingGear: AnarchykeeperSpecMachinegunnerGear
   icon: "JobIconSyndieMarksman"
   supervisors: job-supervisors-anarchykeeper
   access:
@@ -68,7 +68,7 @@
   description: job-description-anarchy
   playTimeTracker: JobSpecMedicTracker
   requirements:
-  startingGear: AnarchykeeperGear
+  startingGear: AnarchykeeperSpecMedicGear
   icon: "JobIconSyndieMarksman"
   supervisors: job-supervisors-anarchykeeper
   access:
